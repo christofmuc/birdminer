@@ -1,1 +1,1 @@
-angular.module("birdMiningApp", []);
+angular.module("birdMiningApp", ['ngSanitize']);

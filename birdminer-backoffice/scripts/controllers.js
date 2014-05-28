@@ -1,4 +1,4 @@
-function candidateController($scope, $http) {
+function candidateController($scope, $http, $sce) {
 
     $scope.candidates = [];
 
@@ -28,7 +28,8 @@ function candidateController($scope, $http) {
                                         console.log("highlight" + data.hits.hits[0].highlight.text[0]);
                                         for (var i = 0; i < $scope.candidates.length; i++) {
                                             if ($scope.candidates[i].id === documentId) {
-                                                $scope.candidates[i].highlight = $scope.candidates[i].highlight + '\n' + data.hits.hits[0].highlight.text[0];
+                                                $scope.candidates[i].highlight = $scope.candidates[i].highlight + '\n' +
+                                                    $sce.trustAsHtml(data.hits.hits[0].highlight.text[0]);
                                             }
                                         }
                                     });

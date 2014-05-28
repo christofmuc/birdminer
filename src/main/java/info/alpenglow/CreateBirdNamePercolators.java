@@ -15,8 +15,10 @@ import org.elasticsearch.index.query.FilterBuilders;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 
 import static org.elasticsearch.index.query.QueryBuilders.*;
 
@@ -64,11 +66,15 @@ public class CreateBirdNamePercolators {
     }
 
     public static void main(String[] args) throws IOException {
+        // Load properties
+        Properties prop = new Properties();
+        prop.load(new FileInputStream("config.properties"));
+
         // Connect to ElasticSearch
         Settings settings = ImmutableSettings.settingsBuilder()
-                .put("cluster.name", "tilman").build();
+                .put("cluster.name", prop.getProperty("cluster.name")).build();
         client = new TransportClient(settings)
-                .addTransportAddress(new InetSocketTransportAddress("localhost", 9300));
+                .addTransportAddress(new InetSocketTransportAddress(prop.getProperty("server.name"), 9300));
 
         // Load the file with bird names and create the percolators
         createBirdNamePercolators("input/LR_USA_List_Flat_20081103.txt");

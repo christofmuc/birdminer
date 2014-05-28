@@ -75,15 +75,8 @@ public class CreateBirdNamePercolators {
     }
 
     public static void main(String[] args) throws IOException {
-        // Load properties
-        Properties prop = new Properties();
-        prop.load(new FileInputStream("config.properties"));
 
-        // Connect to ElasticSearch
-        Settings settings = ImmutableSettings.settingsBuilder()
-                .put("cluster.name", prop.getProperty("cluster.name")).build();
-        client = new TransportClient(settings)
-                .addTransportAddress(new InetSocketTransportAddress(prop.getProperty("server.name"), 9300));
+        client = TransportClientFactory.createClient();
 
         // Load the file with bird names and create the percolators
         createBirdNamePercolators("input/LR_USA_List_Flat_20081103.txt");

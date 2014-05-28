@@ -31,8 +31,8 @@ public class CreateLocationNamePercolators {
 
     public static void main(String[] args) throws IOException {
         // Connect to ElasticSearch
-        client = new TransportClient()
-                .addTransportAddress(new InetSocketTransportAddress("localhost", 9300));
+
+        client = TransportClientFactory.createClient();
 
         // Load the file with bird names and create the percolators
         createLocationNamePercolators("input/Hotspots Nova Scotia.txt");

@@ -2,9 +2,12 @@ package info.alpenglow;
 
 import com.google.gson.JsonObject;
 import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.percolate.PercolateResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.common.xcontent.XContentBuilder;
+import org.elasticsearch.common.xcontent.XContentFactory;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -15,6 +18,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+
+import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 
 class IngestFile extends SimpleFileVisitor<Path> {
@@ -35,14 +40,28 @@ class IngestFile extends SimpleFileVisitor<Path> {
             }
         } while (line != null);
 
+        XContentBuilder c = jsonBuilder().startObject()
+                .field("doc").startObject()
+                .field("text", sb.toString())
+                .endObject().endObject();
+
+        PercolateResponse response = IngestIntoElastic.getClient().preparePercolate()
+                .setIndices("birding")
+                .setDocumentType("sighting")
+                .setSource(c).execute().actionGet();
+
+        for (PercolateResponse.Match m : response.getMatches()) {
+            System.out.println(m.getId());
+        }
+
         // Store it in ElasticSearch
-        JsonObject message = new JsonObject();
-        message.addProperty("file", file.toString());
-        message.addProperty("message", sb.toString());
-        IndexResponse response = IngestIntoElastic.getClient().prepareIndex("birding", "post")
-                .setSource(message.toString())
-                .execute()
-                .actionGet();
+//        JsonObject message = new JsonObject();
+//        message.addProperty("file", file.toString());
+//        message.addProperty("message", sb.toString());
+//        IndexResponse response = IngestIntoElastic.getClient().prepareIndex("birding", "post")
+//                .setSource(message.toString())
+//                .execute()
+//                .actionGet();
 
         // Return success
         return FileVisitResult.CONTINUE;

@@ -19,7 +19,7 @@ function candidateController($scope, $http) {
                 var candidates = data.hits.hits;
                 console.log(data);
                 angular.forEach(candidates, function(value, key) {
-                    $scope.candidates.push({ file: value._source.file, perculators: value._source.perculators });
+                    $scope.candidates.push({ file: value._source.file, percolators: value._source.percolators });
                 });
             }).
             error(function(data, status, headers, config) {

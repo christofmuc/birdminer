@@ -6,14 +6,17 @@
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
-<div ng-controller="candidateController">
+<div class="col-md-9" ng-controller="candidateController">
     <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
     Total candidates: {{returnTotalCandidates()}}
-    <ul>
-        <li ng-repeat="candidate in candidates">
-            <div>{{candidate.file}}</div>
-        </li>
-    </ul>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr ng-repeat="candidate in candidates">
+                <td>{{candidate.file}}</td>
+                <td>{{candidate.percolators}}</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <script src="lib/angular/angular.js"></script>

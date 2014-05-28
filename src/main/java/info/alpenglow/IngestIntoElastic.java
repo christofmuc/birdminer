@@ -62,18 +62,30 @@ class IngestFile extends SimpleFileVisitor<Path> {
             return FileVisitResult.CONTINUE;
         }
 
+        boolean hasBird = false;
+        boolean hasLocation = false;
         for (PercolateResponse.Match m : response.getMatches()) {
-            System.out.println(m.getId());
-            builder.value(m.getId());
+            String id = m.getId().string();
+            if (id.startsWith("Bird_")) {
+                hasBird = true;
+            }
+            if (id.startsWith("Location_")) {
+                hasLocation = true;
+            }
+            System.out.println(id);
+            builder.value(id);
         }
 
         builder.endArray();
         builder.endObject();
 
-        System.out.println(builder.generator().toString());
-
-        IngestIntoElastic.getClient().prepareIndex("result", "bird_candidate")
-                .setSource(builder).execute().actionGet();
+        if (hasBird && hasLocation) {
+            IngestIntoElastic.getClient().prepareIndex("result", "bird_candidate")
+                    .setSource(builder).execute().actionGet();
+        }
+        else {
+            System.out.println("Did not match both Bird and Location");
+        }
 
         // Store it in ElasticSearch
 //        JsonObject message = new JsonObject();

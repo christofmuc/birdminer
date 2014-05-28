@@ -5,15 +5,17 @@
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
-<label>
-    List of candidates:
-    <input type="text" ng-model="text"/>
-</label>
-
-<p>Hello {{text}}!</p>
+<div ng-controller="candidateController">
+    Total candidates: {{returnTotalCandidates()}}
+    <ul>
+        <li ng-repeat="candidate in candidates">
+            <div>{{candidate.message}}</div>
+        </li>
+    </ul>
+</div>
 
 <script src="lib/angular/angular.js"></script>
 <script src="scripts/module.js"></script>
-<script src="scripts/directives/cube-Directive.js"></script>
+<script src="scripts/controllers.js"></script>
 </body>
 </html>

@@ -1,26 +1,16 @@
 package info.alpenglow;
 
 import au.com.bytecode.opencsv.CSVReader;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.ImmutableSettings;
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.FilterBuilders;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
 
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Properties;
 
-import static org.elasticsearch.index.query.QueryBuilders.*;
+import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
+import static org.elasticsearch.index.query.QueryBuilders.fuzzyQuery;
 
 public class CreateBirdNamePercolators {
 
@@ -33,17 +23,15 @@ public class CreateBirdNamePercolators {
     private static void createPercolator(String birdName) throws IOException {
         System.out.println("Creating percolator for " + birdName);
 
-        JsonArray fuzzymatches = new JsonArray();
-
         String[] nameSegs = birdName.split(" ");
 
         BoolQueryBuilder qb = boolQuery();
         for (String seg : nameSegs) {
-            qb.must(fuzzyQuery("text",seg));
+            qb.must(fuzzyQuery("text", seg));
         }
 
         IndexResponse response = getClient().prepareIndex("birding", ".percolator", birdName)
-                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).endObject())
+                .setSource(XContentFactory.jsonBuilder().startObject().field("query", qb).endObject())
                 .setRefresh(true)
                 .execute()
                 .actionGet();

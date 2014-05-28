@@ -55,14 +55,25 @@ class IngestFile extends SimpleFileVisitor<Path> {
                 .setDocumentType("sighting")
                 .setSource(c).execute().actionGet();
 
+        XContentBuilder builder = jsonBuilder().startObject().field("file", file.toString())
+                .field("text", sb.toString()).startArray("percolators");
+
+        if (response.getMatches().length == 0) {
+            return FileVisitResult.CONTINUE;
+        }
+
         for (PercolateResponse.Match m : response.getMatches()) {
             System.out.println(m.getId());
-            jsonBuilder().startObject().field("file",file.getName())
-                    .field("text",sb.toString())
-                    .array("")
-            IngestIntoElastic.getClient().prepareIndex(ELASTIC_INDEX_BIRDING, "post")
-                    .setSource()
+            builder.value(m.getId());
         }
+
+        builder.endArray();
+        builder.endObject();
+
+        System.out.println(builder.generator().toString());
+
+        IngestIntoElastic.getClient().prepareIndex("result", "bird_candidate")
+                .setSource(builder).execute().actionGet();
 
         // Store it in ElasticSearch
 //        JsonObject message = new JsonObject();

@@ -10,6 +10,7 @@ import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.xcontent.XContentFactory;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.FilterBuilders;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -18,6 +19,8 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
+
+import static org.elasticsearch.index.query.QueryBuilders.*;
 
 public class CreateBirdNamePercolators {
 
@@ -28,28 +31,16 @@ public class CreateBirdNamePercolators {
     }
 
     private static void createPercolator(String birdName) throws IOException {
-        //TODO: Code goes here
         System.out.println("Creating percolator for " + birdName);
 
         JsonArray fuzzymatches = new JsonArray();
 
         String[] nameSegs = birdName.split(" ");
+
+        BoolQueryBuilder qb = boolQuery();
         for (String seg : nameSegs) {
-            JsonObject val = new JsonObject();
-            val.addProperty("value", seg);
-            JsonObject fuz = new JsonObject();
-            fuz.add("text", val);
-            fuzzymatches.add(fuz);
+            qb.must(fuzzyQuery("text",seg));
         }
-
-        JsonObject must = new JsonObject();
-        must.add("must", fuzzymatches);
-        JsonObject bool = new JsonObject();
-        bool.add("bool",must);
-        JsonObject query = new JsonObject();
-        query.add("query", bool);
-
-        QueryBuilder qb = QueryBuilders.termQuery("fuzzy","test");
 
         IndexResponse response = getClient().prepareIndex("birding", ".percolator", birdName)
                 .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).endObject())

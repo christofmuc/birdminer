@@ -1,0 +1,58 @@
+GET /birding/post/_search
+{
+    "query":
+    {
+        "bool":
+        {
+            "must":
+            [
+                {
+                    "query_string":{
+                        "query":"cooper's hawk"
+                    }},
+                {
+                    "query_string":{
+                        "query":"Brier Island"
+                    }}
+            ]
+        }
+
+    }
+}
+
+POST /birding/post/_search
+{
+    "query":
+    {
+
+        "bool":
+        {
+            "should":
+            [
+                {
+                    "match_phrase":{
+                        "message":{
+                            "query":"Aspotogan Peninsula"
+
+                        }}},
+                {
+                    "match_phrase":{
+                        "message":{
+                            "query":"Brier Island"
+                        }}}
+            ]
+        }
+    }
+,
+    "highlight":
+    {
+        "fields":
+        {
+            "message":
+            {
+                "fragment_size":  150,
+                "number_of_fragments": 3
+            }
+        }
+    }
+}

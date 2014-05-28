@@ -51,7 +51,7 @@ class IngestFile extends SimpleFileVisitor<Path> {
                 .endObject().endObject();
 
         PercolateResponse response = IngestIntoElastic.getClient().preparePercolate()
-                .setIndices("birding")
+                .setIndices(ELASTIC_INDEX_BIRDING)
                 .setDocumentType("sighting")
                 .setSource(c).execute().actionGet();
 

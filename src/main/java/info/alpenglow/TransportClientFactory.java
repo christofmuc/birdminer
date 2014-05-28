@@ -9,10 +9,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * @author mlappsch
- *         Copyright 2014 by Avid Technology, Inc.
- */
 public class TransportClientFactory {
 
 
@@ -23,9 +19,8 @@ public class TransportClientFactory {
         // Connect to ElasticSearch
         Settings settings = ImmutableSettings.settingsBuilder()
                 .put("cluster.name", prop.getProperty("cluster.name")).build();
-        TransportClient client = new TransportClient(settings)
-                .addTransportAddress(new InetSocketTransportAddress(prop.getProperty("server.name"), 9300));
 
-        return client;
+        return new TransportClient(settings)
+                .addTransportAddress(new InetSocketTransportAddress(prop.getProperty("server.name"), 9300));
     }
 }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="birdMiningApp">
+<head>
+    <title>Bird Mining Backoffice</title>
+    <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
+</head>
+<body ng-init>
+<label>
+    List of candidates:
+    <input type="text" ng-model="text"/>
+</label>
+
+<p>Hello {{text}}!</p>
+
+<script src="lib/angular/angular.js"></script>
+<script src="scripts/module.js"></script>
+<script src="scripts/directives/cube-Directive.js"></script>
+</body>
+</html>

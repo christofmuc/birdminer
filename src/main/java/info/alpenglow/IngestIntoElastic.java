@@ -57,6 +57,11 @@ class IngestFile extends SimpleFileVisitor<Path> {
 
         for (PercolateResponse.Match m : response.getMatches()) {
             System.out.println(m.getId());
+            jsonBuilder().startObject().field("file",file.getName())
+                    .field("text",sb.toString())
+                    .array("")
+            IngestIntoElastic.getClient().prepareIndex(ELASTIC_INDEX_BIRDING, "post")
+                    .setSource()
         }
 
         // Store it in ElasticSearch

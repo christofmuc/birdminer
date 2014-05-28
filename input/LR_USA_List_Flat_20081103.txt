@@ -1,0 +1,4033 @@
+[North American Birds]
+	Hispaniolan Pewee
+		{Contopus hispaniolensis, Contopus (caribaeus) hispaniolensis}
+	Sapphire-throated Hummingbird
+		{Lepidopyga coeruleogularis}
+	Long-billed Murrelet
+		{Brachyramphus perdix, Brachyramphus (marmoratus) perdix}
+	Blue Ground-Dove
+		{Claravis pretiosa}
+	Bay-breasted Warbler
+		{Dendroica castanea}
+	Prairie Falcon
+		{Falco mexicanus}
+	Harpy Eagle
+		{Harpia harpyja}
+	Orchard Oriole
+		{Icterus spurius}
+	Tricolored Munia
+		{Lonchura malacca, Indian Black-headed Munia}
+	Little Cuckoo
+		{Coccycua minuta, Piaya minuta}
+	Heermann's Gull
+		{Larus heermanni}
+	Eurasian Jackdaw
+		{Corvus monedula}
+	Carmiol's Tanager
+		{Chlorothraupis carmioli}
+	Greater Pewee
+		{Contopus pertinax}
+	Purple Honeycreeper
+		{Cyanerpes caeruleus}
+	Acorn Woodpecker
+		{Melanerpes formicivorus}
+	Bronze-olive Pygmy-Tyrant
+		{Pseudotriccus pelzelni}
+	Stygian Owl
+		{Asio stygius}
+	Great Green Macaw
+		{Ara ambiguus, Ara (militaris) ambigua}
+	White Tern
+		{Gygis alba, Common White Tern}
+	Slaty-winged Foliage-gleaner
+		{Philydor fuscipenne, Philydor (erythrocercus) fuscipennis}
+	Rufous-winged Tanager
+		{Tangara lavinia}
+	Jamaican Tody
+		{Todus todus}
+	Nazca Booby
+		{Sula granti, Sula (dactylatra) granti}
+	Agami Heron
+		{Agamia agami}
+	Pheasant Cuckoo
+		{Dromococcyx phasianellus}
+	Black-cowled Oriole
+		{Icterus prosthemelas, Icterus (dominicensis) prosthemelas}
+	White-naped Brush-Finch
+		{Atlapetes albinucha}
+	Lemon-spectacled Tanager
+		{Chlorothraupis olivacea, Chlorothraupis (carmioli) olivacea}
+	Rufous-vented Chachalaca
+		{Ortalis ruficauda}
+	Plumbeous Kite
+		{Ictinia plumbea}
+	Tiny Hawk
+		{Accipiter superciliosus}
+	Tawny-crowned Greenlet
+		{Hylophilus ochraceiceps}
+	Inca Tern
+		{Larosterna inca}
+	White-bellied Mountain-gem
+		{Lampornis hemileucus}
+	Common Peafowl
+		{Pavo cristatus}
+	Gray-breasted Wood-Wren
+		{Henicorhina leucophrys, Grey-breasted Wood-wren}
+	Mountain Elaenia
+		{Elaenia frantzii}
+	Rufous-winged Woodpecker
+		{Piculus simplex}
+	Lesser Antillean Saltator
+		{Saltator albicollis}
+	Northern Gannet
+		{Morus bassanus}
+	Eurasian Oystercatcher
+		{Haematopus ostralegus}
+	Black-cheeked Warbler
+		{Basileuterus melanogenys}
+	Azure-hooded Jay
+		{Cyanolyca cucullata}
+	Crested Auklet
+		{Aethia cristatella}
+	Slender-billed Kite
+		{Helicolestes  hamatus, Rostrhamus hamatus}
+	Anna's Hummingbird
+		{Calypte anna}
+	Sad Flycatcher
+		{Myiarchus barbirostris, Myiarchus (tuberculifer) barbirostris}
+	Common Tody-Flycatcher
+		{Todirostrum cinereum}
+	Bahama Yellowthroat
+		{Geothlypis rostrata, Geothlypis (trichas) rostrata}
+	Steller's Eider
+		{Polysticta stelleri}
+	Inca Dove
+		{Columbina inca, Columbina (squammata) inca}
+	Scarlet Ibis
+		{Eudocimus ruber}
+	Little Tern
+		{Sternula albifrons, Sterna albifrons}
+	Swainson's Warbler
+		{Limnothlypis swainsonii}
+	Verdin
+		{Auriparus flaviceps}
+	White-collared Swift
+		{Streptoprocne zonaris}
+	Village Weaver
+		{Ploceus cucullatus}
+	Swallow-tailed Gull
+		{Creagrus  furcatus , Creagrus furcatus}
+	Yellow-backed Tanager
+		{Hemithraupis flavicollis}
+	Spot-breasted Woodpecker
+		{Colaptes punctigula}
+	Anhinga
+		{Anhinga anhinga}
+	Yellow-bellied Flycatcher
+		{Empidonax flaviventris}
+	White-eared Hummingbird
+		{Hylocharis leucotis}
+	Bridled Tern
+		{Onychoprion anaethetus, Sterna anaethetus}
+	Sandwich Tern
+		{Thalasseus sandvicensis, Sterna sandvicensis}
+	Adelaide's Warbler
+		{Dendroica adelaidae}
+	Stripe-throated Wren
+		{Thryothorus leucopogon}
+	Hooded Warbler
+		{Wilsonia citrina}
+	Black-bellied Plover
+		{Pluvialis squatarola, Grey Plover}
+	Barnacle Goose
+		{Branta leucopsis}
+	Singing Quail
+		{Dactylortyx thoracicus}
+	Apapane
+		{Himatione sanguinea}
+	Violet-green Swallow
+		{Tachycineta thalassina}
+	Long-tailed Silky-flycatcher
+		{Ptilogonys caudatus, Long-tailed Silky-Flycatcher}
+	Japanese White-eye
+		{Zosterops japonicus}
+	Common Snipe
+		{Gallinago gallinago}
+	Golden-crowned Sparrow
+		{Zonotrichia atricapilla}
+	Violaceous Trogon
+		{Trogon violaceus}
+	Ocellated Turkey
+		{Meleagris ocellata, Agriocharis ocellata}
+	Jamaican Euphonia
+		{Euphonia jamaica}
+	Surfbird
+		{Aphriza virgata}
+	Black-eared Wood-Quail
+		{Odontophorus melanotis, Black-eared Wood-quail}
+	Harris's Sparrow
+		{Zonotrichia querula, Harris' Sparrow}
+	White-throated Sparrow
+		{Zonotrichia albicollis}
+	Spot-crowned Barbet
+		{Capito maculicoronatus}
+	Cape May Warbler
+		{Dendroica tigrina}
+	Fan-tailed Warbler
+		{Euthlypis lachrymosa}
+	Red-billed Pigeon
+		{Patagioenas flavirostris, Columba flavirostris}
+	Horned Guan
+		{Oreophasis derbianus}
+	Thick-billed Vireo
+		{Vireo crassirostris}
+	White-rumped Sandpiper
+		{Calidris fuscicollis}
+	Bahama Mockingbird
+		{Mimus gundlachii}
+	Canvasback
+		{Aythya valisineria}
+	Spot-crowned Antvireo
+		{Dysithamnus puncticeps}
+	Tamaulipas Pygmy-Owl
+		{Glaucidium sanchezi, Glaucidium (minutissimum) sanchezi}
+	Blue-throated Goldentail
+		{Hylocharis eliciae}
+	Straight-billed Woodcreeper
+		{Xiphorhynchus picus}
+	Scarlet-thighed Dacnis
+		{Dacnis venusta}
+	Mourning Dove
+		{Zenaida macroura}
+	Rufous-backed Robin
+		{Turdus rufopalliatus, Rufous-backed Thrush}
+	Wedge-tailed Grass-Finch
+		{Emberizoides herbicola}
+	Nutmeg Mannikin
+		{Lonchura punctulata, Scaly-breasted Munia}
+	Eared Dove
+		{Zenaida auriculata}
+	Chuck-will's-widow
+		{Caprimulgus carolinensis}
+	Zenaida Dove
+		{Zenaida aurita}
+	Spot-tailed Nightjar
+		{Caprimulgus maculicaudus}
+	Yellow-eared Toucanet
+		{Selenidera spectabilis}
+	Red-throated Caracara
+		{Ibycter americanus, Daptrius americanus}
+	Tacarcuna Bush-Tanager
+		{Chlorospingus tacarcunae, Chlorospingus (ophthalmicus) tacarcunae}
+	Collared Redstart
+		{Myioborus torquatus}
+	Wrenthrush
+		{Zeledonia coronata}
+	Red-flanked Bluetail
+		{Tarsiger cyanurus}
+	Large-billed Tern
+		{Phaetusa simplex}
+	Brown Jay
+		{Cyanocorax morio, Psilorhinus morio}
+	Spotted Woodcreeper
+		{Xiphorhynchus erythropygius, Xiphorhynchus (triangularis) erythropygius}
+	Black-striped Woodcreeper
+		{Xiphorhynchus lachrymosus}
+	Gull-billed Tern
+		{Gelochelidon nilotica, Sterna nilotica}
+	Scaly-breasted Hummingbird
+		{Phaeochroa cuvierii}
+	Cocoa Woodcreeper
+		{Xiphorhynchus susurrans, Xiphorhynchus (guttatus) susurrans}
+	White-tailed Hummingbird
+		{Eupherusa poliocerca}
+	Arctic Loon
+		{Gavia arctica, Black-throated Diver}
+	American Coot
+		{Fulica americana}
+	Cuban Green Woodpecker
+		{Xiphidiopicus percussus, Cuban Woodpecker}
+	Lesser Scaup
+		{Aythya affinis}
+	Terek Sandpiper
+		{Xenus cinereus}
+	Acadian Flycatcher
+		{Empidonax virescens}
+	Black-faced Grassquit
+		{Tiaris bicolor}
+	Pileated Flycatcher
+		{Xenotriccus mexicanus}
+	Belted Flycatcher
+		{Xenotriccus callizonus}
+	Gambel's Quail
+		{Callipepla gambelii}
+	Sierra Madre Sparrow
+		{Xenospiza baileyi}
+	White-cheeked Pintail
+		{Anas bahamensis}
+	Trumpeter Swan
+		{Cygnus buccinator}
+	Spiny-faced Antshrike
+		{Xenornis setifrons, Speckled Antshrike}
+	Fernandina's Flicker
+		{Colaptes fernandinae}
+	Streaked Xenops
+		{Xenops rutilans}
+	Plain Xenops
+		{Xenops minutus}
+	Great Curassow
+		{Crax rubra}
+	Alder Flycatcher
+		{Empidonax alnorum}
+	Rough-legged Hawk
+		{Buteo lagopus, Rough-legged Buzzard}
+	Barred Forest-Falcon
+		{Micrastur ruficollis, Barred Forest-falcon}
+	White-winged Warbler
+		{Xenoligea montana}
+	Vervain Hummingbird
+		{Mellisuga minima}
+	Canada Goose
+		{Branta canadensis}
+	Mangrove Cuckoo
+		{Coccyzus minor}
+	Sabine's Gull
+		{Xema sabini, Larus sabini}
+	Western Grebe
+		{Aechmophorus occidentalis}
+	Oriente Warbler
+		{Teretistris fornsi}
+	Dusky Warbler
+		{Phylloscopus fuscatus}
+	Sage Thrasher
+		{Oreoscoptes montanus}
+	Yellow-browed Shrike-Vireo
+		{Vireolanius eximius, Vireolanius (pulchellus) eximius}
+	White-crowned Parrot
+		{Pionus senilis}
+	Hill Myna
+		{Gracula religiosa}
+	White-ruffed Manakin
+		{Corapipo altera, Corapipo (leucorrhoa) altera}
+	Green Shrike-Vireo
+		{Vireolanius pulchellus}
+	Chestnut-sided Shrike-Vireo
+		{Vireolanius melitophrys}
+	Hispaniolan Spindalis
+		{Spindalis dominicensis, Hispaniolan Stripe-headed Tanager, Spindalis (zena) dominicensis}
+	Pink-footed Shearwater
+		{Puffinus creatopus, Puffinus (carneipes) creatopus}
+	Yellow-green Vireo
+		{Vireo flavoviridis}
+	Glow-throated Hummingbird
+		{Selasphorus ardens}
+	Fasciated Tiger-Heron
+		{Tigrisoma fasciatum, Fasciated Tiger-heron}
+	Red-eyed Vireo
+		{Vireo olivaceus}
+	Horned Lark
+		{Eremophila alpestris}
+	Olivaceous Woodcreeper
+		{Sittasomus griseicapillus}
+	Spotted Wren
+		{Campylorhynchus gularis}
+	Philadelphia Vireo
+		{Vireo philadelphicus}
+	Millerbird
+		{Acrocephalus familiaris}
+	Brown-capped Vireo
+		{Vireo leucophrys}
+	Warbling Vireo
+		{Vireo gilvus}
+	Black-capped Siskin
+		{Carduelis atriceps, Carduelis (pinus) atriceps}
+	Boat-billed Flycatcher
+		{Megarynchus pitangua}
+	Ruby-crowned Kinglet
+		{Regulus calendula}
+	Belding's Yellowthroat
+		{Geothlypis beldingi, Peninsular Yellowthroat, Geothlypis (trichas) beldingi}
+	Montezuma Quail
+		{Cyrtonyx montezumae}
+	Tree Swallow
+		{Tachycineta bicolor}
+	Sooty-headed Wren
+		{Thryothorus spadix, Thryothorus (atrogularis) spadix}
+	Lineated Foliage-gleaner
+		{Syndactyla subalaris}
+	Squirrel Cuckoo
+		{Piaya cayana}
+	Iiwi
+		{Vestiaria coccinea}
+	Black-headed Siskin
+		{Carduelis notata}
+	Orange-crowned Warbler
+		{Vermivora celata}
+	American Three-toed Woodpecker
+		{Picoides dorsalis, Picoides (tridactylus) dorsalis}
+	Bohemian Waxwing
+		{Bombycilla garrulus}
+	Blue Mountain Vireo
+		{Vireo osburni}
+	Northern Shrike
+		{Lanius excubitor, Great Grey Shrike}
+	Dwarf Vireo
+		{Vireo nelsoni}
+	Chestnut-colored Woodpecker
+		{Celeus castaneus, Chestnut-coloured Woodpecker}
+	Bell's Vireo
+		{Vireo bellii}
+	African Silverbill
+		{Lonchura cantans, Lonchura (malabarica) cantans}
+	Scaly-throated Leaftosser
+		{Sclerurus guatemalensis}
+	Semiplumbeous Hawk
+		{Leucopternis semiplumbeus, Leucopternis semiplumbea}
+	Sandhill Crane
+		{Grus canadensis}
+	Rose-breasted Grosbeak
+		{Pheucticus ludovicianus}
+	Mottled Petrel
+		{Pterodroma inexpectata}
+	Henslow's Sparrow
+		{Ammodramus henslowii}
+	Cuban Vireo
+		{Vireo gundlachii}
+	Cattle Egret
+		{Bubulcus ibis}
+	Mallard
+		{Anas platyrhynchos}
+	St. Andrew Vireo
+		{Vireo caribaeus, Vireo (pallens) caribaeus}
+	Altamira Oriole
+		{Icterus gularis}
+	Gray-crowned Palm-Tanager
+		{Phaenicophilus poliocephalus, Grey-crowned Palm-Tanager}
+	Cozumel Vireo
+		{Vireo bairdi}
+	Mangrove Vireo
+		{Vireo pallens}
+	Louisiana Waterthrush
+		{Seiurus motacilla}
+	White-eyed Vireo
+		{Vireo griseus}
+	Hooded Yellowthroat
+		{Geothlypis nelsoni}
+	Slaty Vireo
+		{Vireo brevipennis}
+	Pin-tailed Whydah
+		{Vidua macroura}
+	Pacific Parakeet
+		{Aratinga strenua, Aratinga (holochlora) strenua}
+	Great Skua
+		{Stercorarius skua, Catharacta skua}
+	Virginia's Warbler
+		{Vermivora virginiae}
+	Sanderling
+		{Calidris alba}
+	Nashville Warbler
+		{Vermivora ruficapilla}
+	Bare-eyed Thrush
+		{Turdus nudigenis}
+	Plumbeous Vireo
+		{Vireo plumbeus, Vireo (solitarius) plumbeus}
+	Tennessee Warbler
+		{Vermivora peregrina}
+	White-tailed Kite
+		{Elanus leucurus, Elanus (caeruleus) leucurus}
+	Violet Sabrewing
+		{Campylopterus hemileucurus}
+	Golden-winged Warbler
+		{Vermivora chrysoptera}
+	Blue-winged Warbler
+		{Vermivora pinus}
+	Yellow-throated Warbler
+		{Dendroica dominica}
+	House Wren
+		{Troglodytes aedon}
+	Sunbittern
+		{Eurypyga helias}
+	Great Antshrike
+		{Taraba major}
+	Bachman's Warbler
+		{Vermivora bachmanii}
+	Carolina Wren
+		{Thryothorus ludovicianus}
+	Red-rumped Woodpecker
+		{Veniliornis kirkii}
+	Smoky-brown Woodpecker
+		{Veniliornis fumigatus}
+	Flame-throated Warbler
+		{Parula gutturalis}
+	Southern Lapwing
+		{Vanellus chilensis}
+	Pinyon Jay
+		{Gymnorhinus cyanocephalus}
+	Band-tailed Barbthroat
+		{Threnetes ruckeri}
+	White-bellied Wren
+		{Uropsila leucogastra}
+	Scaled Quail
+		{Callipepla squamata}
+	Thick-billed Murre
+		{Uria lomvia, Brunnich's Guillemot}
+	Snowy Egret
+		{Egretta thula}
+	White-tailed Eagle
+		{Haliaeetus albicilla}
+	Red-cheeked Cordonbleu
+		{Uraeginthus bengalus}
+	Eurasian Hoopoe
+		{Upupa epops}
+	Brandt's Cormorant
+		{Phalacrocorax penicillatus}
+	Hawaiian Petrel
+		{Pterodroma sandwichensis, Pterodroma (phaeopygia) sandwichensis}
+	Ashy-faced Owl
+		{Tyto glaucops}
+	Boat-billed Heron
+		{Cochlearius cochlearius, Cochlearius cochlearia}
+	Ocellated Poorwill
+		{Nyctiphrynus ocellatus}
+	Barn Owl
+		{Tyto alba}
+	White-tailed Ptarmigan
+		{Lagopus leucura, Lagopus leucurus}
+	Fork-tailed Flycatcher
+		{Tyrannus savana}
+	Fulvous-vented Euphonia
+		{Euphonia fulvicrissa}
+	Giant Kingbird
+		{Tyrannus cubensis}
+	Loggerhead Kingbird
+		{Tyrannus caudifasciatus}
+	Gray Kingbird
+		{Tyrannus dominicensis, Grey Kingbird}
+	Shiny Cowbird
+		{Molothrus bonariensis}
+	Black-tailed Godwit
+		{Limosa limosa}
+	Colombian Crake
+		{Neocrex colombiana, Neocrex colombianus}
+	Eastern Kingbird
+		{Tyrannus tyrannus}
+	Western Kingbird
+		{Tyrannus verticalis}
+	Red-whiskered Bulbul
+		{Pycnonotus jocosus}
+	Red-naped Sapsucker
+		{Sphyrapicus nuchalis, Sphyrapicus (varius) nuchalis}
+	Mountain Bluebird
+		{Sialia currucoides}
+	Common Poorwill
+		{Phalaenoptilus nuttallii}
+	Bridled Quail-Dove
+		{Geotrygon mystacea}
+	Gray Wagtail
+		{Motacilla cinerea, Grey Wagtail}
+	Tropical Kingbird
+		{Tyrannus melancholicus}
+	Ruddy Woodcreeper
+		{Dendrocincla homochroa}
+	Puerto Rican Emerald
+		{Chlorostilbon maugaeus}
+	Black-tipped Cotinga
+		{Carpodectes hopkei, Carpodectes (nitidus) hopkei}
+	Horned Puffin
+		{Fratercula corniculata}
+	Lesser Prairie-Chicken
+		{Tympanuchus pallidicinctus, Tympanuchus (cupido) pallidicinctus}
+	Eurasian Blackbird
+		{Turdus merula}
+	Lovely Cotinga
+		{Cotinga amabilis, Cotinga (cotinga) amabilis}
+	Sharp-tailed Grouse
+		{Tympanuchus phasianellus}
+	White-tailed Trogon
+		{Trogon viridis}
+	Purple-throated Carib
+		{Eulampis jugularis}
+	Yellow-naped Parrot
+		{Amazona auropalliata, Amazona (ochrocephala) auropalliata}
+	Gray Bunting
+		{Emberiza variabilis, Grey Bunting}
+	White-chinned Thrush
+		{Turdus aurantius}
+	La Selle Thrush
+		{Turdus swalesi}
+	Yellow-rumped Cacique
+		{Cacicus cela}
+	American Robin
+		{Turdus migratorius}
+	Green Violetear
+		{Colibri thalassinus, Green Violet-ear}
+	White-throated Thrush
+		{Turdus assimilis, Turdus (albicollis) assimilis}
+	White-eyed Thrush
+		{Turdus jamaicensis}
+	Clay-colored Thrush
+		{Turdus grayi, Clay-coloured Thrush}
+	Bridled Sparrow
+		{Aimophila mystacalis}
+	Canyon Towhee
+		{Pipilo fuscus}
+	Golden-bellied Flycatcher
+		{Myiodynastes hemichrysus, Myiodynastes (chrysocephalus) hemichrysus}
+	Cocoa Thrush
+		{Turdus fumigatus}
+	Yucatan Vireo
+		{Vireo magister}
+	Greater Sage-Grouse
+		{Centrocercus urophasianus}
+	Collared Aracari
+		{Pteroglossus torquatus}
+	Tawny-collared Nightjar
+		{Caprimulgus salvini}
+	Black Thrush
+		{Turdus infuscatus}
+	Sooty Thrush
+		{Turdus nigrescens}
+	Song Thrush
+		{Turdus philomelos , Turdus philomelos}
+	Redwing
+		{Turdus iliacus}
+	Fieldfare
+		{Turdus pilaris}
+	Bobolink
+		{Dolichonyx oryzivorus}
+	Masked Yellowthroat
+		{Geothlypis aequinoctialis}
+	Yellow-breasted Bunting
+		{Emberiza aureola}
+	Eyebrowed Thrush
+		{Turdus obscurus}
+	Long-tailed Woodcreeper
+		{Deconychura longicauda}
+	Tawny-chested Flycatcher
+		{Aphanotriccus capitalis}
+	Rosy Thrush-Tanager
+		{Rhodinocichla rosea}
+	Red-shouldered Blackbird
+		{Agelaius assimilis, Agelaius (phoeniceus) assimilis}
+	Great Egret
+		{Ardea alba}
+	Chinese Egret
+		{Egretta eulophotes}
+	Common Grackle
+		{Quiscalus quiscula}
+	Lattice-tailed Trogon
+		{Trogon clathratus}
+	Western Tanager
+		{Piranga ludoviciana}
+	Slaty-tailed Trogon
+		{Trogon massena}
+	Black-tailed Trogon
+		{Trogon melanurus}
+	Black-throated Trogon
+		{Trogon rufus}
+	Prong-billed Barbet
+		{Semnornis frantzii}
+	Gray Heron
+		{Ardea cinerea, Grey Heron}
+	Collared Trogon
+		{Trogon collaris}
+	Elegant Trogon
+		{Trogon elegans}
+	Mountain Trogon
+		{Trogon mexicanus}
+	Rufous-collared Sparrow
+		{Zonotrichia capensis}
+	Red-legged Thrush
+		{Turdus plumbeus}
+	Citreoline Trogon
+		{Trogon citreolus}
+	Yellow Rail
+		{Coturnicops noveboracensis}
+	Black-headed Trogon
+		{Trogon melanocephalus}
+	Elegant Quail
+		{Callipepla douglasii}
+	Winter Wren
+		{Troglodytes troglodytes, Eurasian Wren}
+	Barred Becard
+		{Pachyramphus versicolor}
+	American Pipit
+		{Anthus rubescens, Buff-bellied Pipit, Anthus (spinoletta) rubescens}
+	Cuban Gnatcatcher
+		{Polioptila lembeyei}
+	Ochraceous Wren
+		{Troglodytes ochraceus, Troglodytes (solstitialis) ochraceus}
+	Aztec Thrush
+		{Ridgwayia pinicola, Zoothera pinicola}
+	Rufous-browed Wren
+		{Troglodytes rufociliatus, Troglodytes (solstitialis) rufociliatus}
+	Emerald Tanager
+		{Tangara florida}
+	Black-necked Stilt
+		{Himantopus mexicanus, Himantopus (himantopus) mexicanus}
+	Brown-hooded Parrot
+		{Pyrilia  haematotis, Pionopsitta haematotis}
+	Common House-Martin
+		{Delichon urbicum, House Martin, Delichon urbica}
+	Streamertail
+		{Trochilus polytmus, Red-billed Streamertail}
+	Green Heron
+		{Butorides virescens, Butorides (striatus) virescens}
+	White-faced Whistling-Duck
+		{Dendrocygna viduata, White-faced Whistling-duck}
+	Gray Partridge
+		{Perdix perdix, Grey Partridge}
+	Peruvian Booby
+		{Sula variegata}
+	Common Redshank
+		{Tringa totanus}
+	Panama Flycatcher
+		{Myiarchus panamensis, Myiarchus (ferox) panamensis}
+	Green Kingfisher
+		{Chloroceryle americana}
+	Lewis's Woodpecker
+		{Melanerpes lewis, Lewis' Woodpecker}
+	Marsh Sandpiper
+		{Tringa stagnatilis}
+	Lesser Yellowlegs
+		{Tringa flavipes}
+	Willet
+		{Tringa semipalmata, Catoptrophorus semipalmatus}
+	Blue Seedeater
+		{Amaurospiza concolor}
+	Common Goldeneye
+		{Bucephala clangula}
+	Blue Bunting
+		{Cyanocompsa parellina}
+	Greater Yellowlegs
+		{Tringa melanoleuca}
+	Greater Ani
+		{Crotophaga major}
+	Black-capped Pygmy-Tyrant
+		{Myiornis atricapillus}
+	Yellow Bittern
+		{Ixobrychus sinensis}
+	Gray-tailed Tattler
+		{Tringa brevipes, Grey-tailed Tattler, Heteroscelus brevipes}
+	Lesser Black-backed Gull
+		{Larus fuscus, Baltic Gull}
+	Yellow-billed Cacique
+		{Amblycercus holosericeus}
+	Band-backed Wren
+		{Campylorhynchus zonatus}
+	Evening Grosbeak
+		{Coccothraustes vespertinus, Hesperiphona vespertina}
+	American Avocet
+		{Recurvirostra americana}
+	Green Sandpiper
+		{Tringa ochropus}
+	Le Conte's Thrasher
+		{Toxostoma lecontei}
+	Florida Scrub-Jay
+		{Aphelocoma coerulescens, Florida Jay}
+	Bananaquit
+		{Coereba flaveola}
+	Cuban Blackbird
+		{Dives atroviolaceus, Dives atroviolacea}
+	Muscovy Duck
+		{Cairina moschata}
+	Roadside Hawk
+		{Buteo magnirostris}
+	Crissal Thrasher
+		{Toxostoma crissale}
+	Lesser Sand-Plover
+		{Charadrius mongolus, Lesser Sand Plover}
+	Slaty-backed Forest-Falcon
+		{Micrastur mirandollei, Slaty-backed Forest-falcon}
+	Lesser Roadrunner
+		{Geococcyx velox}
+	Blue-throated Motmot
+		{Aspatha gularis}
+	Curve-billed Thrasher
+		{Toxostoma curvirostre}
+	Ocellated Thrasher
+		{Toxostoma ocellatum}
+	King Eider
+		{Somateria spectabilis}
+	Orinoco Goose
+		{Neochen jubata}
+	Bendire's Thrasher
+		{Toxostoma bendirei}
+	Sapayoa
+		{Sapayoa aenigma, Broad-billed Manakin}
+	Greater Sand-Plover
+		{Charadrius leschenaultii, Greater Sand Plover}
+	Cozumel Thrasher
+		{Toxostoma guttatum}
+	Long-billed Thrasher
+		{Toxostoma longirostre}
+	Iceland Gull
+		{Larus glaucoides}
+	Brown Thrasher
+		{Toxostoma rufum}
+	Blue-fronted Parrotlet
+		{Touit dilectissimus, Touit dilectissima}
+	Red-billed Scythebill
+		{Campylorhamphus trochilirostris}
+	White-throated Spadebill
+		{Platyrinchus mystaceus}
+	Tufted Puffin
+		{Fratercula cirrhata}
+	Ruby-topaz Hummingbird
+		{Chrysolampis mosquitus}
+	Hwamei
+		{Garrulax canorus}
+	Red Avadavat
+		{Amandava amandava}
+	Yellowish Pipit
+		{Anthus lutescens}
+	Red-fronted Parrotlet
+		{Touit costaricensis, Touit (dilectissima) costaricensis}
+	Yellow-throated Vireo
+		{Vireo flavifrons}
+	Least Pauraque
+		{Siphonorhis brewsteri, Least Poorwill}
+	Yellow-olive Flycatcher
+		{Tolmomyias sulphurescens}
+	Puerto Rican Tody
+		{Todus mexicanus}
+	Black-tailed Gnatcatcher
+		{Polioptila melanura}
+	California Condor
+		{Gymnogyps californianus, Californian Condor}
+	Black-chested Sparrow
+		{Aimophila humeralis}
+	Cuban Tody
+		{Todus multicolor}
+	Black-headed Tody-Flycatcher
+		{Todirostrum nigriceps, Todirostrum (chrysocrotaphum) nigriceps}
+	Wedge-tailed Sabrewing
+		{Campylopterus curvipennis}
+	Brown Booby
+		{Sula leucogaster}
+	Reddish Egret
+		{Egretta rufescens}
+	Bay-headed Tanager
+		{Tangara gyrola}
+	Northwestern Crow
+		{Corvus caurinus, Corvus (brachyrhynchos) caurinus}
+	White-throated Towhee
+		{Pipilo albicollis}
+	Great Tinamou
+		{Tinamus major}
+	Puerto Rican Woodpecker
+		{Melanerpes portoricensis}
+	Sooty-faced Finch
+		{Arremon crassirostris, Lysurus (castaneiceps) crassirostris}
+	Rock Wren
+		{Salpinctes obsoletus}
+	Tropical Parula
+		{Parula pitiayumi}
+	Craveri's Murrelet
+		{Synthliboramphus craveri}
+	Zapata Rail
+		{Cyanolimnas cerverai}
+	Maroon-fronted Parrot
+		{Rhynchopsitta terrisi, Rhynchopsitta (pachyrhyncha) terrisi}
+	White-bellied Emerald
+		{Amazilia candida}
+	Jamaican Becard
+		{Pachyramphus niger}
+	Wilson's Plover
+		{Charadrius wilsonia}
+	Red-breasted Blackbird
+		{Sturnella militaris, Pampas Meadowlark}
+	Long-billed Starthroat
+		{Heliomaster longirostris}
+	Orangequit
+		{Euneornis campestris}
+	Yellow-faced Grassquit
+		{Tiaris olivaceus, Tiaris olivacea}
+	Brown-backed Solitaire
+		{Myadestes occidentalis}
+	Cuban Grassquit
+		{Tiaris canorus, Tiaris canora}
+	Slaty Antwren
+		{Myrmotherula schisticolor}
+	Buff-breasted Wren
+		{Thryothorus leucotis, Thryothorus (longirostris) leucotis}
+	Gray Gull
+		{Leucophaeus modestus, Grey Gull, Larus modestus}
+	Banded Wren
+		{Thryothorus pleurostictus}
+	Sinaloa Wren
+		{Thryothorus sinaloa}
+	Rufous-and-white Wren
+		{Thryothorus rufalbus}
+	Antillean Euphonia
+		{Euphonia musica}
+	Spot-breasted Wren
+		{Thryothorus maculipectus, Thryothorus (rutilus) maculipectus}
+	Scissor-tailed Flycatcher
+		{Tyrannus forficatus}
+	White-lored Gnatcatcher
+		{Polioptila albiloris}
+	Olive-backed Quail-Dove
+		{Geotrygon veraguensis}
+	Cinereous Becard
+		{Pachyramphus rufus}
+	Northern Shoveler
+		{Anas clypeata}
+	Slate-throated Gnatcatcher
+		{Polioptila schistaceigula}
+	Say's Phoebe
+		{Sayornis saya}
+	Streak-headed Woodcreeper
+		{Lepidocolaptes souleyetii}
+	Riverside Wren
+		{Thryothorus semibadius, Thryothorus (nigricapillus) semibadius}
+	Crested Oropendola
+		{Psarocolius decumanus}
+	Black-bellied Wren
+		{Thryothorus fasciatoventris}
+	Black-throated Wren
+		{Thryothorus atrogularis}
+	Chapman's Swift
+		{Chaetura chapmani}
+	Green-backed Sparrow
+		{Arremonops chloronotus}
+	Bay-breasted Cuckoo
+		{Coccyzus rufigularis, Hyetornis rufigularis}
+	White-tailed Nightjar
+		{Caprimulgus cayennensis}
+	Far Eastern Curlew
+		{Numenius madagascariensis}
+	Palm Tanager
+		{Thraupis palmarum}
+	Yellow-winged Tanager
+		{Thraupis abbas}
+	African Collared-Dove
+		{Streptopelia roseogrisea, African Collared Dove, Streptopelia (decaocto) roseogrisea}
+	Northern Saw-whet Owl
+		{Aegolius acadicus}
+	Northern Pygmy-Owl
+		{Glaucidium gnoma, Glaucidium (gnoma) californicum}
+	Blue-gray Tanager
+		{Thraupis episcopus, Blue-grey Tanager}
+	Thicket Antpitta
+		{Hylopezus dives, Fulvous-bellied Antpitta, Hylopezus (fulviventris) dives}
+	Hermit Warbler
+		{Dendroica occidentalis}
+	Buff-necked Ibis
+		{Theristicus caudatus}
+	Lark Bunting
+		{Calamospiza melanocorys}
+	Collared Forest-Falcon
+		{Micrastur semitorquatus, Collared Forest-falcon}
+	Yellow-footed Gull
+		{Larus livens, Larus (occidentalis) livens}
+	Black-hooded Antshrike
+		{Thamnophilus bridgesi}
+	Thick-billed Seed-Finch
+		{Oryzoborus funereus, Oryzoborus angolensis funereus}
+	Sage Sparrow
+		{Amphispiza belli}
+	Black Antshrike
+		{Thamnophilus nigriceps}
+	Cory's Shearwater
+		{Calonectris diomedea}
+	Gray-barred Wren
+		{Campylorhynchus megalopterus, Grey-barred Wren}
+	Cuban Trogon
+		{Priotelus temnurus}
+	Russet Antshrike
+		{Thamnistes anabatinus}
+	Ring-necked Duck
+		{Aythya collaris}
+	Yellow Warbler
+		{Dendroica petechia, American Yellow Warbler}
+	St. Lucia Black Finch
+		{Melanospiza richardsoni, St. Lucia Black-Finch}
+	Green-crowned Woodnymph
+		{Thalurania fannyi, Thalurania (colombica) fannyi}
+	Violet-crowned Woodnymph
+		{Thalurania colombica, Blue-crowned Woodnymph}
+	Thayer's Gull
+		{Larus thayeri, Larus glaucoides thayeri}
+	Elegant Tern
+		{Thalasseus elegans, Sterna elegans}
+	Fox Sparrow
+		{Passerella iliaca}
+	Scrub Greenlet
+		{Hylophilus flavipes}
+	Yellow-winged Cacique
+		{Cacicus melanicterus}
+	Royal Tern
+		{Thalasseus maximus, Sterna maxima}
+	Gray-headed Chachalaca
+		{Ortalis cinereiceps, Grey-headed Chachalaca, Ortalis (garrula) cinereiceps}
+	San Blas Jay
+		{Cyanocorax sanblasianus}
+	Buff-fronted Quail-Dove
+		{Geotrygon costaricensis}
+	Elepaio
+		{Chasiempis sandwichensis}
+	Black Tern
+		{Chlidonias niger}
+	Western Screech-Owl
+		{Megascops kennicottii, Otus (asio) kennicottii}
+	Golden-browed Chlorophonia
+		{Chlorophonia callophrys, Chlorophonia (occipitalis) callophrys}
+	Pigeon Guillemot
+		{Cepphus columba}
+	Yellow-legged Gull
+		{Larus michahellis, Western Yellow-legged Gull, Larus cachinnans michahellis}
+	Mealy Parrot
+		{Amazona farinosa}
+	Northern Jacana
+		{Jacana spinosa}
+	Stripe-headed Sparrow
+		{Aimophila ruficauda}
+	Gray-backed Tern
+		{Onychoprion lunatus, Grey-backed Tern, Sterna lunata}
+	Yellow-nosed Albatross
+		{Thalassarche chlororhynchos, Diomedea chlororhynchos}
+	Orange-billed Sparrow
+		{Arremon aurantiirostris}
+	Turquoise-browed Motmot
+		{Eumomota superciliosa}
+	Himalayan Snowcock
+		{Tetraogallus himalayensis}
+	White-ringed Flycatcher
+		{Conopias albovittatus, Conopias albovittata}
+	Swallow Tanager
+		{Tersina viridis}
+	Chihuahuan Raven
+		{Corvus cryptoleucus}
+	Canada Warbler
+		{Wilsonia canadensis}
+	Black-billed Cuckoo
+		{Coccyzus erythropthalmus}
+	Lesser Ground-Cuckoo
+		{Morococcyx erythropygus}
+	Glaucous-winged Gull
+		{Larus glaucescens, Larus (occidentalis) glaucescens}
+	White-tailed Tropicbird
+		{Phaethon lepturus}
+	White-breasted Thrasher
+		{Ramphocinclus brachyurus, White-breasted Trembler}
+	Plumbeous Warbler
+		{Dendroica plumbea}
+	Yellow-headed Warbler
+		{Teretistris fernandinae}
+	Audubon's Oriole
+		{Icterus graduacauda}
+	Rufous-rumped Antwren
+		{Terenura callinota}
+	Costa Rican Pygmy-Owl
+		{Glaucidium costaricanum, Glaucidium (jardinii) costaricanum}
+	Golden-browed Warbler
+		{Basileuterus belli}
+	Pearly-eyed Thrasher
+		{Margarops fuscatus}
+	Tamaulipas Crow
+		{Corvus imparatus, Mexican Crow}
+	Red Warbler
+		{Ergaticus ruber}
+	Eastern Bluebird
+		{Sialia sialis}
+	Pearly-breasted Cuckoo
+		{Coccyzus euleri}
+	Pomarine Jaeger
+		{Stercorarius pomarinus, Pomarine Skua}
+	Ruddy-tailed Flycatcher
+		{Terenotriccus erythrurus, Myiobius erythrurus}
+	Nihoa Finch
+		{Telespiza ultima, Telespiza (cantans) ultima}
+	Cassin's Auklet
+		{Ptychoramphus aleuticus}
+	Broad-tailed Hummingbird
+		{Selasphorus platycercus}
+	Laysan Finch
+		{Telespiza cantans}
+	Slender-billed Curlew
+		{Numenius tenuirostris}
+	Palmchat
+		{Dulus dominicus}
+	Pale-vented Pigeon
+		{Patagioenas cayennensis, Columba cayennensis}
+	Orange-bellied Euphonia
+		{Euphonia xanthogaster}
+	Ivory-billed Woodpecker
+		{Campephilus principalis}
+	Taiga Flycatcher
+		{Ficedula albicilla, Red-throated Flycatcher, Ficedula parva albicilla}
+	Stripe-breasted Wren
+		{Thryothorus thoracicus}
+	Gray-crowned Rosy-Finch
+		{Leucosticte tephrocotis, Grey-crowned Rosy-Finch, Leucosticte (arctoa) tephrocotis}
+	Nava's Wren
+		{Hylorchilus navai, Hylorchilus (sumichrasti) navai}
+	Swainson's Thrush
+		{Catharus ustulatus}
+	Bluethroat
+		{Luscinia svecica}
+	Masked Tityra
+		{Tityra semifasciata}
+	Common Cuckoo
+		{Cuculus canorus}
+	Yellow-thighed Finch
+		{Pselliophorus tibialis}
+	Western Sandpiper
+		{Calidris mauri}
+	Black-crowned Night-Heron 
+		{Nycticorax nycticorax, Black-crowned Night-heron}
+	Hermit Thrush
+		{Catharus guttatus}
+	American Black Duck
+		{Anas rubripes}
+	Masked Duck
+		{Nomonyx dominicus, Nomonyx dominica}
+	Spangle-cheeked Tanager
+		{Tangara dowii}
+	Great Potoo
+		{Nyctibius grandis}
+	Red Crossbill
+		{Loxia curvirostra, Common Crossbill}
+	Green-naped Tanager
+		{Tangara fucosa}
+	Eurasian Hobby
+		{Falco subbuteo}
+	Gray-headed Tanager
+		{Eucometis penicillata, Grey-headed Tanager}
+	Mitred Parakeet
+		{Aratinga mitrata}
+	Golden-hooded Tanager
+		{Tangara larvata, Tangara (nigrocincta) larvata}
+	Dwarf Jay
+		{Cyanolyca nana}
+	Eurasian Wryneck
+		{Jynx torquilla}
+	Red-necked Stint
+		{Calidris ruficollis}
+	Lesser Antillean Tanager
+		{Tangara cucullata}
+	Rose-bellied Bunting
+		{Passerina rositae}
+	Gray-and-gold Tanager
+		{Tangara palmeri, Grey-and-gold Tanager}
+	Red-headed Barbet
+		{Eubucco bourcierii}
+	Scaly-throated Foliage-gleaner
+		{Anabacerthia variegaticeps, Anabacerthia (striaticollis) variegaticeps}
+	Gray-headed Dove
+		{Leptotila plumbeiceps, Grey-headed Dove, Leptotila (rufaxilla) plumbeiceps}
+	Blue Mockingbird
+		{Melanotis caerulescens}
+	MacGillivray's Warbler
+		{Oporornis tolmiei, Oporornis (philadelphia) tolmiei}
+	Red-throated Ant-Tanager
+		{Habia fuscicauda, Habia (gutturalis) fuscicauda}
+	Cuban Crow
+		{Corvus nasicus}
+	Long-tailed Wood-Partridge
+		{Dendrortyx macroura, Long-tailed Wood-partridge}
+	Red-lored Parrot
+		{Amazona autumnalis}
+	Stripe-cheeked Woodpecker
+		{Piculus callopterus, Piculus (leucolaemus) callopterus}
+	Bahama Swallow
+		{Tachycineta cyaneoviridis}
+	Ferruginous Pygmy-Owl
+		{Glaucidium brasilianum}
+	Glossy Ibis
+		{Plegadis falcinellus}
+	Golden-crowned Warbler
+		{Basileuterus culicivorus}
+	Long-tailed Duck
+		{Clangula hyemalis}
+	Spoon-billed Sandpiper
+		{Eurynorhynchus pygmeus, Spoonbill Sandpiper, Eurynorhynchus pygmaeus}
+	Rufous-crowned Sparrow
+		{Aimophila ruficeps}
+	Hoary Redpoll
+		{Carduelis hornemanni, Arctic Redpoll}
+	Keel-billed Motmot
+		{Electron carinatum}
+	Puerto Rican Parrot
+		{Amazona vittata}
+	Baird's Sandpiper
+		{Calidris bairdii}
+	Gray Catbird
+		{Dumetella carolinensis, Grey Catbird}
+	Sharpbill
+		{Oxyruncus cristatus}
+	Gyrfalcon
+		{Falco rusticolus, Gyr Falcon}
+	Fish Crow
+		{Corvus ossifragus}
+	Tawny-crested Tanager
+		{Tachyphonus delatrii}
+	Connecticut Warbler
+		{Oporornis agilis}
+	Arctic Tern
+		{Sterna paradisaea}
+	Olive-crowned Yellowthroat
+		{Geothlypis semiflava}
+	Rhinoceros Auklet
+		{Cerorhinca monocerata}
+	Golden Swallow
+		{Tachycineta euchrysea}
+	Mangrove Swallow
+		{Tachycineta albilinea}
+	Yellow-winged Vireo
+		{Vireo carmioli}
+	Least Grebe
+		{Tachybaptus dominicus}
+	Greater Prairie-Chicken
+		{Tympanuchus cupido}
+	Pine Siskin
+		{Carduelis pinus}
+	Gray-throated Chat
+		{Granatellus sallaei, Grey-throated Chat}
+	Lesser Antillean Bullfinch
+		{Loxigilla noctis}
+	Streak-breasted Treehunter
+		{Thripadectes rufobrunneus}
+	Steller's Jay
+		{Cyanocitta stelleri}
+	Dusky Flycatcher
+		{Empidonax oberholseri}
+	Yellow-billed Magpie
+		{Pica nuttalli}
+	Green-fronted Hummingbird
+		{Amazilia viridifrons, Amazilia (violiceps) viridifrons}
+	Xantus's Murrelet
+		{Synthliboramphus hypoleucus, Xantus' Murrelet}
+	Sedge Wren
+		{Cistothorus platensis, Grass Wren}
+	Hispaniolan Parakeet
+		{Aratinga chloroptera}
+	Ruddy Foliage-gleaner
+		{Automolus rubiginosus}
+	Hispaniolan Lizard-Cuckoo
+		{Coccyzus longirostris, Saurothera longirostris}
+	Rufous-breasted Spinetail
+		{Synallaxis erythrothorax}
+	Hook-billed Kite
+		{Chondrohierax uncinatus}
+	Baikal Teal
+		{Anas formosa}
+	Nukupuu
+		{Hemignathus lucidus}
+	Slaty Spinetail
+		{Synallaxis brachyura}
+	Yellow-tailed Oriole
+		{Icterus mesomelas}
+	Sooty-capped Bush-Tanager
+		{Chlorospingus pileatus}
+	Pale-breasted Spinetail
+		{Synallaxis albescens}
+	Lesser Whitethroat
+		{Sylvia curruca}
+	Barred Hawk
+		{Leucopternis princeps, Black-chested Hawk}
+	Ochraceous Pewee
+		{Contopus ochraceus}
+	Northern Hawk Owl
+		{Surnia ulula}
+	Antillean Siskin
+		{Carduelis dominicensis}
+	Maui Parrotbill
+		{Pseudonestor xanthophrys}
+	Black-capped Gnatcatcher
+		{Polioptila nigriceps, Polioptila (albiloris) nigriceps}
+	Black-crowned Tityra
+		{Tityra inquisitor}
+	Antillean Mango
+		{Anthracothorax dominicus}
+	Blue-footed Booby
+		{Sula nebouxii}
+	Pacific Antwren
+		{Myrmotherula pacifica, Myrmotherula surinamensis pacifica}
+	Jet Antbird
+		{Cercomacra nigricans}
+	Barn Swallow
+		{Hirundo rustica, Eurasian Swallow}
+	Black-capped Swallow
+		{Notiochelidon pileata}
+	Bronze Mannikin
+		{Lonchura cucullata, Bronze Munia, Spermestes cucullata}
+	Black-breasted Wood-Quail
+		{Odontophorus leucolaemus, Black-breasted Wood-quail}
+	Bearded Wood-Partridge
+		{Dendrortyx barbatus, Bearded Wood-partridge}
+	Western Meadowlark
+		{Sturnella neglecta}
+	Dovekie
+		{Alle alle, Little Auk}
+	Eastern Meadowlark
+		{Sturnella magna}
+	Black-billed Parrot
+		{Amazona agilis}
+	Orange Bishop
+		{Euplectes franciscanus, Euplectes (orix) franciscanus}
+	Little Egret
+		{Egretta garzetta}
+	Emperor Goose
+		{Chen canagica, Anser canagica}
+	Bulwer's Petrel
+		{Bulweria bulwerii}
+	Great Gray Owl
+		{Strix nebulosa, Great Grey Owl}
+	Ring-tailed Pigeon
+		{Patagioenas caribaea, Columba caribaea}
+	Black Vulture
+		{Coragyps atratus, American Black Vulture}
+	Rufous-tailed Flycatcher
+		{Myiarchus validus}
+	Fulvous Owl
+		{Strix fulvescens, Strix (varia) fulvescens}
+	Black-throated Jay
+		{Cyanolyca pumilo}
+	Spotted Owl
+		{Strix occidentalis}
+	Sulphur-winged Parakeet
+		{Pyrrhura hoffmanni}
+	Ross's Gull
+		{Rhodostethia rosea}
+	Yellow-green Grosbeak
+		{Caryothraustes canadensis}
+	Chestnut-collared Swift
+		{Streptoprocne rutila, Cypseloides rutilus}
+	Barbuda Warbler
+		{Dendroica subita, Dendroica (adelaidae) subita}
+	Cuban Solitaire
+		{Myadestes elisabeth}
+	Spotted Dove
+		{Streptopelia chinensis}
+	Black-chinned Sparrow
+		{Spizella atrogularis}
+	Green Ibis
+		{Mesembrinibis cayennensis}
+	Common Bush-Tanager
+		{Chlorospingus ophthalmicus}
+	Barrow's Goldeneye
+		{Bucephala islandica}
+	Eurasian Collared-Dove
+		{Streptopelia decaocto, Eurasian Collared Dove}
+	Narcissus Flycatcher
+		{Ficedula narcissina}
+	Eurasian Kestrel
+		{Falco tinnunculus, Common Kestrel}
+	Common Potoo
+		{Nyctibius griseus, Grey Potoo}
+	Greater Antillean Grackle
+		{Quiscalus niger}
+	European Turtle-Dove
+		{Streptopelia turtur, European Turtle Dove}
+	Whiskered Tern
+		{Chlidonias hybrida, Chlidonias hybridus}
+	Oriental Turtle-Dove
+		{Streptopelia orientalis, Oriental Turtle Dove}
+	Field Sparrow
+		{Spizella pusilla}
+	Beautiful Hummingbird
+		{Calothorax pulcher}
+	Violet-capped Hummingbird
+		{Goldmania violiceps}
+	Northern Cardinal
+		{Cardinalis cardinalis}
+	Cocoi Heron
+		{Ardea cocoi}
+	White-naped Swift
+		{Streptoprocne semicollaris}
+	American Wigeon
+		{Anas americana}
+	Streaked Saltator
+		{Saltator striatipectus, Saltator (albicollis) striatipectus}
+	Green Hermit
+		{Phaethornis guy}
+	Common Tern
+		{Sterna hirundo}
+	Northern Beardless-Tyrannulet
+		{Camptostoma imberbe}
+	Cedar Waxwing
+		{Bombycilla cedrorum}
+	Yellow-green Finch
+		{Pselliophorus luteoviridis, Pselliophorus (tibialis) luteoviridis}
+	One-colored Becard
+		{Pachyramphus homochrous, One-coloured Becard}
+	Mexican Woodnymph
+		{Thalurania ridgwayi, Thalurania (colombica) ridgwayi}
+	Turquoise Cotinga
+		{Cotinga ridgwayi, Cotinga (cotinga) ridgwayi}
+	Parasitic Jaeger
+		{Stercorarius parasiticus, Arctic Skua}
+	Pacific Golden-Plover
+		{Pluvialis fulva, Pacific Golden Plover}
+	Banded Quail
+		{Philortyx fasciatus}
+	Brown-chested Martin
+		{Progne tapera}
+	Sooty-headed Tyrannulet
+		{Phyllomyias griseiceps}
+	Worm-eating Warbler
+		{Helmitheros vermivorum, Helmitheros vermivorus}
+	Colima Warbler
+		{Vermivora crissalis}
+	Cuban Pewee
+		{Contopus caribaeus, Crescent-eyed Pewee}
+	Calliope Hummingbird
+		{Stellula calliope}
+	Rock Pigeon
+		{Columba livia, Rock Dove}
+	Red-faced Warbler
+		{Cardellina rubrifrons}
+	Spectacled Parrotlet
+		{Forpus conspicillatus}
+	Prairie Warbler
+		{Dendroica discolor}
+	Southern Rough-winged Swallow
+		{Stelgidopteryx ruficollis}
+	Northern Rough-winged Swallow
+		{Stelgidopteryx serripennis}
+	Limpkin
+		{Aramus guarauna}
+	Oilbird
+		{Steatornis caripensis}
+	Blue-headed Quail-Dove
+		{Starnoenas cyanocephala}
+	Red-necked Phalarope
+		{Phalaropus lobatus}
+	Red-and-green Macaw
+		{Ara chloropterus}
+	Red-billed Leiothrix
+		{Leiothrix lutea, Pekin Robin}
+	Golden-fronted Greenlet
+		{Hylophilus aurantiifrons}
+	Stripe-tailed Hummingbird
+		{Eupherusa eximia}
+	Ruddy-breasted Seedeater
+		{Sporophila minuta}
+	Scaled Antpitta
+		{Grallaria guatimalensis}
+	American Kestrel
+		{Falco sparverius}
+	Chestnut-sided Warbler
+		{Dendroica pensylvanica}
+	Yellow-bellied Seedeater
+		{Sporophila nigricollis}
+	Mourning Warbler
+		{Oporornis philadelphia}
+	Vitelline Warbler
+		{Dendroica vitellina, Dendroica (discolor) vitellina}
+	Large-footed Finch
+		{Pezopetes capitalis}
+	Jamaican Woodpecker
+		{Melanerpes radiolatus}
+	Mountain Plover
+		{Charadrius montanus}
+	Short-crested Coquette
+		{Lophornis brachylophus, Lophornis brachylopha}
+	Little Curlew
+		{Numenius minutus, Numenius (borealis) minutus}
+	Tawny-shouldered Blackbird
+		{Agelaius humeralis}
+	Little Stint
+		{Calidris minuta}
+	Rufous-capped Warbler
+		{Basileuterus rufifrons}
+	Variable Seedeater
+		{Sporophila americana, Wing-barred Seedeater}
+	Gray Francolin
+		{Francolinus pondicerianus, Grey Francolin}
+	Black-cheeked Woodpecker
+		{Melanerpes pucherani}
+	Common Myna
+		{Acridotheres tristis}
+	Slate-colored Seedeater
+		{Sporophila schistacea, Slate-coloured Seedeater}
+	White-bellied Antbird
+		{Myrmeciza longipes}
+	Pyrrhuloxia
+		{Cardinalis sinuatus}
+	Puerto Rican Lizard-Cuckoo
+		{Coccyzus vieilloti, Saurothera vieilloti}
+	Bicknell's Thrush
+		{Catharus bicknelli, Catharus (minimus) bicknelli}
+	White-throated Crake
+		{Laterallus albigularis}
+	King Rail
+		{Rallus elegans}
+	Yellow-billed Tern
+		{Sternula superciliaris, Sterna superciliaris}
+	Garganey
+		{Anas querquedula}
+	Taiga Bean-Goose
+		{Anser fabalis, Taiga Bean Goose}
+	Ruby-throated Hummingbird
+		{Archilochus colubris}
+	Brewer's Sparrow
+		{Spizella breweri}
+	Western Marsh Harrier
+		{Circus aeruginosus, Eurasian Marsh Harrier}
+	Black-crested Coquette
+		{Lophornis helenae}
+	Aleutian Tern
+		{Onychoprion aleuticus, Sterna aleutica}
+	Yellow-margined Flycatcher
+		{Tolmomyias assimilis}
+	Stilt Sandpiper
+		{Calidris himantopus, Micropalama himantopus}
+	Violaceous Quail-Dove
+		{Geotrygon violacea}
+	Seaside Sparrow
+		{Ammodramus maritimus}
+	Black Scoter
+		{Melanitta nigra, Common Scoter}
+	Azure Gallinule
+		{Porphyrio flavirostris}
+	Jamaican Mango
+		{Anthracothorax mango}
+	Eastern Spot-billed Duck
+		{Anas zonorhyncha, Chinese Spot-billed Duck, Anas (poecilorhyncha) zonorhyncha}
+	Cuban Parakeet
+		{Aratinga euops}
+	Yellow-billed Cardinal
+		{Paroaria capitata}
+	Ash-throated Flycatcher
+		{Myiarchus cinerascens}
+	American Tree Sparrow
+		{Spizella arborea}
+	Black-and-white Hawk-Eagle
+		{Spizaetus melanoleucus, Spizastur melanoleucus}
+	Rufous-browed Peppershrike
+		{Cyclarhis gujanensis}
+	Ornate Hawk-Eagle
+		{Spizaetus ornatus}
+	Laughing Gull
+		{Leucophaeus  atricilla, Larus atricilla}
+	Dickcissel
+		{Spiza americana}
+	Olivaceous Piculet
+		{Picumnus olivaceus}
+	Ladder-backed Woodpecker
+		{Picoides scalaris}
+	Vaux's Swift
+		{Chaetura vauxi}
+	Sirystes
+		{Sirystes sibilator}
+	Puerto Rican Spindalis
+		{Spindalis portoricensis, Puerto Rican Stripe-headed Tanager, Spindalis (zena) portoricensis}
+	Mountain Thrush
+		{Turdus plebejus}
+	Black Skimmer
+		{Rynchops niger}
+	Yellow-shouldered Grassquit
+		{Loxipasser anoxanthus}
+	American Flamingo
+		{Phoenicopterus ruber, Greater Flamingo}
+	Golden Eagle
+		{Aquila chrysaetos}
+	Giant Wren
+		{Campylorhynchus chiapensis, Campylorhynchus (griseus) chiapensis}
+	Yellow-bellied Sapsucker
+		{Sphyrapicus varius}
+	Buff-fronted Foliage-gleaner
+		{Philydor rufum, Philydor rufus}
+	Cassin's Kingbird
+		{Tyrannus vociferans}
+	Ringed Storm-Petrel
+		{Oceanodroma hornbyi}
+	Green Manakin
+		{Chloropipo holochlora}
+	Red-breasted Sapsucker
+		{Sphyrapicus ruber, Sphyrapicus (varius) ruber}
+	Williamson's Sapsucker
+		{Sphyrapicus thyroideus}
+	Common Eider
+		{Somateria mollissima}
+	Prevost's Ground-Sparrow
+		{Melozone biarcuata, Melozone biarcuatum}
+	Brown-headed Nuthatch
+		{Sitta pusilla}
+	Yucatan Nightjar
+		{Caprimulgus badius}
+	Fiery-billed Aracari
+		{Pteroglossus frantzii, Pteroglossus (torquatus) frantzii}
+	Western Gull
+		{Larus occidentalis}
+	Yellow-lored Parrot
+		{Amazona xantholora}
+	Strong-billed Woodcreeper
+		{Xiphocolaptes promeropirhynchus}
+	Great Blue Heron
+		{Ardea herodias}
+	Chestnut-fronted Macaw
+		{Ara severus, Ara severa}
+	Red-breasted Nuthatch
+		{Sitta canadensis}
+	Striped Owl
+		{Pseudoscops clamator, Asio clamator}
+	Clay-colored Sparrow
+		{Spizella pallida, Clay-coloured Sparrow}
+	Jamaican Pauraque
+		{Siphonorhis americana, Jamaican Poorwill, Siphonorhis americanus}
+	Mangrove Hummingbird
+		{Amazilia boucardi}
+	Rufous Sabrewing
+		{Campylopterus rufus}
+	House Finch
+		{Carpodacus mexicanus}
+	Puerto Rican Nightjar
+		{Caprimulgus noctitherus, Caprimulgus (vociferus) noctitherus}
+	Lucifer Hummingbird
+		{Calothorax lucifer}
+	Red-tailed Hawk
+		{Buteo jamaicensis}
+	Red-tailed Tropicbird
+		{Phaethon rubricauda}
+	Gunnison Sage-Grouse
+		{Centrocercus minimus, Centrocercus (urophasianus) minimus}
+	Couch's Kingbird
+		{Tyrannus couchii}
+	Purple-throated Fruitcrow
+		{Querula purpurata}
+	Greenish Elaenia
+		{Myiopagis viridicata}
+	Pygmy Nuthatch
+		{Sitta pygmaea, Sitta (pusilla) pygmaea}
+	Rufous-naped Wren
+		{Campylorhynchus rufinucha}
+	Cattle Tyrant
+		{Machetornis rixosa, Machetornis rixosus}
+	Black-headed Antthrush
+		{Formicarius nigricapillus}
+	Golden-headed Manakin
+		{Pipra erythrocephala}
+	Slender Sheartail
+		{Doricha enicura}
+	Bridled Titmouse
+		{Baeolophus wollweberi, Parus wollweberi}
+	Piping Plover
+		{Charadrius melodus}
+	Juniper Titmouse
+		{Baeolophus ridgwayi, Parus (inornatus) ridgwayi}
+	Streak-chested Antpitta
+		{Hylopezus perspicillatus}
+	Sky Lark
+		{Alauda arvensis, Eurasian Skylark}
+	Gilded Flicker
+		{Colaptes chrysoides, Colaptes (auratus) chrysoides}
+	Nuttall's Woodpecker
+		{Picoides nuttallii}
+	Chimney Swift
+		{Chaetura pelagica}
+	Black-rumped Waxbill
+		{Estrilda troglodytes}
+	Common Canary
+		{Serinus canaria, Island Canary}
+	Social Flycatcher
+		{Myiozetetes similis}
+	Nelson's Sharp-tailed Sparrow
+		{Ammodramus nelsoni, Ammodramus (caudacutus) nelsoni}
+	Wood Duck
+		{Aix sponsa}
+	Red-bellied Woodpecker
+		{Melanerpes carolinus}
+	White-tipped Sicklebill
+		{Eutoxeres aquila}
+	Volcano Hummingbird
+		{Selasphorus flammula, Rose-throated Hummingbird}
+	Emerald-chinned Hummingbird
+		{Abeillia abeillei}
+	White-tailed Hawk
+		{Buteo albicaudatus}
+	Rufous-crested Coquette
+		{Lophornis delattrei}
+	Allen's Hummingbird
+		{Selasphorus sasin}
+	Gray-breasted Crake
+		{Laterallus exilis, Grey-breasted Crake}
+	Crimson-crested Woodpecker
+		{Campephilus melanoleucos}
+	Rustic Bunting
+		{Emberiza rustica}
+	Northern Waterthrush
+		{Seiurus noveboracensis}
+	Ovenbird
+		{Seiurus aurocapilla, Seiurus aurocapillus}
+	Greater Antillean Oriole
+		{Icterus dominicensis}
+	Wandering Albatross
+		{Diomedea exulans}
+	Silvery-fronted Tapaculo
+		{Scytalopus argentifrons}
+	Choco Tapaculo
+		{Scytalopus chocoensis}
+	Akepa
+		{Loxops coccineus}
+	White-necked Jacobin
+		{Florisuga mellivora}
+	Black-billed Flycatcher
+		{Aphanotriccus audax}
+	American Woodcock
+		{Scolopax minor}
+	Olive-backed Pipit
+		{Anthus hodgsoni}
+	Red-cockaded Woodpecker
+		{Picoides borealis}
+	Eurasian Woodcock
+		{Scolopax rusticola}
+	Yellow-throated Bunting
+		{Emberiza elegans}
+	Willow Ptarmigan
+		{Lagopus lagopus, Willow Grouse}
+	Smith's Longspur
+		{Calcarius pictus}
+	Magnificent Frigatebird
+		{Fregata magnificens}
+	White-winged Scoter
+		{Melanitta fusca, Velvet Scoter}
+	Gray-throated Leaftosser
+		{Sclerurus albigularis, Grey-throated Leaftosser}
+	Gray-headed Kite
+		{Leptodon cayanensis, Grey-headed Kite}
+	Tawny-throated Leaftosser
+		{Sclerurus mexicanus}
+	Grayish Saltator
+		{Saltator coerulescens, Greyish Saltator}
+	Falcated Duck
+		{Anas falcata}
+	Black-throated Mango
+		{Anthracothorax nigricollis}
+	Thrush-like Schiffornis
+		{Schiffornis turdina, Thrushlike Schiffornis, Schiffornis turdinus}
+	Eastern Phoebe
+		{Sayornis phoebe}
+	Cinnamon Hummingbird
+		{Amazilia rutila}
+	Black-collared Hawk
+		{Busarellus nigricollis}
+	Gray Flycatcher
+		{Empidonax wrightii, Grey Flycatcher}
+	Black Phoebe
+		{Sayornis nigricans}
+	Gray-crowned Yellowthroat
+		{Geothlypis poliocephala, Grey-crowned Yellowthroat}
+	Stonechat
+		{Saxicola torquatus, Common Stonechat, Saxicola torquata, Eurasian Stonechat}
+	Russet Nightingale-Thrush
+		{Catharus occidentalis, Russet Nightingale-thrush}
+	King Vulture
+		{Sarcoramphus papa}
+	Checker-throated Antwren
+		{Epinecrophylla  fulviventris, Myrmotherula fulviventris}
+	Slate-colored Grosbeak
+		{Saltator grossus, Slate-coloured Grosbeak}
+	Intermediate Egret
+		{Mesophoyx intermedia}
+	Snowy Cotinga
+		{Carpodectes nitidus}
+	Dunlin
+		{Calidris alpina}
+	Volcano Junco
+		{Junco vulcani}
+	Buff-throated Saltator
+		{Saltator maximus}
+	Forster's Tern
+		{Sterna forsteri}
+	Sparkling-tailed Hummingbird
+		{Tilmatura dupontii}
+	Pallas's Bunting
+		{Emberiza pallasi}
+	Purple Finch
+		{Carpodacus purpureus}
+	Savanna Hawk
+		{Buteogallus meridionalis, Savannah Hawk}
+	Snow Goose
+		{Chen caerulescens, Anser caerulescens}
+	Orange-collared Manakin
+		{Manacus aurantiacus, Manacus (manacus) aurantiacus}
+	Jamaican Spindalis
+		{Spindalis nigricephala, Jamaican Stripe-headed Tanager, Spindalis (zena) nigricephala}
+	Pin-tailed Snipe
+		{Gallinago stenura, Pintail Snipe}
+	Plain Wren
+		{Thryothorus modestus}
+	Red-legged Kittiwake
+		{Rissa brevirostris}
+	Snowy Plover
+		{Charadrius alexandrinus, Kentish Plover}
+	Eskimo Curlew
+		{Numenius borealis}
+	Nightingale Wren
+		{Microcerculus philomela, Northern Nightingale Wren}
+	Anianiau
+		{Magumma  parva , Hemignathus parvus}
+	Uniform Crake
+		{Amaurolimnas concolor}
+	Antillean Nighthawk
+		{Chordeiles gundlachii}
+	Russet-crowned Quail-Dove
+		{Geotrygon goldmani, Geotrygon (linearis) goldmani}
+	Lesser Nighthawk
+		{Chordeiles acutipennis}
+	American Bittern
+		{Botaurus lentiginosus}
+	Greater White-fronted Goose
+		{Anser albifrons}
+	Cinnamon Teal
+		{Anas cyanoptera}
+	Rufous Mourner
+		{Rhytipterna holerythra}
+	Oriental Cuckoo
+		{Cuculus optatus, Cuculus saturatus}
+	Rose-throated Tanager
+		{Piranga roseogularis}
+	Lesser Goldfinch
+		{Carduelis psaltria}
+	Tawny-faced Quail
+		{Rhynchortyx cinctus}
+	Thick-billed Parrot
+		{Rhynchopsitta pachyrhyncha}
+	Slaty-backed Nightingale-Thrush
+		{Catharus fuscater, Slaty-backed Nightingale-thrush}
+	White-winged Dove
+		{Zenaida asiatica}
+	Hoffmann's Woodpecker
+		{Melanerpes hoffmannii, Melanerpes (aurifrons) hoffmannii}
+	Moustached Antwren
+		{Myrmotherula ignota, Griscom's Antwren, Myrmotherula brachyura ignota}
+	Crimson-collared Grosbeak
+		{Rhodothraupis celaeno}
+	Streaked Shearwater
+		{Calonectris leucomelas}
+	Olive-capped Warbler
+		{Dendroica pityophila}
+	Ruddy Ground-Dove
+		{Columbina talpacoti}
+	Buff-breasted Sandpiper
+		{Tryngites subruficollis}
+	Ridgway's Hawk
+		{Buteo ridgwayi}
+	Rufous Motmot
+		{Baryphthengus martii, Baryphthengus (ruficapillus) martii}
+	Chestnut-backed Antbird
+		{Myrmeciza exsul}
+	Orange-breasted Bunting
+		{Passerina leclancherii}
+	White-faced Quail-Dove
+		{Geotrygon albifacies, Geotrygon (linearis) albifacies}
+	Solitary Sandpiper
+		{Tringa solitaria}
+	Flame-rumped Tanager
+		{Ramphocelus flammigerus}
+	Lincoln's Sparrow
+		{Melospiza lincolnii}
+	Cherrie's Tanager
+		{Ramphocelus costaricensis, Ramphocelus flammigerus costaricensis}
+	Caribbean Dove
+		{Leptotila jamaicensis}
+	California Gnatcatcher
+		{Polioptila californica, Polioptila (melanura) californica}
+	Crimson-backed Tanager
+		{Ramphocelus dimidiatus}
+	Gila Woodpecker
+		{Melanerpes uropygialis}
+	Eurasian Dotterel
+		{Charadrius morinellus}
+	Alpine Swift
+		{Apus melba, Tachymarptis melba}
+	Crimson-collared Tanager
+		{Ramphocelus sanguinolentus}
+	Fasciated Antshrike
+		{Cymbilaimus lineatus}
+	Long-billed Gnatwren
+		{Ramphocaenus melanurus}
+	Plumbeous Hawk
+		{Leucopternis plumbeus, Leucopternis plumbea}
+	Crested Caracara
+		{Caracara cheriway, Caracara (plancus) cheriway}
+	Brown Pelican
+		{Pelecanus occidentalis}
+	Black-vented Shearwater
+		{Puffinus opisthomelas, Puffinus (puffinus) opisthomelas}
+	Chestnut-mandibled Toucan
+		{Ramphastos swainsonii, Ramphastos (ambiguus) swainsonii}
+	Keel-billed Toucan
+		{Ramphastos sulfuratus}
+	Yellow-crowned Bishop
+		{Euplectes afer}
+	Least Flycatcher
+		{Empidonax minimus}
+	Virginia Rail
+		{Rallus limicola}
+	Le Conte's Sparrow
+		{Ammodramus leconteii}
+	Clapper Rail
+		{Rallus longirostris}
+	Carib Grackle
+		{Quiscalus lugubris}
+	Crimson-fronted Parakeet
+		{Aratinga finschi}
+	Nicaraguan Grackle
+		{Quiscalus nicaraguensis}
+	Black-headed Nightingale-Thrush
+		{Catharus mexicanus, Black-headed Nightingale-thrush}
+	Great-tailed Grackle
+		{Quiscalus mexicanus}
+	Boat-tailed Grackle
+		{Quiscalus major}
+	Semipalmated Plover
+		{Charadrius semipalmatus}
+	Parakeet Auklet
+		{Aethia psittacula, Cyclorrhynchus psittacula}
+	Western Bluebird
+		{Sialia mexicana}
+	Least Tern
+		{Sternula antillarum, Sterna (albifrons) antillarum}
+	Greater Necklaced Laughingthrush
+		{Garrulax pectoralis}
+	Wood Warbler
+		{Phylloscopus sibilatrix}
+	Hispaniolan Emerald
+		{Chlorostilbon swainsonii}
+	Boreal Owl
+		{Aegolius funereus, Tengmalm's Owl}
+	Long-tailed Manakin
+		{Chiroxiphia linearis, Chiroxiphia (pareola) linearis}
+	White-lined Tanager
+		{Tachyphonus rufus}
+	Eurasian Bullfinch
+		{Pyrrhula pyrrhula}
+	Vermilion Flycatcher
+		{Pyrocephalus rubinus}
+	Saffron-headed Parrot
+		{Pyrilia  pyrilia, Pionopsitta pyrilia}
+	Socorro Wren
+		{Troglodytes sissonii}
+	Violet-crowned Hummingbird
+		{Amazilia violiceps}
+	Blue-and-white Swallow
+		{Pygochelidon cyanoleuca, Notiochelidon cyanoleuca}
+	Hawaiian Coot
+		{Fulica alai, Fulica (americana) alai}
+	Green-rumped Parrotlet
+		{Forpus passerinus}
+	Mute Swan
+		{Cygnus olor}
+	Northern Pintail
+		{Anas acuta}
+	Berylline Hummingbird
+		{Amazilia beryllina}
+	Thick-billed Kingbird
+		{Tyrannus crassirostris}
+	Steely-vented Hummingbird
+		{Amazilia saucerrottei}
+	Speckled Mourner
+		{Laniocera rufescens}
+	Gray-cheeked Nunlet
+		{Nonnula frontalis , Grey-cheeked Nunlet, Nonnula (ruficapilla) frontalis}
+	Red-vented Bulbul
+		{Pycnonotus cafer}
+	Hispaniolan Parrot
+		{Amazona ventralis}
+	Double-banded Graytail
+		{Xenerpestes minlosi, Double-banded Greytail}
+	Purple-throated Woodstar
+		{Calliphlox mitchellii, Philodice mitchellii}
+	Purplish-backed Jay
+		{Cyanocorax beecheii}
+	Little Shearwater
+		{Puffinus assimilis}
+	Gundlach's Hawk
+		{Accipiter gundlachi}
+	Wood Sandpiper
+		{Tringa glareola}
+	White-fronted Nunbird
+		{Monasa morphoeus}
+	Forest Thrush
+		{Cichlherminia lherminieri}
+	Scarlet Tanager
+		{Piranga olivacea}
+	Puerto Rican Tanager
+		{Nesospingus speculiferus}
+	Townsend's Shearwater
+		{Puffinus auricularis, Puffinus (puffinus) auricularis}
+	Manx Shearwater
+		{Puffinus puffinus}
+	Yellow-throated Euphonia
+		{Euphonia hirundinacea}
+	Bushy-crested Jay
+		{Cyanocorax melanocyaneus}
+	Oriental Greenfinch
+		{Carduelis sinica, Grey-capped Greenfinch}
+	Christmas Shearwater
+		{Puffinus nativitatis, Christmas Island Shearwater}
+	Short-tailed Shearwater
+		{Puffinus tenuirostris}
+	Marbled Murrelet
+		{Brachyramphus marmoratus}
+	Silvery-throated Jay
+		{Cyanolyca argentigula}
+	Sooty Shearwater
+		{Puffinus griseus}
+	Buller's Shearwater
+		{Puffinus bulleri}
+	Wedge-tailed Shearwater
+		{Puffinus pacificus}
+	Black-headed Gull
+		{Chroicocephalus  ridibundus, Larus ridibundus}
+	Spotted Towhee
+		{Pipilo maculatus, Pipilo (erythrophthalmus) maculatus}
+	Flesh-footed Shearwater
+		{Puffinus carneipes, Pale-footed Shearwater}
+	Scarlet-browed Tanager
+		{Heterospingus xanthopygius}
+	Black-whiskered Vireo
+		{Vireo altiloquus}
+	Gray Silky-flycatcher
+		{Ptilogonys cinereus, Grey Silky-Flycatcher}
+	Stejneger's Petrel
+		{Pterodroma longirostris}
+	Red-crowned Ant-Tanager
+		{Habia rubica}
+	Wing-banded Antbird
+		{Myrmornis torquata, Wing-banded Antpitta}
+	Black-winged Petrel
+		{Pterodroma nigripennis}
+	Jamaican Crow
+		{Corvus jamaicensis}
+	Kirtland's Warbler
+		{Dendroica kirtlandii}
+	Black-polled Yellowthroat
+		{Geothlypis speciosa}
+	White-necked Petrel
+		{Pterodroma cervicalis}
+	Hammond's Flycatcher
+		{Empidonax hammondii}
+	Least Auklet
+		{Aethia pusilla}
+	Akekee
+		{Loxops caeruleirostris}
+	Juan Fernandez Petrel
+		{Pterodroma externa}
+	St. Lucia Parrot
+		{Amazona versicolor}
+	Flammulated Flycatcher
+		{Deltarhynchus flammulatus}
+	Pectoral Sandpiper
+		{Calidris melanotos}
+	Tropical Gnatcatcher
+		{Polioptila plumbea}
+	Black-capped Petrel
+		{Pterodroma hasitata, Capped Petrel}
+	White-winged Becard
+		{Pachyramphus polychopterus}
+	Plain Pigeon
+		{Patagioenas inornata, Columba inornata}
+	Striped Woodhaunter
+		{Hyloctistes subulatus}
+	Arrowhead Warbler
+		{Dendroica pharetra}
+	Oriental Pratincole
+		{Glareola maldivarum, Glareola (pratincola) maldivarum}
+	Bermuda Petrel
+		{Pterodroma cahow, Pterodroma (hasitata) cahow}
+	White-breasted Wood-Wren
+		{Henicorhina leucosticta, White-breasted Wood-wren}
+	Pine Grosbeak
+		{Pinicola enucleator}
+	Murphy's Petrel
+		{Pterodroma ultima}
+	Herald Petrel
+		{Pterodroma arminjoniana, Trindade Petrel}
+	Caspian Tern
+		{Hydroprogne caspia, Sterna caspia}
+	Kermadec Petrel
+		{Pterodroma neglecta}
+	Great-winged Petrel
+		{Pterodroma macroptera}
+	Chestnut-bellied Sandgrouse
+		{Pterocles exustus}
+	Black Guillemot
+		{Cepphus grylle}
+	Ashy-throated Bush-Tanager
+		{Chlorospingus canigularis}
+	Ou
+		{Psittirostra psittacea}
+	Red-breasted Chat
+		{Granatellus venustus}
+	Double-toothed Kite
+		{Harpagus bidentatus}
+	Mottled Duck
+		{Anas fulvigula, Anas (platyrhynchos) fulvigula}
+	Rose-ringed Parakeet
+		{Psittacula krameri}
+	Great Kiskadee
+		{Pitangus sulphuratus}
+	Red-footed Booby
+		{Sula sula}
+	Blue-crowned Motmot
+		{Momotus momota, Blue-diademed Motmot}
+	Melodious Blackbird
+		{Dives dives}
+	Yellow-crowned Night-Heron
+		{Nyctanassa violacea, Yellow-crowned Night-heron}
+	Buffy Tuftedcheek
+		{Pseudocolaptes lawrencii, Pseudocolaptes (boissonneautii) lawrencii}
+	Cassin's Sparrow
+		{Aimophila cassinii}
+	Roseate Tern
+		{Sterna dougallii}
+	Lucy's Warbler
+		{Vermivora luciae}
+	Montezuma Oropendola
+		{Psarocolius montezuma, Gymnostinops montezuma}
+	Chestnut-headed Oropendola
+		{Psarocolius wagleri}
+	Bay Wren
+		{Thryothorus nigricapillus}
+	Ringed Kingfisher
+		{Megaceryle torquata, Ceryle torquata}
+	Great Crested Flycatcher
+		{Myiarchus crinitus}
+	Siberian Accentor
+		{Prunella montanella}
+	Prothonotary Warbler
+		{Protonotaria citrea}
+	Imperial Woodpecker
+		{Campephilus imperialis}
+	Gray-breasted Martin
+		{Progne chalybea, Grey-breasted Martin}
+	Sinaloa Martin
+		{Progne sinaloae, Progne (dominicensis) sinaloae}
+	Wilson's Snipe
+		{Gallinago delicata, Gallinago gallinago delicata}
+	Hispaniolan Trogon
+		{Priotelus roseigaster}
+	Purple Martin
+		{Progne subis}
+	Charming Hummingbird
+		{Amazilia decora, Amazilia (amabilis) decora}
+	Three-wattled Bellbird
+		{Procnias tricarunculatus, Procnias tricarunculata}
+	Rufous-capped Brush-Finch
+		{Atlapetes pileatus}
+	Yellow-rumped Warbler
+		{Dendroica coronata}
+	Southern Bentbill
+		{Oncostoma olivaceum, Oncostoma (cinereigulare) olivaceum}
+	Blue-gray Noddy
+		{Procelsterna cerulea, Blue Noddy}
+	Common Black-Hawk
+		{Buteogallus anthracinus}
+	Gray-collared Becard
+		{Pachyramphus major, Grey-collared Becard, Pachyramphus (albogriseus) major}
+	Kentucky Warbler
+		{Oporornis formosus}
+	Grasshopper Sparrow
+		{Ammodramus savannarum}
+	White Hawk
+		{Leucopternis albicollis}
+	Bristle-thighed Curlew
+		{Numenius tahitiensis}
+	Band-rumped Swift
+		{Chaetura spinicaudus, Chaetura spinicauda}
+	Cuban Martin
+		{Progne cryptoleuca, Progne (dominicensis) cryptoleuca}
+	Barred Antshrike
+		{Thamnophilus doliatus}
+	Spotted Barbtail
+		{Premnoplex brunnescens}
+	Harlequin Duck
+		{Histrionicus histrionicus}
+	Yellow-breasted Crake
+		{Porzana flaviventer}
+	White-necked Puffbird
+		{Notharchus macrorhynchos}
+	Black-bellied Whistling-Duck
+		{Dendrocygna autumnalis, Black-bellied Whistling-duck}
+	Spotted Crake
+		{Porzana porzana}
+	Purple Gallinule
+		{Porphyrio martinica, American Purple Gallinule, Porphyrio martinicus}
+	Black-legged Kittiwake
+		{Rissa tridactyla}
+	Kelp Gull
+		{Larus dominicanus}
+	Striped Cuckoo
+		{Tapera naevia}
+	Narrow-billed Tody
+		{Todus angustirostris}
+	Passerini's Tanager
+		{Ramphocelus passerinii, Scarlet-rumped Tanager}
+	Blue-gray Gnatcatcher
+		{Polioptila caerulea, Blue-grey Gnatcatcher}
+	Tawny-capped Euphonia
+		{Euphonia anneae}
+	Slate-headed Tody-Flycatcher
+		{Poecilotriccus sylvia, Todirostrum sylvia}
+	Gray-headed Chickadee
+		{Poecile cincta, Siberian Tit, Parus cinctus}
+	Boreal Chickadee
+		{Poecile hudsonica, Parus hudsonicus}
+	Long-tailed Tyrant
+		{Colonia colonus}
+	Martinique Oriole
+		{Icterus bonana}
+	Chestnut-backed Chickadee
+		{Poecile rufescens, Parus rufescens}
+	American Dipper
+		{Cinclus mexicanus}
+	Mexican Chickadee
+		{Poecile sclateri, Parus sclateri}
+	Mountain Chickadee
+		{Poecile gambeli, Parus gambeli}
+	Black-capped Chickadee
+		{Poecile atricapillus, Parus atricapillus}
+	Pirre Bush-Tanager
+		{Chlorospingus inornatus, Chlorospingus (ophthalmicus) inornatus}
+	Eared Grebe
+		{Podiceps nigricollis, Black-necked Grebe}
+	Atitlan Grebe
+		{Podilymbus gigas}
+	Black-throated Magpie-Jay
+		{Calocitta colliei, Calocitta (formosa) colliei}
+	Stripe-throated Hermit
+		{Phaethornis striigularis, Phaethornis longuemareus striigularis}
+	Common Ringed Plover
+		{Charadrius hiaticula, Ringed Plover}
+	Short-tailed Nighthawk
+		{Lurocalis semitorquatus}
+	Scrub Euphonia
+		{Euphonia affinis}
+	Carolina Chickadee
+		{Poecile carolinensis, Parus carolinensis}
+	Sulphur-rumped Tanager
+		{Heterospingus rubrifrons, Heterospingus (xanthopygius) rubrifrons}
+	Red-necked Grebe
+		{Podiceps grisegena}
+	Horned Grebe
+		{Podiceps auritus, Slavonian Grebe}
+	American Golden-Plover
+		{Pluvialis dominica, American Golden Plover}
+	European Golden-Plover
+		{Pluvialis apricaria, European Golden Plover}
+	Great Knot
+		{Calidris tenuirostris}
+	White-faced Ibis
+		{Plegadis chihi, Plegadis (falcinellus) chihi}
+	Mckay's Bunting
+		{Plectrophenax hyperboreus, Plectrophenax (nivalis) hyperboreus}
+	Song Wren
+		{Cyphorhinus phaeocephalus, Cyphorhinus (aradus) phaeocephalus}
+	Common Pochard
+		{Aythya ferina}
+	Magenta-throated Woodstar
+		{Calliphlox bryantae, Philodice bryantae}
+	Ruddy Crake
+		{Laterallus ruber}
+	Cackling Goose
+		{Branta hutchinsii, Tundra Canada Goose, Branta canadensis hutchinsii}
+	Parkinson's Petrel
+		{Procellaria parkinsoni, Black Petrel}
+	Stub-tailed Spadebill
+		{Platyrinchus cancrominus, Platyrinchus (mystaceus) cancrominus}
+	Roseate Spoonbill
+		{Platalea ajaja, Ajaia ajaja}
+	Semipalmated Sandpiper
+		{Calidris pusilla}
+	Black-crowned Antpitta
+		{Pittasoma michleri}
+	Jamaican Owl
+		{Pseudoscops grammicus}
+	Lesser Kiskadee
+		{Pitangus lictor, Philohydor lictor}
+	Black Hawk-Eagle
+		{Spizaetus tyrannus}
+	White-winged Tanager
+		{Piranga leucoptera}
+	California Gull
+		{Larus californicus}
+	Groove-billed Ani
+		{Crotophaga sulcirostris}
+	American Pygmy Kingfisher
+		{Chloroceryle aenea}
+	Flame-colored Tanager
+		{Piranga bidentata, Flame-coloured Tanager}
+	Swallow-tailed Kite
+		{Elanoides forficatus, American Swallow-tailed Kite}
+	Greater Akialoa
+		{Hemignathus ellisianus, Hawaiian Akialoa, Hemignathus obscurus ellisianus}
+	Gray-cheeked Thrush
+		{Catharus minimus, Grey-cheeked Thrush}
+	Hepatic Tanager
+		{Piranga flava}
+	Gray-headed Piprites
+		{Piprites griseiceps, Grey-headed Manakin}
+	Maroon-chested Ground-Dove
+		{Claravis mondetoura}
+	Lesser White-fronted Goose
+		{Anser erythropus}
+	Black-tailed Flycatcher
+		{Myiobius atricaudus}
+	Red-capped Manakin
+		{Pipra mentalis}
+	Jamaican Blackbird
+		{Nesopsar nigerrimus}
+	Blue-crowned Manakin
+		{Pipra coronata}
+	White-crowned Manakin
+		{Pipra pipra}
+	Abert's Towhee
+		{Pipilo aberti}
+	California Towhee
+		{Pipilo crissalis}
+	White-crested Coquette
+		{Lophornis adorabilis}
+	Pale-vented Thrush
+		{Turdus obsoletus, Turdus (fumigatus) obsoletus}
+	Greater Scaup
+		{Aythya marila}
+	Eastern Towhee
+		{Pipilo erythrophthalmus, Rufous-sided Towhee}
+	Jabiru
+		{Jabiru mycteria}
+	Gray Nightjar
+		{Caprimulgus indicus, Jungle Nightjar}
+	Greater Shearwater
+		{Puffinus gravis, Great Shearwater}
+	Collared Towhee
+		{Pipilo ocai}
+	Black-thighed Grosbeak
+		{Pheucticus tibialis, Pheucticus (chrysopeplus) tibialis}
+	Common Waxbill
+		{Estrilda astrild}
+	Yellow Grosbeak
+		{Pheucticus chrysopeplus}
+	Capped Heron
+		{Pilherodius pileatus}
+	Striped Sparrow
+		{Oriturus superciliosus}
+	Blue-chested Hummingbird
+		{Amazilia amabilis}
+	Golden-green Woodpecker
+		{Piculus chrysochloros}
+	Blue-and-yellow Macaw
+		{Ara ararauna}
+	Painted Parakeet
+		{Pyrrhura picta}
+	Black-backed Woodpecker
+		{Picoides arcticus}
+	Zapata Sparrow
+		{Torreornis inexpectata}
+	Blue-throated Hummingbird
+		{Lampornis clemenciae}
+	Green-throated Mountain-gem
+		{Lampornis viridipallens}
+	Gray Trembler
+		{Cinclocerthia gutturalis, Grey Trembler, Cinclocerthia (ruficauda) gutturalis}
+	Brant
+		{Branta bernicla, Dark Bellied Brent Goose}
+	Strickland's Woodpecker
+		{Picoides stricklandi}
+	Long-billed Dowitcher
+		{Limnodromus scolopaceus}
+	Black-backed Oriole
+		{Icterus abeillei, Icterus (galbula) abeillei}
+	Ruff
+		{Philomachus pugnax}
+	Whiskered Screech-Owl
+		{Megascops trichopsis, Otus trichopsis}
+	Downy Woodpecker
+		{Picoides pubescens}
+	Black-billed Magpie
+		{Pica hudsonia, Pica (pica) hudsonia}
+	Blue-headed Vireo
+		{Vireo solitarius, Solitary Vireo}
+	Southern Martin
+		{Progne elegans, Progne modesta elegans}
+	Arctic Warbler
+		{Phylloscopus borealis}
+	Baird's Trogon
+		{Trogon bairdii, Trogon (viridis) bairdii}
+	Wilson's Warbler
+		{Wilsonia pusilla}
+	Jamaican Lizard-Cuckoo
+		{Coccyzus vetula, Saurothera vetula}
+	Worthen's Sparrow
+		{Spizella wortheni, Spizella (pusilla) wortheni}
+	Rufous-browed Tyrannulet
+		{Phylloscartes superciliaris}
+	Belted Kingfisher
+		{Megaceryle alcyon, Ceryle alcyon}
+	Red-winged Blackbird
+		{Agelaius phoeniceus}
+	Yellow-green Tyrannulet
+		{Phylloscartes flavovirens}
+	Great Frigatebird
+		{Fregata minor}
+	Light-mantled Albatross
+		{Phoebetria palpebrata}
+	Short-tailed Albatross
+		{Phoebastria albatrus, Diomedea albatrus}
+	Black Kite
+		{Milvus migrans}
+	West Mexican Chachalaca
+		{Ortalis poliocephala}
+	Scaly-breasted Thrasher
+		{Allenia fusca, Margarops fuscus}
+	Black-footed Albatross
+		{Phoebastria nigripes, Diomedea nigripes}
+	Laysan Albatross
+		{Phoebastria immutabilis, Diomedea immutabilis}
+	South Polar Skua
+		{Stercorarius maccormicki, Catharacta (skua) maccormicki}
+	Yellow-billed Cuckoo
+		{Coccyzus americanus}
+	Rufescent Tiger-Heron
+		{Tigrisoma lineatum, Rufescent Tiger-heron}
+	Bare-crowned Antbird
+		{Gymnocichla nudiceps}
+	White-chinned Swift
+		{Cypseloides cryptus}
+	Green-tailed Towhee
+		{Pipilo chlorurus}
+	Cocos Finch
+		{Pinaroloxias inornata}
+	Yucatan Woodpecker
+		{Melanerpes pygmaeus, Melanerpes (rubricapillus) pygmaeus}
+	Rock Ptarmigan
+		{Lagopus muta, Lagopus mutus}
+	Resplendent Quetzal
+		{Pharomachrus mocinno}
+	Golden-headed Quetzal
+		{Pharomachrus auriceps, Pharomachrus (pavoninus) auriceps}
+	Golden-crowned Flycatcher
+		{Myiodynastes chrysocephalus}
+	White-throated Needletail
+		{Hirundapus caudacutus}
+	Red Phalarope
+		{Phalaropus fulicarius, Grey Phalarope}
+	Wilson's Phalarope
+		{Phalaropus tricolor}
+	Pelagic Cormorant
+		{Phalacrocorax pelagicus}
+	Red-faced Cormorant
+		{Phalacrocorax urile}
+	Brown-throated Parakeet
+		{Aratinga pertinax}
+	Middendorff's Grasshopper-Warbler 
+		{Locustella ochotensis, Middendorff's Grasshopper-warbler}
+	Bran-colored Flycatcher
+		{Myiophobus fasciatus, Bran-coloured Flycatcher}
+	Brownish Twistwing
+		{Cnipodectes subbrunneus, Brownish Flycatcher}
+	Yellow-backed Oriole
+		{Icterus chrysater}
+	Double-crested Cormorant
+		{Phalacrocorax auritus}
+	Akiapolaau
+		{Hemignathus munroi}
+	Ruffed Grouse
+		{Bonasa umbellus}
+	European Goldfinch
+		{Carduelis carduelis}
+	Lesser Antillean Swift
+		{Chaetura martinica}
+	Neotropic Cormorant
+		{Phalacrocorax brasilianus}
+	Bald Eagle
+		{Haliaeetus leucocephalus}
+	Black-and-yellow Silky-flycatcher
+		{Phainoptila melanoxantha, Black-and-yellow Silky-Flycatcher}
+	Dull-mantled Antbird
+		{Myrmeciza laemosticta}
+	Phainopepla
+		{Phainopepla nitens}
+	Orange-crowned Oriole
+		{Icterus auricapillus}
+	White-winged Tern
+		{Chlidonias leucopterus}
+	Pink-footed Goose
+		{Anser brachyrhynchus, Anser (fabalis) brachyrhynchus}
+	Pale-bellied Hermit
+		{Phaethornis anthophilus}
+	Black-winged Stilt
+		{Himantopus himantopus}
+	Long-billed Hermit
+		{Phaethornis longirostris, Mexican Hermit, Phaethornis (longirostris) mexicanus}
+	Tundra Swan
+		{Cygnus columbianus}
+	Saffron Finch
+		{Sicalis flaveola}
+	Cliff Swallow
+		{Petrochelidon pyrrhonota, Hirundo pyrrhonota}
+	Rusty-backed Spinetail
+		{Cranioleuca vulpina}
+	Red-billed Tropicbird
+		{Phaethon aethereus}
+	Buff-rumped Warbler
+		{Phaeothlypis fulvicauda, Basileuterus (rivularis) fulvicauda}
+	Lesser Elaenia
+		{Elaenia chiriquensis}
+	Yellow-bellied Siskin
+		{Carduelis xanthogastra}
+	Mouse-colored Tyrannulet
+		{Phaeomyias murina, Mouse-coloured Tyrannulet}
+	Tawny-faced Gnatwren
+		{Microbates cinereiventris}
+	Coppery-headed Emerald
+		{Elvira cupreiceps}
+	Cordilleran Flycatcher
+		{Empidonax occidentalis, Empidonax (difficilis) occidentalis}
+	Ivory-billed Woodcreeper 
+		{Xiphorhynchus flavigaster, Ivory-billed Woodcreeper}
+	Northern Scrub-Flycatcher
+		{Sublegatus arenarum, Sublegatus (modestus) arenarum}
+	Black-crowned Palm-Tanager
+		{Phaenicophilus palmarum}
+	White-collared Seedeater
+		{Sporophila torqueola, Cinnamon-rumped Seedeater}
+	Gray Vireo
+		{Vireo vicinior, Grey Vireo}
+	Oak Titmouse
+		{Baeolophus inornatus, Parus inornatus}
+	Cave Swallow
+		{Petrochelidon fulva, Hirundo fulva pelodoma}
+	Gray-rumped Swift
+		{Chaetura cinereiventris, Grey-rumped Swift}
+	Gray-crowned Woodpecker
+		{Colaptes  auricularis, Grey-crowned Woodpecker, Piculus (rubiginosus) auricularis}
+	Gray Jay
+		{Perisoreus canadensis, Grey Jay}
+	Highland Guan
+		{Penelopina nigra}
+	Crested Guan
+		{Penelope purpurascens}
+	American White Pelican
+		{Pelecanus erythrorhynchos}
+	White-faced Storm-Petrel
+		{Pelagodroma marina}
+	Short-billed Pigeon
+		{Patagioenas nigrirostris, Columba nigrirostris}
+	Painted Bunting
+		{Passerina ciris}
+	Glaucous Gull
+		{Larus hyperboreus}
+	Black-faced Grosbeak
+		{Caryothraustes poliogaster, Caryothraustes (canadensis) poliogaster}
+	White-crowned Pigeon
+		{Patagioenas leucocephala, Columba leucocephala}
+	Gray-chested Dove
+		{Leptotila cassini, Grey-chested Dove}
+	Spot-fronted Swift
+		{Cypseloides cherriei}
+	Scaly-naped Pigeon
+		{Patagioenas squamosa, Columba squamosa}
+	Scaled Pigeon
+		{Patagioenas speciosa, Columba speciosa}
+	Ruddy Pigeon
+		{Patagioenas subvinacea, Columba subvinacea}
+	White-bellied Chachalaca
+		{Ortalis leucogastra}
+	Green-crowned Brilliant
+		{Heliodoxa jacula}
+	Azure-rumped Tanager
+		{Tangara cabanisi}
+	Blue Cotinga
+		{Cotinga nattererii, Cotinga (cotinga) nattererii}
+	Island Scrub-Jay
+		{Aphelocoma insularis, Aphelocoma (californica) insularis}
+	Chiriqui Quail-Dove
+		{Geotrygon chiriquensis, Rufous-breasted Quail-Dove, Geotrygon (linearis) chiriquensis}
+	Brambling
+		{Fringilla montifringilla}
+	Ruddy Treerunner
+		{Margarornis rubiginosus}
+	Galapagos Petrel
+		{Pterodroma phaeopygia, Dark-rumped Petrel}
+	House Sparrow
+		{Passer domesticus}
+	Bare-throated Tiger-Heron
+		{Tigrisoma mexicanum, Bare-throated Tiger-heron}
+	Northern Parula
+		{Parula americana}
+	Crescent-chested Warbler
+		{Parula superciliosa}
+	Oahu Alauahio
+		{Paroreomyza maculata, Oahu Creeper}
+	Red-crested Cardinal
+		{Paroaria coronata}
+	Spotted Rail
+		{Pardirallus maculatus}
+	Cozumel Emerald
+		{Chlorostilbon forficatus, Chlorostilbon (canivetii) forficatus}
+	Harris's Hawk
+		{Parabuteo unicinctus, Harris' Hawk}
+	Great Swallow-tailed Swift
+		{Panyptila sanctihieronymi}
+	Spot-crowned Woodcreeper
+		{Lepidocolaptes affinis}
+	Fiery-throated Hummingbird
+		{Panterpe insignis}
+	Northern Goshawk
+		{Accipiter gentilis}
+	Akohekohe
+		{Palmeria dolei}
+	Ivory Gull
+		{Pagophila eburnea}
+	Red-throated Pipit
+		{Anthus cervinus}
+	Black-headed Grosbeak
+		{Pheucticus melanocephalus}
+	Antillean Crested Hummingbird
+		{Orthorhyncus cristatus}
+	Rose-throated Becard
+		{Pachyramphus aglaiae}
+	Golden-crowned Spadebill
+		{Platyrinchus coronatus}
+	Black-and-white Becard
+		{Pachyramphus albogriseus}
+	Cinnamon Becard
+		{Pachyramphus cinnamomeus, Pachyramphus (castaneus) cinnamomeus}
+	Ruddy Duck
+		{Oxyura jamaicensis}
+	White-tipped Dove
+		{Leptotila verreauxi}
+	Oahu Amakihi
+		{Hemignathus flavus, Hemignathus (virens) chloris}
+	Flammulated Owl
+		{Otus flammeolus}
+	Nicaraguan Seed-Finch
+		{Oryzoborus nuttingi}
+	Steller's Sea-Eagle
+		{Haliaeetus pelagicus}
+	Rufous-bellied Chachalaca
+		{Ortalis wagleri, Ortalis (poliocephala) wagleri}
+	Plain Chachalaca
+		{Ortalis vetula}
+	Sharp-shinned Hawk
+		{Accipiter striatus}
+	European Storm-Petrel
+		{Hydrobates pelagicus}
+	Black-cheeked Ant-Tanager
+		{Habia atrimaxillaris}
+	Blue-black Grassquit
+		{Volatinia jacarina}
+	Least Bittern
+		{Ixobrychus exilis}
+	Mountain Quail
+		{Oreortyx pictus}
+	Hawaii Creeper
+		{Oreomystis mana, Oreomystis (bairdi) mana}
+	Akikiki
+		{Oreomystis bairdi, Kauai Creeper}
+	Royal Flycatcher
+		{Onychorhynchus coronatus}
+	Ruddy-capped Nightingale-Thrush
+		{Catharus frantzii, Ruddy-capped Nightingale-thrush}
+	Sungrebe
+		{Heliornis fulica}
+	Northern Bentbill
+		{Oncostoma cinereigulare}
+	Northern Wheatear
+		{Oenanthe oenanthe}
+	Spotted Wood-Quail
+		{Odontophorus guttatus, Spotted Wood-quail}
+	European Starling
+		{Sturnus vulgaris, Common Starling}
+	Tacarcuna Wood-Quail
+		{Odontophorus dialeucos, Tacarcuna Wood-quail}
+	White-crowned Sparrow
+		{Zonotrichia leucophrys}
+	Rufous-winged Antwren
+		{Herpsilochmus rufimarginatus}
+	Ruddy Quail-Dove
+		{Geotrygon montana}
+	Nutting's Flycatcher
+		{Myiarchus nuttingi}
+	Snowy-bellied Hummingbird
+		{Amazilia edward, Snowy-breasted Hummingbird}
+	Cinnamon-tailed Sparrow
+		{Aimophila sumichrasti}
+	Tristram's Storm-Petrel
+		{Oceanodroma tristrami, Oceanodroma (markhami) tristrami}
+	Markham's Storm-Petrel
+		{Oceanodroma markhami}
+	Common Nighthawk
+		{Chordeiles minor}
+	Guadalupe Storm-Petrel
+		{Oceanodroma macrodactyla}
+	Brown Creeper
+		{Certhia americana}
+	Black Storm-Petrel
+		{Oceanodroma melania}
+	Wedge-rumped Storm-Petrel
+		{Oceanodroma tethys}
+	Gray Frog-Hawk
+		{Accipiter soloensis, Chinese Goshawk}
+	Golden-olive Woodpecker
+		{Colaptes  rubiginosus, Piculus rubiginosus}
+	Band-rumped Storm-Petrel
+		{Oceanodroma castro, Madeiran Storm-Petrel}
+	Ashy Storm-Petrel
+		{Oceanodroma homochroa}
+	Rusty Blackbird
+		{Euphagus carolinus}
+	Scarlet-rumped Cacique
+		{Cacicus uropygialis, Subtropical Cacique}
+	Leach's Storm-Petrel
+		{Oceanodroma leucorhoa}
+	California Quail
+		{Callipepla californica}
+	Wilson's Storm-Petrel
+		{Oceanites oceanicus}
+	Barred Puffbird
+		{Nystalus radiatus}
+	Lawrence's Goldfinch
+		{Carduelis lawrencei}
+	Baird's Sparrow
+		{Ammodramus bairdii}
+	Eared Poorwill
+		{Nyctiphrynus mcleodii}
+	Common Pauraque
+		{Nyctidromus albicollis, Pauraque}
+	Northern Potoo
+		{Nyctibius jamaicensis, Common (Northern) Potoo, Nyctibius (griseus) jamaicensis}
+	White-tailed Emerald
+		{Elvira chionura}
+	Atlantic Puffin
+		{Fratercula arctica}
+	Long-billed Curlew
+		{Numenius americanus}
+	Eurasian Curlew
+		{Numenius arquata}
+	Whimbrel
+		{Numenius phaeopus}
+	Clark's Nutcracker
+		{Nucifraga columbiana}
+	Ocellated Antbird
+		{Phaenostictus mcleannani}
+	Pileated Woodpecker
+		{Dryocopus pileatus}
+	Pied Puffbird
+		{Notharchus tectus}
+	Savannah Sparrow
+		{Passerculus sandwichensis}
+	White-necked Crow
+		{Corvus leucognaphalus}
+	Cocos Flycatcher
+		{Nesotriccus ridgwayi}
+	Antillean Piculet
+		{Nesoctites micromegas}
+	Spot-crowned Euphonia
+		{Euphonia imitans}
+	Rufous-vented Ground-Cuckoo
+		{Neomorphus geoffroyi}
+	Yucatan Flycatcher
+		{Myiarchus yucatanensis}
+	Orange-breasted Falcon
+		{Falco deiroleucus}
+	Mew Gull
+		{Larus canus, Common Gull}
+	Hooded Merganser
+		{Lophodytes cucullatus}
+	Snail Kite
+		{Rostrhamus sociabilis}
+	Red-shouldered Hawk
+		{Buteo lineatus}
+	West Indian Whistling-Duck
+		{Dendrocygna arborea, West Indian Whistling-duck}
+	Rusty Sparrow
+		{Aimophila rufescens}
+	Masked Booby
+		{Sula dactylatra}
+	Cook's Petrel
+		{Pterodroma cookii}
+	Yellow-eyed Junco
+		{Junco phaeonotus}
+	Green-striped Brush-Finch
+		{Arremon virenticeps, Atlapetes (torquatus) virenticeps}
+	Golden-crowned Kinglet
+		{Regulus satrapa}
+	Gray-capped Flycatcher
+		{Myiozetetes granadensis, Grey-capped Flycatcher}
+	Yellow-fronted Canary
+		{Serinus mozambicus}
+	Rusty-margined Flycatcher
+		{Myiozetetes cayanensis}
+	Monk Parakeet
+		{Myiopsitta monachus}
+	Orange-fronted Parakeet
+		{Aratinga canicularis}
+	Hudsonian Godwit
+		{Limosa haemastica}
+	Forest Elaenia
+		{Myiopagis gaimardii}
+	Sulphur-bellied Flycatcher
+		{Myiodynastes luteiventris}
+	Streaked Flycatcher
+		{Myiodynastes maculatus}
+	Olivaceous Flatbill
+		{Rhynchocyclus olivaceus}
+	Slate-throated Redstart
+		{Myioborus miniatus}
+	Green-breasted Mango
+		{Anthracothorax prevostii}
+	Eurasian Coot
+		{Fulica atra, Common Coot}
+	Painted Redstart
+		{Myioborus pictus}
+	Belcher's Gull
+		{Larus belcheri, Band-tailed Gull}
+	Tawny-breasted Flycatcher
+		{Myiobius villosus}
+	Ochre-breasted Antpitta
+		{Grallaricula flavirostris}
+	Puerto Rican Flycatcher
+		{Myiarchus antillarum}
+	Stolid Flycatcher
+		{Myiarchus stolidus}
+	Burrowing Owl
+		{Athene cunicularia}
+	White-throated Jay
+		{Cyanolyca mirabilis}
+	La Sagra's Flycatcher
+		{Myiarchus sagrae}
+	Grenada Flycatcher
+		{Myiarchus nugator}
+	Marbled Godwit
+		{Limosa fedoa}
+	Green-fronted Lancebill
+		{Doryfera ludovicae}
+	Least Storm-Petrel
+		{Oceanodroma microsoma}
+	Shy Albatross
+		{Thalassarche cauta, Diomedea cauta}
+	Venezuelan Troupial
+		{Icterus icterus, Troupial}
+	Paint-billed Crake
+		{Neocrex erythrops}
+	Wood Stork
+		{Mycteria americana}
+	White Ibis
+		{Eudocimus albus}
+	Brown-billed Scythebill
+		{Campylorhamphus pusillus}
+	Spectacled Eider
+		{Somateria fischeri}
+	Olive-backed Euphonia
+		{Euphonia gouldi}
+	Omao
+		{Myadestes obscurus}
+	Pine Flycatcher
+		{Empidonax affinis}
+	Kamao
+		{Myadestes myadestinus}
+	Slate-colored Solitaire
+		{Myadestes unicolor, Slate-coloured Solitaire}
+	Corn Crake
+		{Crex crex}
+	St. Vincent Parrot
+		{Amazona guildingii}
+	Slaty Finch
+		{Haplospiza rustica}
+	Black-faced Solitaire
+		{Myadestes melanops, Myadestes (ralloides) melanops}
+	Black-crested Titmouse
+		{Baeolophus atricristatus, Parus (bicolor) atricristatus}
+	Townsend's Solitaire
+		{Myadestes townsendi}
+	Ashy-tailed Swift
+		{Chaetura andrei}
+	Hairy Woodpecker
+		{Picoides villosus}
+	Asian Brown Flycatcher
+		{Muscicapa dauurica}
+	Green-breasted Mountain-gem
+		{Lampornis sybillae, Lampornis (viridipallens) sybillae}
+	Dark-sided Flycatcher
+		{Muscicapa sibirica}
+	White Wagtail
+		{Motacilla alba}
+	Citrine Wagtail
+		{Motacilla citreola}
+	Eastern Yellow Wagtail
+		{Motacilla tschutschensis, Alaska Yellow-wagtail, Motacilla flava tschutschensis}
+	Red-headed Tanager
+		{Piranga erythrocephala}
+	Sora
+		{Porzana carolina}
+	Giant Cowbird
+		{Molothrus oryzivorus}
+	Shining Honeycreeper
+		{Cyanerpes lucidus, Cyanerpes (caeruleus) lucidus}
+	Olive-throated Parakeet
+		{Aratinga nana}
+	Slaty Flowerpiercer
+		{Diglossa plumbea, Slaty Flower-piercer}
+	Bare-shanked Screech-Owl
+		{Megascops clarkii, Otus clarkii}
+	White-striped Woodcreeper
+		{Lepidocolaptes leucogaster}
+	Yellow-crowned Parrot
+		{Amazona ochrocephala}
+	Eastern Wood-Pewee
+		{Contopus virens}
+	Bishop's Oo
+		{Moho bishopi}
+	Plain Antvireo
+		{Dysithamnus mentalis}
+	Yellow-headed Parrot
+		{Amazona oratrix, Amazona (ochrocephala) oratrix}
+	White-throated Shrike-Tanager
+		{Lanio leucothorax, Lanio (aurantius) leucothorax}
+	Tufted Flycatcher
+		{Mitrephanes phaeocercus}
+	Lavender Waxbill
+		{Estrilda caerulescens}
+	Ochre-bellied Flycatcher
+		{Mionectes oleagineus}
+	Olive-striped Flycatcher
+		{Mionectes olivaceus}
+	Snow Bunting
+		{Plectrophenax nivalis}
+	Black-throated Gray Warbler
+		{Dendroica nigrescens, Black-throated Grey Warbler}
+	Blue-tailed Hummingbird
+		{Amazilia cyanura}
+	Common Sandpiper
+		{Actitis hypoleucos, Actitis (hypoleucos) Hypoleucos}
+	Imperial Parrot
+		{Amazona imperialis}
+	Bronzed Cowbird
+		{Molothrus aeneus}
+	Pied Water-Tyrant
+		{Fluvicola pica}
+	Yellow-browed Warbler
+		{Phylloscopus inornatus}
+	Baltimore Oriole
+		{Icterus galbula}
+	Green-tailed Warbler
+		{Microligea palustris}
+	Garnet-throated Hummingbird
+		{Lamprolaima rhami}
+	Cassin's Finch
+		{Carpodacus cassinii}
+	Scaly-breasted Wren
+		{Microcerculus marginatus, Southern Nightingale-wren}
+	Vesper Sparrow
+		{Pooecetes gramineus}
+	Reed Bunting
+		{Emberiza schoeniclus}
+	Elf Owl
+		{Micrathene whitneyi}
+	California Thrasher
+		{Toxostoma redivivum}
+	Black-headed Saltator
+		{Saltator atriceps}
+	Botteri's Sparrow
+		{Aimophila botterii}
+	Indigo Bunting
+		{Passerina cyanea}
+	Smew
+		{Mergellus albellus}
+	Zebra Dove
+		{Geopelia striata}
+	Puaiohi
+		{Myadestes palmeri}
+	Rusty-crowned Ground-Sparrow
+		{Melozone kieneri, Melozone (biarcuatum) kieneri}
+	Swamp Sparrow
+		{Melospiza georgiana}
+	Magnolia Warbler
+		{Dendroica magnolia}
+	Cuban Bullfinch
+		{Melopyrrha nigra}
+	Budgerigar
+		{Melopsittacus undulatus}
+	Solitary Eagle
+		{Harpyhaliaetus solitarius, Harpyhaliaetus (coronatus) solitarius}
+	Spectacled Owl
+		{Pulsatrix perspicillata}
+	Wild Turkey
+		{Meleagris gallopavo}
+	Gray-hooded Gull
+		{Chroicocephalus  cirrocephalus, Grey-headed Gull, Larus cirrocephalus}
+	Black Catbird
+		{Melanoptila glabrirostris}
+	Chipping Sparrow
+		{Spizella passerina}
+	Rufous-breasted Antthrush
+		{Formicarius rufipectus}
+	West Indian Woodpecker
+		{Melanerpes superciliaris}
+	Scintillant Hummingbird
+		{Selasphorus scintilla}
+	Golden-fronted Woodpecker
+		{Melanerpes aurifrons}
+	Eye-ringed Flatbill
+		{Rhynchocyclus brevirostris}
+	Black-capped Donacobius
+		{Donacobius atricapilla, Donacobius atricapillus}
+	Scale-crested Pygmy-Tyrant
+		{Lophotriccus pileatus}
+	Clarion Wren
+		{Troglodytes tanneri, Troglodytes (aedon) tanneri}
+	Orange-cheeked Waxbill
+		{Estrilda melpoda}
+	Golden-cheeked Woodpecker
+		{Melanerpes chrysogenys}
+	Wrentit
+		{Chamaea fasciata}
+	Crane Hawk
+		{Geranospiza caerulescens}
+	Hispaniolan Woodpecker
+		{Melanerpes striatus}
+	Golden-naped Woodpecker
+		{Melanerpes chrysauchen}
+	Red-headed Woodpecker
+		{Melanerpes erythrocephalus}
+	Guadeloupe Woodpecker
+		{Melanerpes herminieri}
+	Poo-uli
+		{Melamprosops phaeosoma}
+	Cape Verde Shearwater
+		{Calonectris edwardsii, Calonectris (diomedea) edwardsii}
+	Puerto Rican Screech-Owl
+		{Megascops nudipes, Otus nudipes}
+	Brown-headed Cowbird
+		{Molothrus ater}
+	Bee Hummingbird
+		{Mellisuga helenae}
+	Bearded Screech-Owl
+		{Megascops barbarus, Santa Barbara Screech-Owl, Otus barbarus}
+	Tropical Screech-Owl
+		{Megascops choliba, Otus choliba}
+	Bullock's Oriole
+		{Icterus bullockii, Icterus (galbula) bullockii}
+	Spotted Flycatcher
+		{Muscicapa striata}
+	White-winged Parakeet
+		{Brotogeris versicolurus, Canary-winged Parakeet}
+	Snowcap
+		{Microchera albocoronata}
+	Common Ground-Dove
+		{Columbina passerina}
+	Crested Owl
+		{Lophostrix cristata}
+	Red-necked Parrot
+		{Amazona arausiaca}
+	White-fringed Antwren
+		{Formicivora grisea}
+	Eastern Screech-Owl
+		{Megascops asio, Otus asio}
+	Golden Vireo
+		{Vireo hypochryseus}
+	Peg-billed Finch
+		{Acanthidops bairdii}
+	Black-faced Antthrush
+		{Formicarius analis}
+	Bushtit
+		{Psaltriparus minimus}
+	Black-chested Jay
+		{Cyanocorax affinis}
+	Black-breasted Puffbird
+		{Notharchus pectoralis}
+	Beautiful Treerunner
+		{Margarornis bellulus, Margarornis (squamiger) bellulus}
+	Black-striped Sparrow
+		{Arremonops conirostris}
+	Blue-crowned Chlorophonia
+		{Chlorophonia occipitalis}
+	Willow Flycatcher
+		{Empidonax traillii}
+	Green Honeycreeper
+		{Chlorophanes spiza}
+	Zapata Wren
+		{Ferminia cerverai}
+	Sooty Tern
+		{Onychoprion fuscatus, Sterna fuscata}
+	White-whiskered Puffbird
+		{Malacoptila panamensis}
+	Black-throated Blue Warbler
+		{Dendroica caerulescens}
+	Torrent Tyrannulet
+		{Serpophaga cinerea}
+	Crimson-bellied Woodpecker
+		{Campephilus haematogaster}
+	White-eared Conebill
+		{Conirostrum leucogenys}
+	Unicolored Jay
+		{Aphelocoma unicolor, Unicoloured Jay}
+	Jack Snipe
+		{Lymnocryptes minimus}
+	Black-and-yellow Tanager
+		{Chrysothlypis chrysomelas}
+	Siberian Blue Robin
+		{Luscinia cyane}
+	Silver-throated Tanager
+		{Tangara icterocephala}
+	Slaty-breasted Tinamou
+		{Crypturellus boucardi}
+	Black-billed Nightingale-Thrush
+		{Catharus gracilirostris, Black-billed Nightingale-thrush}
+	Green Thorntail
+		{Discosura conversii, Popelairia conversii}
+	Green Jay
+		{Cyanocorax yncas, Inca Jay}
+	Siberian Rubythroat
+		{Luscinia calliope}
+	Pied-billed Grebe
+		{Podilymbus podiceps}
+	Varied Thrush
+		{Ixoreus naevius, Zoothera naevia}
+	Olive-sided Flycatcher
+		{Contopus cooperi, Contopus borealis}
+	Tacarcuna Tapaculo
+		{Scytalopus panamensis}
+	Broad-billed Hummingbird
+		{Cynanthus latirostris}
+	Ocellated Quail
+		{Cyrtonyx ocellatus, Cyrtonyx (montezumae) ocellatus}
+	Eurasian Tree Sparrow
+		{Passer montanus}
+	Purple-crowned Fairy
+		{Heliothryx barroti, Heliothryx (aurita) barroti}
+	Western Spindalis
+		{Spindalis zena, Stripe-headed Tanager}
+	Green-throated Carib
+		{Eulampis holosericeus}
+	Choco Tinamou
+		{Crypturellus kerriae}
+	Greater Antillean Bullfinch
+		{Loxigilla violacea}
+	White-winged Crossbill
+		{Loxia leucoptera, Two-barred Crossbill}
+	Lanceolated Monklet
+		{Micromonacha lanceolata}
+	Black-chinned Hummingbird
+		{Archilochus alexandri}
+	Bronze-tailed Plumeleteer
+		{Chalybura urochrysia}
+	Brewer's Blackbird
+		{Euphagus cyanocephalus}
+	Dusky-backed Jacamar
+		{Brachygalba salmoni}
+	Jamaican Oriole
+		{Icterus leucopteryx}
+	Red-crowned Woodpecker
+		{Melanerpes rubricapillus}
+	Green-winged Teal
+		{Anas crecca, Eurasian Teal}
+	Military Macaw
+		{Ara militaris}
+	Pirre Warbler
+		{Basileuterus ignotus, Basileuterus (melanogenys) ignotus}
+	Double-striped Thick-knee
+		{Burhinus bistriatus}
+	Oriental Scops-Owl
+		{Otus sunia, Otus (scops) sunia}
+	Flat-billed Vireo
+		{Vireo nanus}
+	Yellow-bellied Elaenia
+		{Elaenia flavogaster}
+	Highland Tinamou
+		{Nothocercus bonapartei}
+	Broad-billed Tody
+		{Todus subulatus}
+	American Crow
+		{Corvus brachyrhynchos}
+	White-shouldered Tanager
+		{Tachyphonus luctuosus}
+	Brown-crested Flycatcher
+		{Myiarchus tyrannulus}
+	Song Sparrow
+		{Melospiza melodia}
+	Gray Elaenia
+		{Myiopagis caniceps, Grey Elaenia}
+	Arizona Woodpecker
+		{Picoides arizonae, Picoides (stricklandi) arizonae}
+	Short-tailed Swift
+		{Chaetura brachyura}
+	Yellow-throated Bush-Tanager
+		{Chlorospingus flavigularis}
+	Tufted Jay
+		{Cyanocorax dickeyi}
+	Snowy Owl
+		{Bubo scandiacus, Nyctea scandiaca}
+	Broad-billed Sandpiper
+		{Limicola falcinellus}
+	Brown-capped Rosy-Finch
+		{Leucosticte australis, Leucosticte (arctoa) australis}
+	Black Rosy-Finch
+		{Leucosticte atrata, Leucosticte (arctoa) atrata}
+	Puerto Rican Vireo
+		{Vireo latimeri}
+	Veery
+		{Catharus fuscescens}
+	Whiskered Auklet
+		{Aethia pygmaea}
+	Chinese Pond-Heron
+		{Ardeola bacchus, Chinese Pond-heron}
+	Black-throated Sparrow
+		{Amphispiza bilineata}
+	Kalij Pheasant
+		{Lophura leucomelanos}
+	Jamaican Vireo
+		{Vireo modestus}
+	Orange-chinned Parakeet
+		{Brotogeris jugularis}
+	Pearl Kite
+		{Gampsonyx swainsonii}
+	Long-eared Owl
+		{Asio otus}
+	Franklin's Gull
+		{Leucophaeus  pipixcan, Larus pipixcan}
+	Common Crane
+		{Grus grus}
+	White-vented Plumeleteer
+		{Chalybura buffonii}
+	Broad-billed Motmot
+		{Electron platyrhynchum}
+	Crested Eagle
+		{Morphnus guianensis}
+	Happy Wren
+		{Thryothorus felix}
+	Red Siskin
+		{Carduelis cucullata}
+	Semper's Warbler
+		{Leucopeza semperi}
+	Blue Grosbeak
+		{Passerina caerulea, Guiraca caerulea}
+	American Oystercatcher
+		{Haematopus palliatus}
+	Lapland Longspur
+		{Calcarius lapponicus, Lapland Bunting}
+	Yellow-shouldered Blackbird
+		{Agelaius xanthomus}
+	Green Parakeet
+		{Aratinga holochlora}
+	Kauai Oo
+		{Moho braccatus}
+	Blue-and-white Mockingbird
+		{Melanotis hypoleucus, Melanotis (caerulescens) hypoleucus}
+	Common Yellowthroat
+		{Geothlypis trichas}
+	Green Mango
+		{Anthracothorax viridis}
+	Russet-crowned Motmot
+		{Momotus mexicanus}
+	Blue Jay
+		{Cyanocitta cristata}
+	Chestnut Munia
+		{Lonchura atricapilla, Southern Black-headed Munia, Lonchura (malacca) atricapilla}
+	Slaty-capped Flycatcher
+		{Leptopogon superciliaris}
+	Japanese Quail
+		{Coturnix japonica}
+	Sepia-capped Flycatcher
+		{Leptopogon amaurocephalus}
+	Lesser Antillean Pewee
+		{Contopus latirostris}
+	Oaxaca Sparrow
+		{Aimophila notosticta}
+	Orange-billed Nightingale-Thrush
+		{Catharus aurantiirostris, Orange-billed Nightingale-thrush}
+	White-fronted Parrot
+		{Amazona albifrons}
+	Tufted Duck
+		{Aythya fuligula}
+	Immaculate Antbird
+		{Myrmeciza immaculata}
+	Lesser Swallow-tailed Swift
+		{Panyptila cayennensis}
+	Plain-breasted Ground-Dove
+		{Columbina minuta}
+	Yellow-breasted Chat
+		{Icteria virens}
+	Chestnut-bellied Cuckoo
+		{Coccyzus pluvialis, Hyetornis pluvialis}
+	Long-tailed Sabrewing
+		{Campylopterus excellens, Campylopterus (curvipennis) excellens}
+	Ancient Murrelet
+		{Synthliboramphus antiquus}
+	Sprague's Pipit
+		{Anthus spragueii, Anthus (furcatus) spragueii}
+	Common Redpoll
+		{Carduelis flammea, Mealy Redpoll}
+	Pacific-slope Flycatcher
+		{Empidonax difficilis}
+	Laughing Falcon
+		{Herpetotheres cachinnans}
+	Pirre Hummingbird
+		{Goethalsia bella, Rufous-cheeked Hummingbird}
+	Peregrine Falcon
+		{Falco peregrinus}
+	Piratic Flycatcher
+		{Legatus leucophaius}
+	Euler's Flycatcher
+		{Lathrotriccus euleri}
+	Wine-throated Hummingbird
+		{Atthis ellioti, Atthis (heloisa) ellioti}
+	Balsas Screech-Owl
+		{Megascops seductus, Otus (kennicottii) seductus}
+	Palm Crow
+		{Corvus palmarum, Hispaniolan Palm Crow}
+	Black Oystercatcher
+		{Haematopus bachmani, Haematopus (palliatus) bachmani}
+	Pacific Loon
+		{Gavia pacifica, Pacific Diver}
+	Hawaiian Duck
+		{Anas wyvilliana, Anas (platyrhynchos) wyvilliana}
+	Great Horned Owl
+		{Bubo virginianus}
+	Java Sparrow
+		{Padda oryzivora}
+	Eastern Chat-Tanager
+		{Calyptophilus frugivorus, Chat Tanager}
+	Lesser Greenlet
+		{Hylophilus decurtatus}
+	Mexican Sheartail
+		{Doricha eliza}
+	Long-toed Stint
+		{Calidris subminuta, Calidris (minutilla) subminuta}
+	Black Rail
+		{Laterallus jamaicensis}
+	White-rumped Shama
+		{Copsychus malabaricus}
+	Cassin's Vireo
+		{Vireo cassinii, Vireo (solitarius) cassinii}
+	Rock Sandpiper
+		{Calidris ptilocnemis, Calidris (maritima) ptilocnemis}
+	Fork-tailed Swift
+		{Apus pacificus, Pacific Swift}
+	Western Reef-Heron
+		{Egretta gularis, Western Reef-Egret, Egretta (garzetta) gularis}
+	Socorro Mockingbird
+		{Mimus graysoni, Socorro Thrasher, Mimodes graysoni}
+	Rufous-tailed Jacamar
+		{Galbula ruficauda}
+	Turkey Vulture
+		{Cathartes aura}
+	St. Lucia Warbler
+		{Dendroica delicata, Dendroica (adelaidae) delicata}
+	Swainson's Hawk
+		{Buteo swainsoni}
+	Hawfinch
+		{Coccothraustes coccothraustes}
+	Crested Bobwhite
+		{Colinus cristatus}
+	Great Black-backed Gull
+		{Larus marinus}
+	Band-tailed Pigeon
+		{Patagioenas fasciata, Columba fasciata}
+	Great Black-Hawk
+		{Buteogallus urubitinga}
+	Slaty-backed Gull
+		{Larus schistisagus}
+	Blackburnian Warbler
+		{Dendroica fusca}
+	Killdeer
+		{Charadrius vociferus}
+	Dusky Antbird
+		{Cercomacra tyrannina}
+	Cocos Cuckoo
+		{Coccyzus ferrugineus, Coccyzus (minor) ferrugineus}
+	Long-tailed Jaeger
+		{Stercorarius longicaudus, Long-tailed Skua}
+	Herring Gull
+		{Larus argentatus}
+	Short-billed Dowitcher
+		{Limnodromus griseus}
+	Three-striped Warbler
+		{Basileuterus tristriatus}
+	Bufflehead
+		{Bucephala albeola}
+	White-throated Mountain-gem
+		{Lampornis castaneoventris}
+	Gray Hawk
+		{Buteo nitidus, Grey-lined Hawk}
+	Lark Sparrow
+		{Chondestes grammacus}
+	Cactus Wren
+		{Campylorhynchus brunneicapillus}
+	Western Slaty-Antshrike
+		{Thamnophilus atrinucha, Thamnophilus (punctatus) atrinucha}
+	American Redstart
+		{Setophaga ruticilla}
+	Timberline Wren
+		{Thryorchilus browni}
+	White-thighed Swallow
+		{Neochelidon tibialis}
+	Blue-winged Teal
+		{Anas discors}
+	Cerulean Warbler
+		{Dendroica cerulea}
+	Dusky Hummingbird
+		{Cynanthus sordidus}
+	Black-banded Woodcreeper
+		{Dendrocolaptes picumnus}
+	Five-striped Sparrow
+		{Aimophila quinquestriata}
+	Canivet's Emerald
+		{Chlorostilbon canivetii, Fork-tailed Emerald}
+	Black-tailed Gull
+		{Larus crassirostris}
+	Sulphur-rumped Flycatcher
+		{Myiobius sulphureipygius, Myiobius barbatus sulphureipygius}
+	Aplomado Falcon
+		{Falco femoralis}
+	Black-bellied Hummingbird
+		{Eupherusa nigriventris}
+	Olive Warbler
+		{Peucedramus taeniatus}
+	Loggerhead Shrike
+		{Lanius ludovicianus}
+	Tody Motmot
+		{Hylomanes momotula}
+	Greater Roadrunner
+		{Geococcyx californianus}
+	Cooper's Hawk
+		{Accipiter cooperii}
+	Brown Shrike
+		{Lanius cristatus}
+	Dusky-faced Tanager
+		{Mitrospingus cassinii}
+	Upland Sandpiper
+		{Bartramia longicauda}
+	Black-throated Shrike-Tanager
+		{Lanio aurantius}
+	Tricolored Blackbird
+		{Agelaius tricolor}
+	Magnificent Hummingbird
+		{Eugenes fulgens}
+	Pacific Screech-Owl
+		{Megascops cooperi, Otus (kennicottii) cooperi}
+	Clark's Grebe
+		{Aechmophorus clarkii}
+	Sharp-tailed Sandpiper
+		{Calidris acuminata}
+	Pine Bunting
+		{Emberiza leucocephalos}
+	Black-throated Green Warbler
+		{Dendroica virens}
+	Northern Bobwhite
+		{Colinus virginianus}
+	Greater Antillean Nightjar
+		{Caprimulgus cubanensis}
+	Key West Quail-Dove
+		{Geotrygon chrysia}
+	Marsh Wren
+		{Cistothorus palustris}
+	Western Chat-Tanager
+		{Calyptophilus tertius, Calyptophilus frugivorus tertius}
+	Yellow-billed Cotinga
+		{Carpodectes antoniae, Carpodectes (nitidus) antoniae}
+	White-throated Swift
+		{Aeronautes saxatalis}
+	Bright-rumped Attila
+		{Attila spadiceus}
+	Hawaiian Goose
+		{Branta sandvicensis, Nene}
+	White-headed Woodpecker
+		{Picoides albolarvatus}
+	Mariana Swiftlet
+		{Aerodramus bartschi, Collocalia (inquieta) bartschi}
+	Jouanin's Petrel
+		{Bulweria fallax, Bulweria (bulwerii) fallax}
+	Garden Emerald
+		{Chlorostilbon assimilis}
+	Amethyst-throated Hummingbird
+		{Lampornis amethystinus}
+	Gray-streaked Flycatcher
+		{Muscicapa griseisticta, Grey-streaked Flycatcher}
+	Lesser Akialoa
+		{Hemignathus obscurus, Akialoa}
+	Wandering Tattler
+		{Tringa incana, Heteroscelus incanus}
+	Streak-backed Oriole
+		{Icterus pustulatus}
+	Vermiculated Screech-Owl
+		{Megascops guatemalae, Otus (atricapillus) vermiculatus}
+	Black Guan
+		{Chamaepetes unicolor}
+	Ring-necked Pheasant
+		{Phasianus colchicus, Common Pheasant}
+	Black-throated Bobwhite
+		{Colinus nigrogularis}
+	Spotted Redshank
+		{Tringa erythropus}
+	Thick-billed Euphonia
+		{Euphonia laniirostris}
+	Black-capped Flycatcher
+		{Empidonax atriceps}
+	Rufous-necked Wood-Rail
+		{Aramides axillaris, Rufous-necked Wood-rail}
+	Gray-necked Wood-Rail
+		{Aramides cajanea, Grey-necked Wood-rail}
+	Olomao
+		{Myadestes lanaiensis}
+	Great Jacamar
+		{Jacamerops aureus}
+	Tropical Pewee
+		{Contopus cinereus}
+	Redhead
+		{Aythya americana}
+	Lanceolated Warbler
+		{Locustella lanceolata}
+	Black-and-white Warbler
+		{Mniotilta varia}
+	Yellow-billed Parrot
+		{Amazona collaria}
+	Great Crested Tern
+		{Thalasseus bergii, Sterna bergii}
+	Brown Violetear
+		{Colibri delphinae, Brown Violet-ear}
+	Spot-breasted Oriole
+		{Icterus pectoralis}
+	Pale-eyed Pygmy-Tyrant
+		{Lophotriccus pilaris, Atalotriccus pilaris}
+	Lesser Frigatebird
+		{Fregata ariel}
+	Bumblebee Hummingbird
+		{Atthis heloisa}
+	Northern Mockingbird
+		{Mimus polyglottos}
+	Golden-crowned Emerald
+		{Chlorostilbon auriceps, Chlorostilbon (canivetii) auriceps}
+	Eurasian Siskin
+		{Carduelis spinus}
+	Yucatan Wren
+		{Campylorhynchus yucatanicus, Campylorhynchus (brunneicapillus) yucatanicus}
+	Common Rosefinch
+		{Carpodacus erythrinus}
+	Brown Trembler
+		{Cinclocerthia ruficauda}
+	Golden-cheeked Warbler
+		{Dendroica chrysoparia}
+	Collared Plover
+		{Charadrius collaris}
+	Palm Warbler
+		{Dendroica palmarum}
+	Whistling Warbler
+		{Catharopeza bishopi}
+	Sharp-tailed Streamcreeper
+		{Lochmias nematura}
+	Great Lizard-Cuckoo
+		{Coccyzus merlini, Saurothera merlini}
+	Buff-breasted Flycatcher
+		{Empidonax fulvifrons}
+	Costa's Hummingbird
+		{Calypte costae}
+	Bar-winged Oriole
+		{Icterus maculialatus}
+	Wedge-billed Woodcreeper
+		{Glyphorynchus spirurus}
+	Montserrat Oriole
+		{Icterus oberi}
+	Rufous-throated Solitaire
+		{Myadestes genibarbis}
+	Spotted Antbird
+		{Hylophylax naevioides}
+	Greenish Puffleg
+		{Haplophaedia aureliae}
+	Socorro Dove
+		{Zenaida graysoni, Zenaida (macroura) graysoni}
+	Scott's Oriole
+		{Icterus parisorum}
+	Yellow-crowned Tyrannulet
+		{Tyrannulus elatus}
+	Chukar
+		{Alectoris chukar}
+	Yellow Tyrannulet
+		{Capsiempis flaveola}
+	Violet-headed Hummingbird
+		{Klais guimeti}
+	Plain-brown Woodcreeper
+		{Dendrocincla fuliginosa}
+	Golden-collared Manakin
+		{Manacus vitellinus, Manacus (manacus) vitellinus}
+	Ferruginous Hawk
+		{Buteo regalis}
+	Rufous-collared Robin
+		{Turdus rufitorques, Rufous-collared Thrush}
+	Variegated Flycatcher
+		{Empidonomus varius}
+	Xantus's Hummingbird
+		{Hylocharis xantusii, Xantus' Hummingbird}
+	Humboldt's Sapphire
+		{Hylocharis humboldtii, Hylocharis (grayi) humboldti}
+	Little Gull
+		{Hydrocoloeus  minutus, Larus minutus}
+	Brown-capped Tyrannulet
+		{Ornithion brunneicapillus, Ornithion brunneicapillum}
+	Hooded Oriole
+		{Icterus cucullatus}
+	Grace's Warbler
+		{Dendroica graciae}
+	Tufted Titmouse
+		{Baeolophus bicolor, Parus bicolor}
+	Gray-breasted Woodpecker
+		{Melanerpes hypopolius, Grey-breasted Woodpecker}
+	McCown's Longspur
+		{Calcarius mccownii}
+	Bahama Woodstar
+		{Calliphlox evelynae}
+	White-fronted Swift
+		{Cypseloides storeri}
+	Purple-throated Mountain-gem
+		{Lampornis calolaemus, Lampornis (castaneoventris) calolaema}
+	Black Noddy
+		{Anous minutus, Anous (tenuirostris) minutus}
+	Grenada Dove
+		{Leptotila wellsi, Leptotila (rufaxilla) wellsi}
+	Red-crowned Parrot
+		{Amazona viridigenalis}
+	Whooper Swan
+		{Cygnus cygnus}
+	Kittlitz's Murrelet
+		{Brachyramphus brevirostris}
+	Black-capped Vireo
+		{Vireo atricapilla, Vireo atricapillus}
+	White-headed Wren
+		{Campylorhynchus albobrunneus}
+	Grand Cayman Thrush
+		{Turdus ravidus}
+	Plain-capped Starthroat
+		{Heliomaster constantii}
+	Caribbean Elaenia
+		{Elaenia martinica}
+	Indian Silverbill
+		{Lonchura malabarica}
+	Hooded Grosbeak
+		{Coccothraustes abeillei, Hesperiphona abeillei}
+	Dusky Nightjar
+		{Caprimulgus saturatus}
+	Varied Bunting
+		{Passerina versicolor}
+	Bonin Petrel
+		{Pterodroma hypoleuca}
+	Yellow-bellied Tyrannulet
+		{Ornithion semiflavum}
+	Striated Heron
+		{Butorides striata, Butorides striatus}
+	Northern Lapwing
+		{Vanellus vanellus}
+	Ocellated Crake
+		{Micropygia schomburgkii}
+	Saltmarsh Sharp-tailed Sparrow
+		{Ammodramus caudacutus}
+	Bare-legged Owl
+		{Gymnoglaux lawrencii, Otus lawrencii}
+	Chestnut-capped Brush-Finch
+		{Arremon brunneinucha, Atlapetes brunneinucha}
+	Lesser Antillean Flycatcher
+		{Myiarchus oberi}
+	Black-vented Oriole
+		{Icterus wagleri}
+	Rufous-breasted Hermit
+		{Glaucis hirsutus, Glaucis hirsuta}
+	Bronzy Hermit
+		{Glaucis aeneus, Glaucis (hirsuta) aenea}
+	Rufous-tailed Hummingbird
+		{Amazilia tzacatl}
+	Colima Pygmy-Owl
+		{Glaucidium palmarum, Glaucidium (minutissimum) palmarum}
+	Central American Pygmy-Owl
+		{Glaucidium griseiceps, Glaucidium (minutissimum) griseiceps}
+	Barred Parakeet
+		{Bolborhynchus lineola}
+	Cinnamon Woodpecker
+		{Celeus loricatus}
+	Marbled Wood-Quail
+		{Odontophorus gujanensis, Marbled Wood-quail}
+	Hawaiian Hawk
+		{Buteo solitarius}
+	Red-footed Falcon
+		{Falco vespertinus , Falco vespertinus}
+	Northern Barred-Woodcreeper
+		{Dendrocolaptes sanctithomae, Dendrocolaptes certhia sanctithomae}
+	Crested Quail-Dove
+		{Geotrygon versicolor}
+	Lance-tailed Manakin
+		{Chiroxiphia lanceolata, Chiroxiphia (pareola) lanceolata}
+	Common Merganser
+		{Mergus merganser, Goosander}
+	Black-browed Albatross
+		{Thalassarche melanophris, Diomedea melanophris}
+	Red-throated Loon
+		{Gavia stellata, Red-throated Diver}
+	Black Francolin
+		{Francolinus francolinus}
+	Purplish-backed Quail-Dove
+		{Geotrygon lawrencii}
+	Lazuli Bunting
+		{Passerina amoena, Passerina (cyanea) amoena}
+	Azure-crowned Hummingbird
+		{Amazilia cyanocephala}
+	Mottled Owl
+		{Ciccaba virgata, Strix virgata}
+	Bachman's Sparrow
+		{Aimophila aestivalis}
+	Dusky Thrush
+		{Turdus naumanni, Naumann's Thrush}
+	Short-tailed Hawk
+		{Buteo brachyurus}
+	Northern Harrier
+		{Circus cyaneus, Hen Harrier}
+	Pale-billed Woodpecker
+		{Campephilus guatemalensis}
+	Yucatan Poorwill
+		{Nyctiphrynus yucatanicus}
+	Veraguan Mango
+		{Anthracothorax veraguensis, Anthracothorax (prevostii) veraguensis}
+	Little Bunting
+		{Emberiza pusilla}
+	Boucard's Wren
+		{Campylorhynchus jocosus}
+	Whip-poor-will
+		{Caprimulgus vociferus}
+	Hutton's Vireo
+		{Vireo huttoni}
+	White-eared Ground-Sparrow
+		{Melozone leucotis}
+	Fork-tailed Storm-Petrel
+		{Oceanodroma furcata}
+	White-breasted Nuthatch
+		{Sitta carolinensis}
+	Laysan Duck
+		{Anas laysanensis, Anas (platyrhynchos) laysanensis}
+	Mexican Parrotlet
+		{Forpus cyanopygius}
+	Common Swift
+		{Apus apus}
+	Japanese Bush-Warbler
+		{Cettia diphone, Japanese Bush-warbler}
+	Buff-bellied Hummingbird
+		{Amazilia yucatanensis}
+	Red Junglefowl
+		{Gallus gallus}
+	Common Moorhen
+		{Gallinula chloropus}
+	Blue-black Grosbeak
+		{Cyanocompsa cyanoides}
+	Eurasian Wigeon
+		{Anas penelope}
+	Caribbean Martin
+		{Progne dominicensis}
+	Northern Fulmar
+		{Fulmarus glacialis}
+	Erckel's Francolin
+		{Francolinus erckelii, Pternistis erckelii}
+	Caribbean Coot
+		{Fulica caribaea, Fulica (americana) caribaea}
+	Cuban Pygmy-Owl
+		{Glaucidium siju}
+	Gadwall
+		{Anas strepera}
+	Viridian Dacnis
+		{Dacnis viguieri}
+	Lilac-crowned Parrot
+		{Amazona finschi}
+	Jamaican Pewee
+		{Contopus pallidus, Contopus (caribaeus) pallidus}
+	Bat Falcon
+		{Falco rufigularis}
+	Common Chaffinch
+		{Fringilla coelebs, Chaffinch}
+	Lineated Woodpecker
+		{Dryocopus lineatus}
+	Black-bellied Storm-Petrel
+		{Fregetta tropica}
+	Rough-legged Tyrannulet
+		{Phyllomyias burmeisteri}
+	Violet-bellied Hummingbird
+		{Damophila julie}
+	Elfin-woods Warbler
+		{Dendroica angelae}
+	Surf Scoter
+		{Melanitta perspicillata}
+	Speckled Tanager
+		{Tangara guttata}
+	Grassland Yellow-Finch
+		{Sicalis luteola}
+	Blue Dacnis
+		{Dacnis cayana}
+	Rufous Nightjar
+		{Caprimulgus rufus}
+	Tree Pipit
+		{Anthus trivialis}
+	Wood Thrush
+		{Hylocichla mustelina}
+	Jamaican Elaenia
+		{Myiopagis cotta}
+	Merlin
+		{Falco columbarius}
+	Spruce Grouse
+		{Falcipennis canadensis}
+	Gray-fronted Quail-Dove
+		{Geotrygon caniceps, Grey-headed Quail-Dove}
+	Tawny-winged Woodcreeper
+		{Dendrocincla anabatina}
+	Cuban Emerald
+		{Chlorostilbon ricordii}
+	Paltry Tyrannulet
+		{Zimmerius vilissimus}
+	Rufous Piha
+		{Lipaugus unirufus}
+	Antillean Palm-Swift
+		{Tachornis phoenicobia, Antillean Palm-swift}
+	Blue-and-gold Tanager
+		{Bangsia arcaei}
+	Osprey
+		{Pandion haliaetus}
+	Rufous Hummingbird
+		{Selasphorus rufus}
+	Rufous-breasted Wren
+		{Thryothorus rutilus}
+	Elegant Euphonia
+		{Euphonia elegantissima, Blue-hooded Euphonia, Euphonia (musica) elegantissima}
+	Curlew Sandpiper
+		{Calidris ferruginea}
+	Yellow-crowned Euphonia
+		{Euphonia luteicapilla}
+	Black-and-white Owl
+		{Ciccaba nigrolineata, Strix (huhula) nigrolineata}
+	Buff-throated Foliage-gleaner
+		{Automolus ochrolaemus}
+	Blue-capped Hummingbird
+		{Eupherusa cyanophrys}
+	Sumichrast's Wren
+		{Hylorchilus sumichrasti, Slender-billed Wren}
+	Streak-crowned Antvireo
+		{Dysithamnus striaticeps}
+	Blue-headed Parrot
+		{Pionus menstruus}
+	Ross's Goose
+		{Chen rossii, Anser rossii}
+	Red Knot
+		{Calidris canutus}
+	Red-breasted Merganser
+		{Mergus serrator}
+	Comb Duck
+		{Sarkidiornis melanotos}
+	Dark-eyed Junco
+		{Junco hyemalis}
+	Tricolored Heron
+		{Egretta tricolor}
+	Common Raven
+		{Corvus corax}
+	Yellowish Flycatcher
+		{Empidonax flavescens, Empidonax (difficilis) flavescens}
+	Kauai Amakihi
+		{Hemignathus kauaiensis, Viridonia stejnegeri}
+	White-throated Flycatcher
+		{Empidonax albigularis}
+	Tooth-billed Hummingbird
+		{Androdon aequatorialis}
+	Brown Noddy
+		{Anous stolidus}
+	Helmeted Guineafowl
+		{Numida meleagris}
+	Summer Tanager
+		{Piranga rubra}
+	Spotted Sandpiper
+		{Actitis macularius, Actitis (hypoleucos) macularia}
+	Rufous-winged Sparrow
+		{Aimophila carpalis}
+	Broad-winged Hawk
+		{Buteo platypterus}
+	Greater Antillean Elaenia
+		{Elaenia fallax}
+	Green-and-rufous Kingfisher
+		{Chloroceryle inda}
+	Red-faced Spinetail
+		{Cranioleuca erythrops}
+	Ring-billed Gull
+		{Larus delawarensis}
+	Yellow-headed Caracara
+		{Milvago chimachima}
+	Little Blue Heron
+		{Egretta caerulea}
+	Common Murre
+		{Uria aalge, Common Guillemot}
+	Pallas's Leaf-Warbler
+		{Phylloscopus proregulus , Pallas's Warbler, Phylloscopus proregulus}
+	Audubon's Shearwater
+		{Puffinus lherminieri, Puffinus (assimilis) lherminieri}
+	Buff-collared Nightjar
+		{Caprimulgus ridgwayi}
+	Olive Sparrow
+		{Arremonops rufivirgatus}
+	Southern Beardless-Tyrannulet
+		{Camptostoma obsoletum, Camptostoma (imberbe) obsoletum}
+	Bank Swallow
+		{Riparia riparia, Sand Martin}
+	Wattled Jacana
+		{Jacana jacana, Jacana (spinosa) jacana}
+	Great Spotted Woodpecker
+		{Dendrocopos major}
+	Cinnamon-bellied Flowerpiercer
+		{Diglossa baritula, Cinnamon Flower-piercer}
+	Buffy-crowned Wood-Partridge
+		{Dendrortyx leucophrys, Buffy-crowned Wood-partridge}
+	Tuxtla Quail-Dove
+		{Geotrygon carrikeri, Veracruz Quail-Dove}
+	Temminck's Stint
+		{Calidris temminckii}
+	Spotted Nightingale-Thrush
+		{Catharus dryas, Spotted Nightingale-thrush}
+	Plain-colored Tanager
+		{Tangara inornata, Plain-coloured Tanager}
+	Little Ringed Plover
+		{Charadrius dubius, Little Plover}
+	Blackpoll Warbler
+		{Dendroica striata}
+	Barred Owl
+		{Strix varia}
+	White-throated Magpie-Jay
+		{Calocitta formosa}
+	Chestnut-collared Longspur
+		{Calcarius ornatus}
+	Pine Warbler
+		{Dendroica pinus}
+	Black Oropendola
+		{Psarocolius guatimozinus, Gymnostinops guatimozinus}
+	Bar-tailed Godwit
+		{Limosa lapponica}
+	Great Cormorant
+		{Phalacrocorax carbo}
+	Black Turnstone
+		{Arenaria melanocephala}
+	American Goldfinch
+		{Carduelis tristis}
+	Black Swift
+		{Cypseloides niger}
+	Altamira Yellowthroat
+		{Geothlypis flavovelata, Geothlypis (trichas) flavovelata}
+	Razorbill
+		{Alca torda}
+	Red-legged Honeycreeper
+		{Cyanerpes cyaneus}
+	Tropical Mockingbird
+		{Mimus gilvus, Mimus (polyglottos) gilvus}
+	Bicolored Antbird
+		{Gymnopithys leucaspis, White-cheeked Antbird}
+	Purple Sandpiper
+		{Calidris maritima}
+	Fulvous Whistling-Duck
+		{Dendrocygna bicolor, Fulvous Whistling-duck}
+	Tundra Bean-Goose
+		{Anser serrirostris, Tundra Bean Goose, Anser fabalis serrirostris}
+	Pechora Pipit
+		{Anthus gustavi}
+	Bare-necked Umbrellabird
+		{Cephalopterus glabricollis, Cephalopterus (ornatus) glabricollis}
+	Thicket Tinamou
+		{Crypturellus cinnamomeus}
+	White-collared Manakin
+		{Manacus candei, Manacus (manacus) candei}
+	Dusky Grouse
+		{Dendragapus obscurus, Blue Grouse}
+	Townsend's Warbler
+		{Dendroica townsendi}
+	Pink-headed Warbler
+		{Ergaticus versicolor, Ergaticus (ruber) versicolor}
+	Yellow-billed Loon
+		{Gavia adamsii, Yellow-billed Diver}
+	Bicolored Hawk
+		{Accipiter bicolor, Bicoloured Hawk}
+	Emerald Toucanet
+		{Aulacorhynchus prasinus}
+	Dusky-capped Flycatcher
+		{Myiarchus tuberculifer}
+	Gray Thrasher
+		{Toxostoma cinereum, Grey Thrasher, Toxostoma (bendirei) cinereum}
+	Willow Warbler
+		{Phylloscopus trochilus}
+	Orange Oriole
+		{Icterus auratus}
+	Common Greenshank
+		{Tringa nebularia}
+	Yellow-headed Blackbird
+		{Xanthocephalus xanthocephalus}
+	Yucatan Jay
+		{Cyanocorax yucatanicus, Cyanocorax (sanblasianus) yucatanicus}
+	Blue-headed Hummingbird
+		{Cyanophaia bicolor}
+	Least Sandpiper
+		{Calidris minutilla}
+	Dark Pewee
+		{Contopus lugubris}
+	Pinnated Bittern
+		{Botaurus pinnatus}
+	Ruddy Turnstone
+		{Arenaria interpres}
+	Scarlet Macaw
+		{Ara macao}
+	Northern Flicker
+		{Colaptes auratus}
+	Palila
+		{Loxioides bailleui}
+	Honduran Emerald
+		{Amazilia luciae}
+	St. Lucia Oriole
+		{Icterus laudabilis}
+	Little Tinamou
+		{Crypturellus soui}
+	Smooth-billed Ani
+		{Crotophaga ani}
+	Varied Solitaire
+		{Myadestes coloratus, Myadestes (ralloides) coloratus}
+	Eared Quetzal
+		{Euptilotis neoxenus, Eared Trogon}
+	Hawaiian Crow
+		{Corvus hawaiiensis}
+	White-vented Euphonia
+		{Euphonia minuta}
+	Sinaloa Crow
+		{Corvus sinaloae, Corvus (imparatus) sinaloae}
+	Lesser Yellow-headed Vulture
+		{Cathartes burrovianus}
+	Dot-winged Antwren
+		{Microrhopias quixensis}
+	Mexican Jay
+		{Aphelocoma ultramarina}
+	Western Wood-Pewee
+		{Contopus sordidulus, Contopus (virens) sordidulus}
+	Common Loon
+		{Gavia immer, Great Northern Diver}
+	Western Scrub-Jay
+		{Aphelocoma californica, Scrub Jay}
+	Orange-bellied Trogon
+		{Trogon aurantiiventris}
+	Mugimaki Flycatcher
+		{Ficedula mugimaki}
+	Zone-tailed Hawk
+		{Buteo albonotatus}
+	Bewick's Wren
+		{Thryomanes bewickii}
+	Canyon Wren
+		{Catherpes mexicanus}
+	Cuban Parrot
+		{Amazona leucocephala, Rose-throated Parrot}
+	Mississippi Kite
+		{Ictinia mississippiensis, Ictinia (plumbea) mississippiensis}
+	Unspotted Saw-whet Owl
+		{Aegolius ridgwayi, Aegolius acadicus ridgwayi}
+	Stripe-headed Brush-Finch
+		{Arremon torquatus, Atlapetes torquatus}
+	Dark-billed Cuckoo
+		{Coccyzus melacoryphus}
+	Amazon Kingfisher
+		{Chloroceryle amazona}
+	White-flanked Antwren
+		{Myrmotherula axillaris}
+	Yellow-collared Chlorophonia
+		{Chlorophonia flavirostris}
+	Bonaparte's Gull
+		{Chroicocephalus  philadelphia, Larus philadelphia}
+	Whooping Crane
+		{Grus americana}
+	Short-eared Owl
+		{Asio flammeus}

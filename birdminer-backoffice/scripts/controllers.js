@@ -10,6 +10,10 @@ function candidateController($scope) {
         return $scope.candidates.length;
     };
 
+    $scope.refreshCandidateList= function () {
+        console.log ('refreshCandidateList executes');
+        return $scope.candidates.length;
+    };
 
     /*$scope.addNewTodo = function () {
         console.log ('addNewTodo executes');

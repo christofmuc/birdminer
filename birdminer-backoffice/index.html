@@ -2,10 +2,12 @@
 <html ng-app="birdMiningApp">
 <head>
     <title>Bird Mining Backoffice</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
 <div ng-controller="candidateController">
+    <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
     Total candidates: {{returnTotalCandidates()}}
     <ul>
         <li ng-repeat="candidate in candidates">

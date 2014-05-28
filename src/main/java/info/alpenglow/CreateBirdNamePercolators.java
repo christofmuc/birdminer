@@ -30,10 +30,10 @@ public class CreateBirdNamePercolators {
         return client;
     }
 
+    private static int idx = 0;
+
     private static void createPercolator(String birdName) throws IOException {
         System.out.println("Creating percolator for " + birdName);
-
-        JsonArray fuzzymatches = new JsonArray();
 
         String[] nameSegs = birdName.split(" ");
 
@@ -42,11 +42,13 @@ public class CreateBirdNamePercolators {
             qb.must(fuzzyQuery("text",seg));
         }
 
-        IndexResponse response = getClient().prepareIndex("birding", ".percolator", birdName)
-                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).endObject())
+        IndexResponse response = getClient().prepareIndex("birding", ".percolator", "Bird_"+idx)
+                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).field("bird",birdName).endObject())
                 .setRefresh(true)
                 .execute()
                 .actionGet();
+
+        idx++;
     }
 
     private static void createBirdNamePercolators(String inputFile) throws IOException {

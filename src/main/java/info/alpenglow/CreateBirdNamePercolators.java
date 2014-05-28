@@ -1,9 +1,18 @@
 package info.alpenglow;
 
 import au.com.bytecode.opencsv.CSVReader;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.common.xcontent.XContentFactory;
+import org.elasticsearch.index.query.FilterBuilders;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,9 +25,35 @@ public class CreateBirdNamePercolators {
         return client;
     }
 
-    private static void createPercolator(String birdName) {
+    private static void createPercolator(String birdName) throws IOException {
         //TODO: Code goes here
         System.out.println("Creating percolator for " + birdName);
+
+        JsonArray fuzzymatches = new JsonArray();
+
+        String[] nameSegs = birdName.split(" ");
+        for (String seg : nameSegs) {
+            JsonObject val = new JsonObject();
+            val.addProperty("value", seg);
+            JsonObject fuz = new JsonObject();
+            fuz.add("text", val);
+            fuzzymatches.add(fuz);
+        }
+
+        JsonObject must = new JsonObject();
+        must.add("must", fuzzymatches);
+        JsonObject bool = new JsonObject();
+        bool.add("bool",must);
+        JsonObject query = new JsonObject();
+        query.add("query", bool);
+
+        QueryBuilder qb = QueryBuilders.termQuery("fuzzy","test");
+
+        IndexResponse response = getClient().prepareIndex("birding", ".percolator", birdName)
+                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).endObject())
+                .setRefresh(true)
+                .execute()
+                .actionGet();
     }
 
     private static void createBirdNamePercolators(String inputFile) throws IOException {
@@ -39,7 +74,9 @@ public class CreateBirdNamePercolators {
 
     public static void main(String[] args) throws IOException {
         // Connect to ElasticSearch
-        client = new TransportClient()
+        Settings settings = ImmutableSettings.settingsBuilder()
+                .put("cluster.name", "tilman").build();
+        client = new TransportClient(settings)
                 .addTransportAddress(new InetSocketTransportAddress("localhost", 9300));
 
         // Load the file with bird names and create the percolators

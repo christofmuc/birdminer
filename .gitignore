@@ -2,5 +2,5 @@ src/main/resources/downloaded
 target
 .idea/workspace.xml
 .idea/libraries
-config.properties
+properties/config.properties
 

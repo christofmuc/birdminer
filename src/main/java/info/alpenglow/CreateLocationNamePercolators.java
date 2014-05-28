@@ -2,6 +2,7 @@ package info.alpenglow;
 
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.common.unit.Fuzziness;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 
@@ -29,7 +30,7 @@ public class CreateLocationNamePercolators {
 
         BoolQueryBuilder qb = boolQuery();
         for (String seg : nameSegs) {
-            qb.must(fuzzyQuery("text", seg));
+            qb.must(fuzzyQuery("text", seg).fuzziness(Fuzziness.ZERO));
         }
 
         IndexResponse response = getClient().prepareIndex("birding", ".percolator", "Location_" + idx)

@@ -3,6 +3,7 @@ package info.alpenglow;
 import au.com.bytecode.opencsv.CSVReader;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.common.unit.Fuzziness;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 
@@ -29,11 +30,11 @@ public class CreateBirdNamePercolators {
 
         BoolQueryBuilder qb = boolQuery();
         for (String seg : nameSegs) {
-            qb.must(fuzzyQuery("text", seg));
+            qb.must(fuzzyQuery("text", seg).fuzziness(Fuzziness.ZERO));
         }
 
         IndexResponse response = getClient().prepareIndex("birding", ".percolator", "Bird_"+idx)
-                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).field("bird",birdName).endObject())
+                .setSource(XContentFactory.jsonBuilder().startObject().field("query", qb).field("bird",birdName).endObject())
                 .setRefresh(true)
                 .execute()
                 .actionGet();

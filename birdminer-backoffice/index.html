@@ -12,7 +12,9 @@
     <div class="table-responsive">
         <table class="table table-striped">
             <tr ng-repeat="candidate in candidates">
-                <td>{{candidate.file}}</td>
+                <td>{{candidate.id}}</td>
+                <!--td>{{candidate.file}}</td-->
+                <td>{{candidate.highlight}}</td>
                 <td>{{candidate.percolators}}</td>
             </tr>
         </table>

@@ -2,8 +2,6 @@ package info.alpenglow;
 
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 
@@ -17,6 +15,8 @@ import static org.elasticsearch.index.query.QueryBuilders.fuzzyQuery;
 public class CreateLocationNamePercolators {
 
     private static Client client;
+
+    private static int idx = 0;
 
     public static Client getClient() {
         return client;
@@ -32,11 +32,13 @@ public class CreateLocationNamePercolators {
             qb.must(fuzzyQuery("text", seg));
         }
 
-        IndexResponse response = getClient().prepareIndex("birding", ".percolator", locationName)
-                .setSource(XContentFactory.jsonBuilder().startObject().field("query",qb).endObject())
+        IndexResponse response = getClient().prepareIndex("birding", ".percolator", "Location_" + idx)
+                .setSource(XContentFactory.jsonBuilder().startObject().field("query", qb).field("location", locationName).endObject())
                 .setRefresh(true)
                 .execute()
                 .actionGet();
+
+        idx++;
 
     }
 

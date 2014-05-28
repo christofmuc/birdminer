@@ -18,7 +18,7 @@ public class TransportClientFactory {
 
     public static TransportClient createClient() throws IOException {
         Properties prop = new Properties();
-        prop.load(new FileInputStream("config.properties"));
+        prop.load(new FileInputStream("properties/config.properties"));
 
         // Connect to ElasticSearch
         Settings settings = ImmutableSettings.settingsBuilder()

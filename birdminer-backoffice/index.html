@@ -12,10 +12,12 @@
     <div class="table-responsive">
         <table class="table table-striped">
             <tr ng-repeat="candidate in candidates">
-                <td>{{candidate.id}}</td>
-                <!--td>{{candidate.file}}</td-->
+                <!--td>{{candidate.id}}</td-->
+                <td>{{candidate.file}}</td>
+                <td>{{candidate.locations}}</td>
+                <td>{{candidate.birds}}</td>
                 <td><div ng-bind-html="candidate.highlight"></div>
-                <td>{{candidate.percolators}}</td>
+                <!--td>{{candidate.percolators}}</td-->
             </tr>
         </table>
     </div>

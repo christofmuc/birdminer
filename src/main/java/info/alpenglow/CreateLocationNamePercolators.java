@@ -2,16 +2,15 @@ package info.alpenglow;
 
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.common.unit.Fuzziness;
 import org.elasticsearch.common.xcontent.XContentFactory;
-import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.SimpleQueryStringBuilder;
+import org.elasticsearch.index.query.SimpleQueryStringFlag;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
-import static org.elasticsearch.index.query.QueryBuilders.fuzzyQuery;
+import static org.elasticsearch.index.query.QueryBuilders.simpleQueryString;
 
 public class CreateLocationNamePercolators {
 
@@ -26,12 +25,9 @@ public class CreateLocationNamePercolators {
     private static void createPercolator(String locationName) throws IOException {
         System.out.println("Creating percolator for " + locationName);
 
-        String[] nameSegs = locationName.split(" ");
-
-        BoolQueryBuilder qb = boolQuery();
-        for (String seg : nameSegs) {
-            qb.must(fuzzyQuery("text", seg).fuzziness(Fuzziness.ZERO));
-        }
+        SimpleQueryStringBuilder qb;
+        qb = simpleQueryString("\\\"" + locationName + "\\\"");
+        qb.flags(SimpleQueryStringFlag.PHRASE);
 
         IndexResponse response = getClient().prepareIndex("birding", ".percolator", "Location_" + idx)
                 .setSource(XContentFactory.jsonBuilder().startObject().field("query", qb).field("location", locationName).endObject())

@@ -12,16 +12,19 @@
     <div class="table-responsive">
         <table class="table table-striped">
             <tr ng-repeat="candidate in candidates">
-                <td>{{candidate.id}}</td>
-                <!--td>{{candidate.file}}</td-->
-                <td>{{candidate.highlight}}</td>
-                <td>{{candidate.percolators}}</td>
+                <!--td>{{candidate.id}}</td-->
+                <td>{{candidate.file}}</td>
+                <td>{{candidate.locations}}</td>
+                <td>{{candidate.birds}}</td>
+                <td><div ng-bind-html="candidate.highlight"></div>
+                <!--td>{{candidate.percolators}}</td-->
             </tr>
         </table>
     </div>
 </div>
 
 <script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-sanitize.js"></script>
 <script src="scripts/module.js"></script>
 <script src="scripts/controllers.js"></script>
 </body>

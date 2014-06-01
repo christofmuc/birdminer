@@ -6,23 +6,32 @@
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
-<div class="col-md-9" ng-controller="candidateController">
-    <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
-    Total candidates: {{returnTotalCandidates()}}
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <tr ng-repeat="candidate in candidates">
-                <!--td>{{candidate.id}}</td-->
-                <td>{{candidate.file}}</td>
-                <td>{{candidate.locations}}</td>
-                <td>{{candidate.birds}}</td>
-                <td><div ng-bind-html="candidate.highlight"></div>
-                <!--td>{{candidate.percolators}}</td-->
-            </tr>
-        </table>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" ng-controller="candidateController">
+            <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
+            Total candidates: {{returnTotalCandidates()}}
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="candidate in candidates">
+                    <!--td>{{candidate.id}}</td-->
+                    <div><strong>{{candidate.file}}</strong></div>
+                    <div>
+                        <span class="location" ng-repeat="location in candidate.locations">
+                            {{location}}
+                        </span>
+                    </div>
+                    <div>
+                        <span class="bird" ng-repeat="bird in candidate.birds">
+                            {{bird}}        
+                        </span>
+                    </div>
+                    <div ng-bind-html="candidate.highlight"></div>
+                    <!--td>{{candidate.percolators}}</td-->
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-sanitize.js"></script>
 <script src="scripts/module.js"></script>

@@ -1,0 +1,17 @@
+.location {
+    background-color: #7277D8;
+    padding: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: .2em;
+    margin-right: .3em;
+}
+
+.bird {
+    background-color: #FFDA73;
+    padding: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: .2em;
+    margin-right: .3em;
+}

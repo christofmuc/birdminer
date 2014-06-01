@@ -41,8 +41,8 @@ function candidateController($scope, $http, $sce) {
                                         console.log("highlight" + data.hits.hits[0].highlight.text[0]);
                                         for (var i = 0; i < $scope.candidates.length; i++) {
                                             if ($scope.candidates[i].id === documentId) {
-                                                $scope.candidates[i].birds = prepend($scope.candidates[i].birds, bird);
-                                                $scope.candidates[i].locations = prepend($scope.candidates[i].locations, location);
+                                                $scope.candidates[i].birds.push(bird);
+                                                $scope.candidates[i].locations.push(location);
                                                 $scope.candidates[i].highlight = prepend($scope.candidates[i].highlight,
                                                     $sce.trustAsHtml(data.hits.hits[0].highlight.text[0]));
                                             }
@@ -51,7 +51,15 @@ function candidateController($scope, $http, $sce) {
                             });
                     });
 
-                    $scope.candidates.push({ id: documentId, file: value._source.file, percolators: value._source.percolators });
+                    $scope.candidates.push(
+                        { 
+                            id: documentId, 
+                            birds:[], 
+                            locations:[],
+                            file: value._source.file, 
+                            percolators: value._source.percolators 
+                        }
+                    );
                 });
             }).
             error(function (data, status, headers, config) {

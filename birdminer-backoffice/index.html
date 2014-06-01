@@ -8,7 +8,7 @@
 <body ng-init>
 <div class="container">
     <div class="row">
-        <div class="col-md-12" ng-controller="candidateController">
+        <div class="col-md-12" ng-controller="candidateController" ng-init="refreshCandidateList()">
             <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
             Total candidates: {{returnTotalCandidates()}}
             <ul class="list-group">

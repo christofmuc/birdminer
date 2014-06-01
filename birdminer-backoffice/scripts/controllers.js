@@ -41,8 +41,12 @@ function candidateController($scope, $http, $sce) {
                                         console.log("highlight" + data.hits.hits[0].highlight.text[0]);
                                         for (var i = 0; i < $scope.candidates.length; i++) {
                                             if ($scope.candidates[i].id === documentId) {
-                                                $scope.candidates[i].birds.push(bird);
-                                                $scope.candidates[i].locations.push(location);
+                                                if (bird) {
+                                                    $scope.candidates[i].birds.push(bird);
+                                                }
+                                                if (location) {
+                                                    $scope.candidates[i].locations.push(location);
+                                                }
                                                 $scope.candidates[i].highlight = prepend($scope.candidates[i].highlight,
                                                     $sce.trustAsHtml(data.hits.hits[0].highlight.text[0]));
                                             }

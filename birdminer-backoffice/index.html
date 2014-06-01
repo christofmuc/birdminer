@@ -6,22 +6,21 @@
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
-<div class="container" ng-controller="candidateController" ng-init="refreshCandidateList()">
+<div class="container" ng-controller="candidateController" ng-init="preloadAndStart()">
     <div class="row">
         <div class="col-md-3">
             <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
             Total candidates: {{returnTotalCandidates()}}
             <div class="type" ng-repeat="item in items">
                 <a class="bucket_item" ng-click="filterByKey(item.key)">
-                    <span>{{item.key}}: </span><span>{{item.count}}</span>
+                    <span>{{item.name}}: </span><span>{{item.count}}</span>
                 </a>
             </div>
         </div>
         <div class="col-md-9">            
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="candidate in candidates">
-                    <!--td>{{candidate.id}}</td-->
-                    <div><strong>{{candidate.file}}</strong></div>
+                    <div><strong>{{candidate.id}}:</strong> {{candidate.file}}</div>
                     <div>
                         <span class="location" ng-repeat="location in candidate.locations">
                             {{location}}
@@ -32,7 +31,11 @@
                             {{bird}}        
                         </span>
                     </div>
-                    <div ng-bind-html="candidate.highlight"></div>
+                    <div>
+                        <div class="highlight" ng-repeat="highlight in candidate.highlights" ng-bind-html="highlight">
+                            
+                        </div>
+                    </div>
                     <!--td>{{candidate.percolators}}</td-->
                 </li>
             </ul>

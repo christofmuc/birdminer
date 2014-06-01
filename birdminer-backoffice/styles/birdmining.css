@@ -15,3 +15,12 @@
     border-radius: .2em;
     margin-right: .3em;
 }
+
+.highlight {
+    font-size: small;
+    padding-bottom: .2em;
+}
+
+.highlight > em {
+    background-color: yellow;
+}

@@ -27,9 +27,10 @@ function candidateController($scope, $http, $sce) {
 
     $scope.filterByKey = function(key) {
         console.log("Filter by key: "+key);
+        $scope.refreshCandidateList(key);
     }
 
-    $scope.refreshCandidateList = function () {
+    $scope.refreshCandidateList = function (key) {
         $scope.clearCandidates();
         var search_payload = {
             query: {
@@ -44,6 +45,15 @@ function candidateController($scope, $http, $sce) {
                 }
             }
         };
+        if (key) {
+            search_payload.filter = 
+            {
+                term: {
+                    percolators: key,
+                }
+            };
+        }
+        console.log(search_payload);
         $http.post('http://localhost:9200/result/_search', search_payload).
             success(function (data, status, headers, config) {
                 console.log("Status is", status);

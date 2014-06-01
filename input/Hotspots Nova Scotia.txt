@@ -58,7 +58,7 @@ Cape Sable Island--Daniel's Head
 Cape Sable Island--The Hawk
 Chebucto Head
 Cherry Hill Beach
-Chéticamp Island
+Chï¿½ticamp Island
 Chezzetcook Inlet--Dyke Road
 Chezzetcook Inlet--Shore Road
 Chignecto NWA--Amherst Point Bird Sanctuary
@@ -107,9 +107,9 @@ Fraserville
 Gaff Point
 Glace Bay Bird Sanctuary
 Goose Creek Marsh
-Grand Pré--Evangeline Beach
-Grand Pré--general area
-Grand Pré--The Guzzle
+Grand Prï¿½--Evangeline Beach
+Grand Prï¿½--general area
+Grand Prï¿½--The Guzzle
 Graves Island Provincial Park
 Green Bay Road
 Greenwich--Tannery Pond
@@ -212,7 +212,6 @@ Spryfield--Frog Pond
 Spryfield--McIntosh Run
 St. Margaret's Bay
 Station Road - Maitland
-Sydney Harbour
 Sydney Harbour
 Sydney Harbour--North Sydney
 Sydney--South Bar

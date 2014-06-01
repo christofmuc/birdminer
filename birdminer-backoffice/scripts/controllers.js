@@ -1,10 +1,16 @@
 function candidateController($scope, $http, $sce) {
 
     $scope.candidates = [];
+    $scope.items = [];
 
     $scope.returnTotalCandidates = function () {
         console.log('returnTotalCandidates executes');
         return $scope.candidates.length;
+    };
+
+    $scope.returnTotalItems = function () {
+        console.log('returnTotalItems executes');
+        return $scope.items.length;
     };
 
     function prepend(array, value) {
@@ -19,13 +25,34 @@ function candidateController($scope, $http, $sce) {
 
     }
 
+    $scope.filterByKey = function(key) {
+        console.log("Filter by key: "+key);
+    }
+
     $scope.refreshCandidateList = function () {
         $scope.clearCandidates();
-        $http({method: 'POST', url: 'http://localhost:9200/result/_search'}).
+        var search_payload = {
+            query: {
+                match_all : {}
+            },
+            aggs: {
+                birds: {
+                    terms: {
+                        field: "percolators",
+                        size: 0
+                    }
+                }
+            }
+        };
+        $http.post('http://localhost:9200/result/_search', search_payload).
             success(function (data, status, headers, config) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
                 console.log(data);
+                angular.forEach(data.aggregations.birds.buckets, function(bucket, key) {
+                    $scope.items.push({key: bucket.key, count:bucket.doc_count});
+                });
+
                 angular.forEach(candidates, function (value, key) {
                     var documentId = value._id;
 
@@ -79,8 +106,17 @@ function candidateController($scope, $http, $sce) {
         console.log('showCandidate executes');
     };
 
+    $scope.showItems = function () {
+        console.log('showItems executes');
+    };
+
     $scope.clearCandidates = function () {
         console.log('clear executes');
         $scope.candidates = [];
+    }
+
+    $scope.clearItems = function () {
+        console.log('clear executes');
+        $scope.items = [];
     }
 }

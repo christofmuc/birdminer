@@ -17,6 +17,7 @@ function candidateController($scope, $http, $sce) {
             success(function (data, status, headers, config) {
                 console.log("Preload done with: ");
                 angular.forEach(data.hits.hits, function(val,key) {
+                    var id = val._id.toLowerCase();
                     var name = "";
                     if (val._source.location) {
                         name = val._source.location;
@@ -24,7 +25,10 @@ function candidateController($scope, $http, $sce) {
                         name = val._source.bird;
                     }
 
-                    $scope.lookup[val._id.toLowerCase()] = name;
+                    $scope.lookup[id] = {
+                        name:name,
+                        query: val._source.query
+                    };
                 });
                 console.log($scope.lookup);
                 $scope.refreshCandidateList();
@@ -90,8 +94,8 @@ function candidateController($scope, $http, $sce) {
                     $scope.items.push(
                         {
                             key: bucket.key, 
-                            name: $scope.lookup[bucket.key.toLowerCase()], 
-                            count:bucket.doc_count
+                            name: $scope.lookup[bucket.key.toLowerCase()].name, 
+                            count: bucket.doc_count
                         });
                 });
 
@@ -99,45 +103,38 @@ function candidateController($scope, $http, $sce) {
                     var documentId = value._id;
 
                     angular.forEach(value._source.percolators, function (value, key) {
-                        $http.get('http://localhost:9200/birding/.percolator/' + value).
-                            success(function (data, status, headers, config) {
-                                var payload = { 
-                                    query: data._source.query, 
-                                    filter: { 
-                                        ids: { 
-                                            values: [ documentId ] 
-                                        } 
-                                    }, 
-                                    highlight: { 
-                                        fields: { 
-                                            text: {}
+                        var lookup_key = value.toLowerCase();
+                        var lookup = $scope.lookup[lookup_key];
+                        var payload = { 
+                            query: lookup.query, 
+                            filter: { 
+                                ids: { 
+                                    values: [ documentId ] 
+                                } 
+                            }, 
+                            highlight: { 
+                                fields: { 
+                                    text: {}
+                                }
+                            } 
+                        };
+
+                        $http.post('http://localhost:9200/result/bird_candidate/_search', payload)
+                            .success(function (data, status, headers, config) {
+                                angular.forEach($scope.candidates, function(candidate, idx) {
+                                    if (candidate.id === documentId) {
+                                        if (lookup_key.indexOf("bird_") == 0) {
+                                            candidate.birds.push(lookup.name);
                                         }
-                                    } 
-                                };
-                                var location = data._source.location;
-                                var bird = data._source.bird;
-                                $http.post('http://localhost:9200/result/bird_candidate/_search',
-                                        payload).
-                                    success(function (data, status, headers, config) {
-                                        for (var i = 0; i < $scope.candidates.length; i++) {
-                                            if ($scope.candidates[i].id === documentId) {
-                                                if (bird) {
-                                                    $scope.candidates[i].birds.push(bird);
-                                                }
-                                                if (location) {
-                                                    $scope.candidates[i].locations.push(location);
-                                                }
-                                                angular.forEach(data.hits.hits[0].highlight.text, function(text, key) {
-                                                    var escapedText = text; //$sce.trustAsHtml(text);
-                                                    $scope.candidates[i].highlights.push(escapedText);
-                                                    console.log($scope.candidates[i]);
-                                                });
-                                                // $scope.candidates[i].highlight = prepend($scope.candidates[i].highlight,
-                                                //    $sce.trustAsHtml(data.hits.hits[0].highlight.text[0]));
-                                            }
+                                        if (lookup_key.indexOf("location_") == 0) {
+                                            candidate.locations.push(lookup.name);
                                         }
-                                        console.log($scope.candidates[i]);
-                                    });
+                                        angular.forEach(data.hits.hits[0].highlight.text, function(text, key) {
+                                            candidate.highlights.push(text);
+                                        });
+                                    }
+
+                                });
                             });
                     });
 

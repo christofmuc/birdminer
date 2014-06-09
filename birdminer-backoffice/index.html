@@ -6,23 +6,42 @@
     <link href="styles/birdmining.css" media="all" rel="stylesheet"/>
 </head>
 <body ng-init>
-<div class="col-md-9" ng-controller="candidateController">
-    <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
-    Total candidates: {{returnTotalCandidates()}}
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <tr ng-repeat="candidate in candidates">
-                <!--td>{{candidate.id}}</td-->
-                <td>{{candidate.file}}</td>
-                <td>{{candidate.locations}}</td>
-                <td>{{candidate.birds}}</td>
-                <td><div ng-bind-html="candidate.highlight"></div>
-                <!--td>{{candidate.percolators}}</td-->
-            </tr>
-        </table>
+<div class="container" ng-controller="candidateController" ng-init="preloadAndStart()">
+    <div class="row">
+        <div class="col-md-3">
+            <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
+            Total candidates: {{returnTotalCandidates()}}
+            <div class="type" ng-repeat="item in items">
+                <a class="bucket_item" ng-click="filterByKey(item.key)">
+                    <span>{{item.name}}: </span><span>{{item.count}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-9">            
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="candidate in candidates">
+                    <div><strong>{{candidate.id}}:</strong> {{candidate.file}}</div>
+                    <div>
+                        <span class="location" ng-repeat="location in candidate.locations">
+                            {{location}}
+                        </span>
+                    </div>
+                    <div>
+                        <span class="bird" ng-repeat="bird in candidate.birds">
+                            {{bird}}        
+                        </span>
+                    </div>
+                    <div>
+                        <div class="highlight" ng-repeat="highlight in candidate.highlights" ng-bind-html="highlight">
+                            
+                        </div>
+                    </div>
+                    <!--td>{{candidate.percolators}}</td-->
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-sanitize.js"></script>
 <script src="scripts/module.js"></script>

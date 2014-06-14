@@ -1,5 +1,7 @@
 # Running this
 
-1. Run createperc.rb to create the percolations
-    * This crates the percolators index, you might want to delete that before to start from scratch
-2. 
+Before running this for the first time you need to get dependencies. Run `bundle install` in the ruby directory.
+
+1. Modify index.yml to set index and type names
+2. Run setup.rb -> This will always create a new index for now
+

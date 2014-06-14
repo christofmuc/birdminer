@@ -7,7 +7,7 @@ require 'nokogiri'
 
 config = YAML.load_file('index.yml')
 @index = config['index']
-@type = 'birdsource'
+@type = config['type']
 
 @client = Elasticsearch::Client.new # log: true
 

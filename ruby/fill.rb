@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'yaml'
 require 'elasticsearch'
 require 'cgi'
@@ -6,7 +8,7 @@ require 'nokogiri'
 config = YAML.load_file('index.yml')
 index = config['index']
 
-client = Elasticsearch::Client.new log: true
+client = Elasticsearch::Client.new # log: true
 
 client.transport.reload_connections!
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'yaml'
 require 'elasticsearch'
 
@@ -12,7 +14,12 @@ result = client.search index: index,
     body: {
         query: {
             match_all: {}
-        },    
+        },   
+        filter: {
+            exists: { 
+                field: "birds" 
+            }
+        }, 
         aggs: {
             birds: {
                 terms: {
@@ -22,6 +29,8 @@ result = client.search index: index,
             }
         }
     }
+
+puts "A total of #{result['hits']['total']} documents were tagged"
 
 result['aggregations']['birds']['buckets'].each do |bird|
     puts "#{bird['key']}: #{bird['doc_count']}"

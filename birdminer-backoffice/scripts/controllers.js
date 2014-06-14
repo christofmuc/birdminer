@@ -3,6 +3,8 @@ function candidateController($scope, $http, $sce) {
     $scope.candidates = [];
     $scope.items = [];
     $scope.lookup = [];
+    $scope.birds = [];
+    $scope.locations = [];
 
     $scope.preloadAndStart = function() {
         var query = {
@@ -13,16 +15,20 @@ function candidateController($scope, $http, $sce) {
             }
         };
 
-        $http.post('http://localhost:9200/birding/.percolator/_search',query).
+        $http.post('http://localhost:9200/birdwatch/.percolator/_search',query).
             success(function (data, status, headers, config) {
                 console.log("Preload done with: ");
+                birds = [];
+                locations = [];
                 angular.forEach(data.hits.hits, function(val,key) {
                     var id = val._id.toLowerCase();
                     var name = "";
-                    if (val._source.location) {
-                        name = val._source.location;
-                    } else {
+                    if (val._source.bird) {
+                         birds.push(val._id);
                         name = val._source.bird;
+                    } else {
+                        locations.push(val._id);
+                        name = val._source.location;
                     }
 
                     $scope.lookup[id] = {
@@ -64,33 +70,71 @@ function candidateController($scope, $http, $sce) {
 
     $scope.refreshCandidateList = function (key) {
         $scope.clearCandidates();
+        var filter = {
+                and: [
+                    {
+                        exists:{
+                            field:"birds"
+                        }
+                    },
+                    {
+                        exists:{
+                            field:"locations"
+                        }
+                    }
+                ]
+            };
+
+        if (key) {
+            if (birds.indexOf(key) != -1) {
+                filter.and.push( 
+                {
+                    term: {
+                        birds: key,
+                    }
+                });                
+            } else if (locations.indexOf(key != -1)) {
+                filter.and.push( 
+                {
+                    term: {
+                        locations: key,
+                    }
+                });                                
+            }
+        }
+
         var search_payload = {
+            size: 500,
             query: {
                 match_all : {}
             },
             aggs: {
-                birds: {
-                    terms: {
-                        field: "percolators",
-                        size: 0
+                both_only: {
+                    filter : filter,
+                    aggs: {
+                        birds: {
+                            terms: {
+                                field: "birds",
+                                size: 0
+                            }                            
+                        },
+                        locations: {
+                            terms: {
+                                field: "locations",
+                                size: 0
+                            }                                                        
+                        }
                     }
                 }
-            }
+            },
+            filter: filter
         };
-        if (key) {
-            search_payload.filter = 
-            {
-                term: {
-                    percolators: key,
-                }
-            };
-        }
-        console.log(search_payload);
-        $http.post('http://localhost:9200/result/_search', search_payload).
+        console.log(JSON.stringify(search_payload));
+        $http.post('http://localhost:9200/birdwatch/_search', search_payload).
             success(function (data, status, headers, config) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
-                angular.forEach(data.aggregations.birds.buckets, function(bucket, key) {
+                angular.forEach(data.aggregations.both_only.birds.buckets, function(bucket, key) {
                     $scope.items.push(
                         {
                             key: bucket.key, 
@@ -101,9 +145,12 @@ function candidateController($scope, $http, $sce) {
 
                 angular.forEach(candidates, function (value, key) {
                     var documentId = value._id;
+                    var birds = value._source.birds;
+                    var locations = value._source.locations
+                    var percs = birds.concat(locations);
 
-                    angular.forEach(value._source.percolators, function (value, key) {
-                        var lookup_key = value.toLowerCase();
+                    angular.forEach(percs, function (tagName, key) {
+                        var lookup_key = tagName.toLowerCase();
                         var lookup = $scope.lookup[lookup_key];
                         var payload = { 
                             query: lookup.query, 
@@ -114,22 +161,24 @@ function candidateController($scope, $http, $sce) {
                             }, 
                             highlight: { 
                                 fields: { 
-                                    text: {}
+                                    fulltext: {}
                                 }
                             } 
                         };
 
-                        $http.post('http://localhost:9200/result/bird_candidate/_search', payload)
+                        console.log(JSON.stringify(payload));
+
+                        $http.post('http://localhost:9200/birdwatch/birdsource/_search', payload)
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
-                                        if (lookup_key.indexOf("bird_") == 0) {
+                                        if (birds.indexOf(tagName) != -1) {
                                             candidate.birds.push(lookup.name);
                                         }
-                                        if (lookup_key.indexOf("location_") == 0) {
+                                        if (locations.indexOf(tagName) != -1) {
                                             candidate.locations.push(lookup.name);
                                         }
-                                        angular.forEach(data.hits.hits[0].highlight.text, function(text, key) {
+                                        angular.forEach(data.hits.hits[0].highlight.fulltext, function(text, key) {
                                             candidate.highlights.push(text);
                                         });
                                     }

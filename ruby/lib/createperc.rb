@@ -1,16 +1,10 @@
-#!/usr/bin/env ruby
-require 'elasticsearch'
-
 match_name = /^\s(\S.*)$/
 match_synonym = /^\s\s{(\S.*)}$/
-
-@client = Elasticsearch::Client.new
-@client.transport.reload_connections!
 
 def create_percolator(bird) 
   puts bird
   all_names = "\"#{bird[:name]}\" \"#{bird[:synonym].join('\" \"')}\""
-  @client.index index: 'birdwatch',
+  @client.index index: @index,
       type: '.percolator',
       id: bird[:name],
       body: { 
@@ -46,7 +40,7 @@ File.open("../input/Hotspots Nova Scotia.txt", "r") do |file_handle|
   file_handle.each_line do |line|
     line.chop!
     puts line
-    @client.index index: 'birdwatch',
+    @client.index index: @index,
         type: '.percolator',
         id: line,
         body: { query: { query_string: { query: "\"#{line}\"" } }, location: line }

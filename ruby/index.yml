@@ -1,10 +1,1 @@
 index: birdwatch
-searches:
-    match_phrase:
-        match_phrase:
-            fulltext: <birdname>
-    fuzzy:
-        fuzzy_like_this_field:
-            fulltext:
-                like_text: <birdname>
-                

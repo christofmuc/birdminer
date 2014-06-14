@@ -13,7 +13,7 @@ function candidateController($scope, $http, $sce) {
             }
         };
 
-        $http.post('http://localhost:9200/birding/.percolator/_search',query).
+        $http.post('http://localhost:9200/percolators/.percolator/_search',query).
             success(function (data, status, headers, config) {
                 console.log("Preload done with: ");
                 angular.forEach(data.hits.hits, function(val,key) {
@@ -29,7 +29,7 @@ function candidateController($scope, $http, $sce) {
                 console.log($scope.lookup);
                 $scope.refreshCandidateList();
             });
-    }
+    };
 
     $scope.returnTotalCandidates = function () {
         console.log('returnTotalCandidates executes');
@@ -56,7 +56,7 @@ function candidateController($scope, $http, $sce) {
     $scope.filterByKey = function(key) {
         console.log("Filter by key: "+key);
         $scope.refreshCandidateList(key);
-    }
+    };
 
     $scope.refreshCandidateList = function (key) {
         $scope.clearCandidates();
@@ -96,10 +96,10 @@ function candidateController($scope, $http, $sce) {
                 });
 
                 angular.forEach(candidates, function (value, key) {
-                    var documentId = value._id;
+                    var documentId = value._source.documentId;
 
                     angular.forEach(value._source.percolators, function (value, key) {
-                        $http.get('http://localhost:9200/birding/.percolator/' + value).
+                        $http.get('http://localhost:9200/percolators/.percolator/' + value).
                             success(function (data, status, headers, config) {
                                 var payload = { 
                                     query: data._source.query, 
@@ -110,13 +110,13 @@ function candidateController($scope, $http, $sce) {
                                     }, 
                                     highlight: { 
                                         fields: { 
-                                            text: {}
+                                            message: {}
                                         }
                                     } 
                                 };
                                 var location = data._source.location;
                                 var bird = data._source.bird;
-                                $http.post('http://localhost:9200/result/bird_candidate/_search',
+                                $http.post('http://localhost:9200/input/_search',
                                         payload).
                                     success(function (data, status, headers, config) {
                                         for (var i = 0; i < $scope.candidates.length; i++) {
@@ -127,7 +127,7 @@ function candidateController($scope, $http, $sce) {
                                                 if (location) {
                                                     $scope.candidates[i].locations.push(location);
                                                 }
-                                                angular.forEach(data.hits.hits[0].highlight.text, function(text, key) {
+                                                angular.forEach(data.hits.hits[0].highlight.message, function(text, key) {
                                                     var escapedText = text; //$sce.trustAsHtml(text);
                                                     $scope.candidates[i].highlights.push(escapedText);
                                                     console.log($scope.candidates[i]);

@@ -165,11 +165,8 @@ function candidateController($scope, $http, $sce) {
 
                 angular.forEach(candidates, function (value, key) {
                     var documentId = value._id;
-                    var birds = value._source.birds;
-                    var locations = value._source.locations
-                    var percs = birds.concat(locations);
 
-                    angular.forEach(percs, function (tagName, key) {
+                    angular.forEach(value._source.birds, function (tagName, key) {
                         var lookup_key = tagName.toLowerCase();
                         var lookup = $scope.lookup[lookup_key];
                         var payload = { 
@@ -190,17 +187,41 @@ function candidateController($scope, $http, $sce) {
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
-                                        if (birds.indexOf(tagName) != -1) {
-                                            candidate.birds.push(lookup.name);
-                                        }
-                                        if (locations.indexOf(tagName) != -1) {
-                                            candidate.locations.push(lookup.name);
-                                        }
+                                        candidate.birds.push(tagName);
                                         angular.forEach(data.hits.hits[0].highlight.fulltext, function(text, key) {
                                             candidate.highlights.push(text);
                                         });
                                     }
+                                });
+                            });
+                    });
 
+                    angular.forEach(value._source.locations, function (tagName, key) {
+                        var lookup_key = tagName.toLowerCase();
+                        var lookup = $scope.lookup[lookup_key];
+                        var payload = { 
+                            query: lookup.query, 
+                            filter: { 
+                                ids: { 
+                                    values: [ documentId ] 
+                                } 
+                            }, 
+                            highlight: { 
+                                fields: { 
+                                    fulltext: {}
+                                }
+                            } 
+                        };
+
+                        $http.post('http://localhost:9200/birdwatch/birdsource/_search', payload)
+                            .success(function (data, status, headers, config) {
+                                angular.forEach($scope.candidates, function(candidate, idx) {
+                                    if (candidate.id === documentId) {
+                                        candidate.locations.push(tagName);
+                                        angular.forEach(data.hits.hits[0].highlight.fulltext, function(text, key) {
+                                            candidate.highlights.push(text);
+                                        });
+                                    }
                                 });
                             });
                     });

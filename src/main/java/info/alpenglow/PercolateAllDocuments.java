@@ -11,6 +11,8 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 
 import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
@@ -27,36 +29,38 @@ public class PercolateAllDocuments {
                 .setDocumentType("post")
                 .execute().actionGet();
 
-        XContentBuilder builder = jsonBuilder().startObject().field("documentId", docId)
-                .startArray("percolators");
-
         if (response.getMatches().length == 0) {
             return;
         }
 
-        boolean hasBird = false;
-        boolean hasLocation = false;
+        List<String> birds = new LinkedList<>();
+        List<String> locations = new LinkedList<>();
         for (PercolateResponse.Match m : response.getMatches()) {
             String id = m.getId().string();
             if (id.startsWith("Bird_")) {
-                hasBird = true;
+                birds.add(id);
             }
             if (id.startsWith("Location_")) {
-                hasLocation = true;
+                locations.add(id);
             }
-            System.out.println(id);
-            builder.value(id);
         }
 
+        XContentBuilder builder = jsonBuilder().startObject().field("documentId", docId);
+
+        builder.startArray("birds");
+        for (String bird : birds)
+            builder.value(bird);
         builder.endArray();
+
+        builder.startArray("locations");
+        for (String location : locations)
+            builder.value(location);
+        builder.endArray();
+
         builder.endObject();
 
-        if (hasBird && hasLocation) {
-            client.prepareIndex("result", "bird_candidate")
-                    .setSource(builder).execute().actionGet();
-        } else {
-            System.out.println("Did not match both Bird and Location");
-        }
+        client.prepareIndex("result", "bird_candidate")
+                .setSource(builder).execute().actionGet();
     }
 
     public static void main(String[] args) throws IOException {

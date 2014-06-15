@@ -41,7 +41,7 @@ class IngestFile extends SimpleFileVisitor<Path> {
 
         System.out.println("Title:" + metadata2.get(Metadata.TITLE));
         System.out.println("Type:" + metadata2.get(Metadata.CONTENT_TYPE));
-        System.out.println("Body:" + textHandler2.toString());
+        // System.out.println("Body:" + textHandler2.toString());
     }
 
     @Override

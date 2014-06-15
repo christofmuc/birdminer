@@ -9,6 +9,8 @@ import org.apache.tika.parser.Parser;
 import org.apache.tika.sax.BodyContentHandler;
 import org.apache.xmlbeans.impl.common.ReaderInputStream;
 import org.elasticsearch.client.Client;
+import org.jsoup.Jsoup;
+import org.jsoup.examples.HtmlToPlainText;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 
@@ -49,13 +51,13 @@ class IngestFile extends SimpleFileVisitor<Path> {
         System.out.println("Reading file " + file.toString());
 
         // Test Tika
-        try {
-            extractContent(file);
-        } catch (TikaException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            extractContent(file);
+//        } catch (TikaException e) {
+//            e.printStackTrace();
+//        } catch (SAXException e) {
+//            e.printStackTrace();
+//        }
 
         // Read the file
         FileReader reader = new FileReader(file.toFile());
@@ -69,10 +71,12 @@ class IngestFile extends SimpleFileVisitor<Path> {
             }
         } while (line != null);
 
+        String cleanedText = new HtmlToPlainText().getPlainText(Jsoup.parse(sb.toString()));
+
         // Store it in ElasticSearch
         JsonObject message = new JsonObject();
         message.addProperty("file", file.toString());
-        message.addProperty("message", sb.toString());
+        message.addProperty("message", cleanedText);
         IngestIntoElastic.getClient().prepareIndex("input", "post")
                 .setSource(message.toString())
                 .execute()

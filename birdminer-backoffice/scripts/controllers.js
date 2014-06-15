@@ -1,7 +1,6 @@
 function candidateController($scope, $http, $sce) {
 
     $scope.candidates = [];
-    $scope.items = [];
     $scope.lookup = [];
     $scope.birds = [];
     $scope.locations = [];
@@ -18,18 +17,9 @@ function candidateController($scope, $http, $sce) {
         $http.post('http://localhost:9200/birdwatch/.percolator/_search',query).
             success(function (data, status, headers, config) {
                 console.log("Preload done with: ");
-                birds = [];
-                locations = [];
                 angular.forEach(data.hits.hits, function(val,key) {
                     var id = val._id.toLowerCase();
                     var name = "";
-                    if (val._source.bird) {
-                         birds.push(val._id);
-                        name = val._source.bird;
-                    } else {
-                        locations.push(val._id);
-                        name = val._source.location;
-                    }
 
                     $scope.lookup[id] = {
                         name:name,
@@ -46,9 +36,14 @@ function candidateController($scope, $http, $sce) {
         return $scope.candidates.length;
     };
 
-    $scope.returnTotalItems = function () {
-        console.log('returnTotalItems executes');
-        return $scope.items.length;
+    $scope.returnTotalBirds = function () {
+        console.log('returnTotalBirds executes');
+        return $scope.birds.length;
+    };
+
+    $scope.returnTotalLocations = function () {
+        console.log('returnTotalLocations executes');
+        return $scope.locations.length;
     };
 
     function prepend(array, value) {
@@ -63,13 +58,32 @@ function candidateController($scope, $http, $sce) {
 
     }
 
-    $scope.filterByKey = function(key) {
-        console.log("Filter by key: "+key);
-        $scope.refreshCandidateList(key);
+    $scope.filterByBird = function(bird) {
+        console.log("Filter by bird: "+bird);
+        $scope.birdFilter = bird;
+        $scope.refreshCandidateList();
     }
 
-    $scope.refreshCandidateList = function (key) {
+    $scope.clearBird = function() {
+        $scope.birdFilter = null;
+        $scope.refreshCandidateList();
+    }
+
+    $scope.clearLocation = function() {
+        $scope.locationFilter = null;
+        $scope.refreshCandidateList();
+    }
+
+    $scope.filterByLocation = function(location) {
+        console.log("Filter by location: "+location);
+        $scope.locationFilter = location;
+        $scope.refreshCandidateList();
+    }
+
+    $scope.refreshCandidateList = function () {
         $scope.clearCandidates();
+        $scope.clearBirds();
+        $scope.clearLocations();
         var filter = {
                 and: [
                     {
@@ -85,22 +99,20 @@ function candidateController($scope, $http, $sce) {
                 ]
             };
 
-        if (key) {
-            if (birds.indexOf(key) != -1) {
-                filter.and.push( 
-                {
-                    term: {
-                        birds: key,
-                    }
-                });                
-            } else if (locations.indexOf(key != -1)) {
-                filter.and.push( 
-                {
-                    term: {
-                        locations: key,
-                    }
-                });                                
-            }
+        if ($scope.birdFilter) {
+            filter.and.push({
+                term: {
+                    birds: $scope.birdFilter,
+                }
+            });                
+        } 
+
+        if ($scope.locationFilter) {
+            filter.and.push({
+                term: {
+                    locations: $scope.locationFilter,
+                }
+            });                                
         }
 
         var search_payload = {
@@ -135,10 +147,18 @@ function candidateController($scope, $http, $sce) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
                 angular.forEach(data.aggregations.both_only.birds.buckets, function(bucket, key) {
-                    $scope.items.push(
+                    $scope.birds.push(
                         {
                             key: bucket.key, 
-                            name: $scope.lookup[bucket.key.toLowerCase()].name, 
+                            name: bucket.key, 
+                            count: bucket.doc_count
+                        });
+                });
+                angular.forEach(data.aggregations.both_only.locations.buckets, function(bucket, key) {
+                    $scope.locations.push(
+                        {
+                            key: bucket.key, 
+                            name: bucket.key, 
                             count: bucket.doc_count
                         });
                 });
@@ -165,8 +185,6 @@ function candidateController($scope, $http, $sce) {
                                 }
                             } 
                         };
-
-                        console.log(JSON.stringify(payload));
 
                         $http.post('http://localhost:9200/birdwatch/birdsource/_search', payload)
                             .success(function (data, status, headers, config) {
@@ -212,8 +230,12 @@ function candidateController($scope, $http, $sce) {
         console.log('showCandidate executes');
     };
 
-    $scope.showItems = function () {
-        console.log('showItems executes');
+    $scope.showBirds = function () {
+        console.log('showBirds executes');
+    };
+
+    $scope.showLocations = function () {
+        console.log('showLocations executes');
     };
 
     $scope.clearCandidates = function () {
@@ -221,8 +243,13 @@ function candidateController($scope, $http, $sce) {
         $scope.candidates = [];
     }
 
-    $scope.clearItems = function () {
+    $scope.clearBirds = function () {
         console.log('clear executes');
-        $scope.items = [];
+        $scope.birds = [];
+    }
+
+    $scope.clearLocations = function () {
+        console.log('clear locations executes');
+        $scope.locations = [];
     }
 }

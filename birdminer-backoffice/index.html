@@ -11,10 +11,27 @@
         <div class="col-md-3">
             <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
             Total candidates: {{returnTotalCandidates()}}
-            <div class="type" ng-repeat="item in items">
-                <a class="bucket_item" ng-click="filterByKey(item.key)">
-                    <span>{{item.name}}: </span><span>{{item.count}}</span>
-                </a>
+            <div id="tagGroup">
+                <div>Birds</div>
+                <div class="type" ng-repeat="bird in birds" ng-if="!birdFilter">
+                    <a class="bird" ng-click="filterByBird(bird.key)">
+                        <span>{{bird.name}}: </span><span>{{bird.count}}</span>
+                    </a>
+                </div>
+                <div class="type" ng-if="birdFilter">
+                    <span class="bird"><b>{{birdFilter}}</b> <a ng-click="clearBird()">Clear</a></span>
+                </div>
+            </div>
+            <div id="tagGroup">
+                <div>Locations</div>
+                <div class="type" ng-repeat="location in locations" ng-if="!locationFilter">
+                    <a class="location" ng-click="filterByLocation(location.key)">
+                        <span>{{location.name}}: </span><span>{{location.count}}</span>
+                    </a>
+                </div>
+                <div class="type" ng-if="locationFilter">
+                    <span class="location"><b>{{locationFilter}}</b> <a ng-click="clearLocation()">Clear</a></span>
+                </div>
             </div>
         </div>
         <div class="col-md-9">            

@@ -24,3 +24,16 @@
 .highlight > em {
     background-color: yellow;
 }
+
+#tagGroup {
+    margin-top: 1em;
+}
+
+#tagGroup > div:first-of-type {
+    padding-left: 0em;
+    font-weight: bold;
+}
+
+#tagGroup > div {
+    padding-left: 1em;
+}

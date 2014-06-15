@@ -5,6 +5,18 @@ function candidateController($scope, $http, $sce) {
     $scope.birds = [];
     $scope.locations = [];
 
+    var EMPTY_LOCATION_FILTER = {
+        key:"Missing filter",
+        name:"Missing location",
+        query:""
+    };
+
+    var EMPTY_BIRD_FILTER = {
+        key:"Missing filter",
+        name:"Missing bird",
+        query:""
+    };
+
     $scope.preloadAndStart = function() {
         var query = {
             from:0,
@@ -87,6 +99,16 @@ function candidateController($scope, $http, $sce) {
         $scope.refreshCandidateList();
     }
 
+    $scope.filterByEmptyLocation = function() {
+        $scope.locationFilter = EMPTY_LOCATION_FILTER;
+        $scope.refreshCandidateList();
+    }
+
+    $scope.filterByEmptyBird = function() {
+        $scope.birdFilter = EMPTY_BIRD_FILTER;
+        $scope.refreshCandidateList();
+    }
+
     $scope.refreshCandidateList = function () {
         $scope.clearCandidates();
         $scope.clearBirds();
@@ -107,19 +129,43 @@ function candidateController($scope, $http, $sce) {
         };
 
         if ($scope.birdFilter) {
-            filter.and.push({
-                term: {
-                    birds: $scope.birdFilter.key,
-                }
-            });
+            if ($scope.birdFilter == EMPTY_BIRD_FILTER) {
+                angular.forEach(filter.and, function(value, key) {
+                    if (value.exists.field === "birds") {
+                        filter.and[key] = {
+                            missing: {
+                                field:"birds"
+                            }
+                        }
+                    }
+                });
+            } else {
+                filter.and.push({
+                    term: {
+                        birds: $scope.birdFilter.key,
+                    }
+                });
+            }
         }
 
         if ($scope.locationFilter) {
-            filter.and.push({
-                term: {
-                    locations: $scope.locationFilter.key,
-                }
-            });
+            if ($scope.locationFilter == EMPTY_LOCATION_FILTER) {
+                angular.forEach(filter.and, function(value, key) {
+                    if (value.exists.field === "locations") {
+                        filter.and[key] = {
+                            missing: {
+                                field:"locations"
+                            }
+                        }
+                    }
+                });
+            } else {
+                filter.and.push({
+                    term: {
+                        locations: $scope.locationFilter.key,
+                    }
+                });
+            }
         }
 
         var search_payload = {
@@ -144,6 +190,16 @@ function candidateController($scope, $http, $sce) {
                             }
                         }
                     }
+                },
+                missing_birds: {
+                    missing: {
+                        field: "birds"
+                    }
+                },
+                missing_locations: {
+                    missing: {
+                        field: "locations"
+                    }
                 }
             },
             filter: filter
@@ -153,6 +209,8 @@ function candidateController($scope, $http, $sce) {
             success(function (data, status, headers, config) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
+                $scope.missingBirds = data.aggregations.missing_birds.doc_count;
+                $scope.missingLocations = data.aggregations.missing_locations.doc_count;
                 angular.forEach(data.aggregations.both_only.birds.buckets, function(bucket, key) {
                     $scope.birds.push(
                         {

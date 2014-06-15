@@ -9,13 +9,20 @@
 <div class="container" ng-controller="candidateController" ng-init="preloadAndStart()">
     <div class="row">
         <div class="col-md-3">
+            <!--
             <button class="btn btn-default" type="submit" ng-click="refreshCandidateList()">Get Candidates</button>
             Total candidates: {{returnTotalCandidates()}}
+            -->
             <div id="tagGroup">
                 <div>Birds</div>
                 <div class="type" ng-repeat="bird in birds" ng-if="!birdFilter">
                     <a class="bird" ng-click="filterByBird(bird.key)">
                         <span>{{bird.name}}: </span><span>{{bird.count}}</span>
+                    </a>
+                </div>
+                <div class="type" ng-if="!birdFilter">
+                    <a class="no-location" ng-click="filterByEmptyBird()">
+                        <span>Missing bird: {{missingBirds}}</span>
                     </a>
                 </div>
                 <div class="type" ng-if="birdFilter">
@@ -27,6 +34,11 @@
                 <div class="type" ng-repeat="location in locations" ng-if="!locationFilter">
                     <a class="location" ng-click="filterByLocation(location.key)">
                         <span>{{location.name}}: </span><span>{{location.count}}</span>
+                    </a>
+                </div>
+                <div class="type" ng-if="!locationFilter">
+                    <a class="no-location" ng-click="filterByEmptyLocation()">
+                        <span>Missing location: {{missingLocations}}</span>
                     </a>
                 </div>
                 <div class="type" ng-if="locationFilter">

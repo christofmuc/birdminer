@@ -172,6 +172,7 @@ function candidateController($scope, $http, $sce) {
 
                 angular.forEach(candidates, function (value, key) {
                     var documentId = value._source.documentId;
+                    var file = "";
 
                     angular.forEach(value._source.birds, function (tagName, key) {
                         var lookup_key = tagName.toLowerCase();
@@ -195,9 +196,10 @@ function candidateController($scope, $http, $sce) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
                                         candidate.birds.push($scope.lookup[tagName.toLowerCase()].name);
-                                        angular.forEach(data.hits.hits[0].highlight.fulltext, function(text, key) {
+                                        angular.forEach(data.hits.hits[0].highlight.message, function(text, key) {
                                             candidate.highlights.push(text);
                                         });
+                                        candidate.file = data.hits.hits[0]._source.file;
                                     }
                                 });
                             });
@@ -225,9 +227,10 @@ function candidateController($scope, $http, $sce) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
                                         candidate.locations.push($scope.lookup[tagName.toLowerCase()].name);
-                                        angular.forEach(data.hits.hits[0].highlight.fulltext, function(text, key) {
+                                        angular.forEach(data.hits.hits[0].highlight.message, function(text, key) {
                                             candidate.highlights.push(text);
                                         });
+                                        candidate.file = data.hits.hits[0]._source.file;
                                     }
                                 });
                             });

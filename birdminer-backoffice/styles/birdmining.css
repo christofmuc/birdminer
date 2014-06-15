@@ -37,3 +37,24 @@
 #tagGroup > div {
     padding-left: 1em;
 }
+
+a {
+    cursor:pointer;
+}
+
+.title {
+    margin-bottom: .5em;
+}
+
+.location-box {
+    margin-bottom: .5em;
+}
+
+.bird-box {
+    margin-bottom: .5em;
+}
+
+.highlights {
+    border-top: 1px solid black;
+    padding-top: .5em;
+}

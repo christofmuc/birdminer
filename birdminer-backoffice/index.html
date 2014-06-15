@@ -37,20 +37,19 @@
         <div class="col-md-9">
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="candidate in candidates">
-                    <div><strong>{{candidate.id}}:</strong> {{candidate.file}}</div>
-                    <div>
+                    <div class="title"><strong>{{candidate.file}}</strong> ({{candidate.id}})</div>
+                    <div class="location-box">
                         <span class="location" ng-repeat="location in candidate.locations">
                             {{location}}
                         </span>
                     </div>
-                    <div>
+                    <div class="bird-box">
                         <span class="bird" ng-repeat="bird in candidate.birds">
                             {{bird}}        
                         </span>
                     </div>
-                    <div>
+                    <div class="highlights">
                         <div class="highlight" ng-repeat="highlight in candidate.highlights" ng-bind-html="highlight">
-
                         </div>
                     </div>
                     <!--td>{{candidate.percolators}}</td-->

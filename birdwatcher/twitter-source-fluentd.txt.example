@@ -1,0 +1,15 @@
+<source>
+  type twitter
+  consumer_key        <your app key>
+  consumer_secret     <your app secret>
+  oauth_token         <your access token for your user>
+  oauth_token_secret  <your access secret for your user>
+  tag                 input.twitter
+  timeline            sampling                # Required (sampling or userstream)
+  keyword            ${hashtag}bird
+  output_format       simple                  # or flat or nest
+</source>
+
+<match input.twitter>
+  type stdout
+</match>

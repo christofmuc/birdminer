@@ -11,5 +11,9 @@
 </source>
 
 <match input.twitter>
-  type stdout
+  type elasticsearch
+  host 192.168.50.1
+  port 9200
+  index_name twitter
+  type_name tweet
 </match>

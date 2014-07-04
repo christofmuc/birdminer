@@ -13,6 +13,10 @@ curl -L http://toolbelt.treasuredata.com/sh/install-ubuntu-lucid.sh | sh
 apt-get --yes install libssl-dev
 sudo /usr/lib/fluent/ruby/bin/fluent-gem install fluent-plugin-twitter
 
+# Install Elasticsearch Plugin for fluentd
+sudo apt-get --yes install libcurl4-gnutls-dev
+sudo /usr/lib/fluent/ruby/bin/fluent-gem install fluent-plugin-elasticsearch
+
 # Configure fluentd
 if [ ! -f ~/td-agent.conf.original ]; then cp /etc/td-agent/td-agent.conf ~/td-agent.conf.original; fi;
 cat ~/td-agent.conf.original /vagrant/twitter-source-fluentd.txt > td-agent.conf

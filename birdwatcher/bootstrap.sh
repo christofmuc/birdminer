@@ -5,6 +5,10 @@ apt-get --yes update
 apt-get --yes install build-essential
 apt-get --yes install ruby
 
+# Install Puppet modules used later
+mkdir -p /etc/puppet/modules
+puppet module install puppetlabs/apt
+
 # Install Fluentd in the td-agent version
 apt-get --yes install curl
 curl -L http://toolbelt.treasuredata.com/sh/install-ubuntu-lucid.sh | sh

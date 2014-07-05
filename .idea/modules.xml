@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BirdMining.iml" filepath="$PROJECT_DIR$/BirdMining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/birdwatcher/javabirder/birder.iml" filepath="$PROJECT_DIR$/birdwatcher/javabirder/birder.iml" />
       <module fileurl="file://$PROJECT_DIR$/birdminer-backoffice/birdminer-backoffice.iml" filepath="$PROJECT_DIR$/birdminer-backoffice/birdminer-backoffice.iml" />
     </modules>
   </component>

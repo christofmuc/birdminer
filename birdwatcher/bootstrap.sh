@@ -10,6 +10,9 @@ mkdir -p /etc/puppet/modules
 puppet module install puppetlabs/apt
 puppet module install elasticsearch-elasticsearch
 
+# This is one of many Kibana puppet modules
+puppet module install thejandroman-kibana3
+
 # Fix Puppet Ruby installation on Ubuntu Lucid
 # https://ask.puppetlabs.com/question/2147/could-not-find-a-suitable-provider-for-augeas/
 # http://m0dlx.com/blog/Puppet__could_not_find_a_default_provider_for_augeas.html

@@ -1,0 +1,16 @@
+{
+  "name": "srf-fluentd",
+  "version": "0.1.3",
+  "author": "Gianni Carafa",
+  "summary": "fluentd module",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/mmz-srf/puppet-fluentd.git",
+  "project_page": "https://github.com/mmz-srf/puppet-fluentd",
+  "issues_url": "https://github.com/mmz-srf/puppet-fluentd/issues",
+  "description": "Manages Fluentd installation and configuration with Puppet using the td-agent.",
+  "dependencies": [
+    {"name":"puppetlabs/apt","version_requirement":">= 1.4.0"},
+    {"name":"puppetlabs/concat","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.1.0"}
+  ]
+}

@@ -7,3 +7,4 @@ properties/config.properties
 downloaded
 birdwatcher/twitter-source-fluentd.txt
 birdwatcher/.vagrant/machines/default/virtualbox/id
+birdwatcher/.vagrant

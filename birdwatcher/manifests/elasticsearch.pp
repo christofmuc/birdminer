@@ -1,5 +1,5 @@
 class { 'elasticsearch':
-  version => '1.2.1'
+   package_url => 'https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.1.deb'
 }
 
 elasticsearch::instance { 'birdmine': }

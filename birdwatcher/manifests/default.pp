@@ -37,3 +37,9 @@ class must-have {
 }
 
 include must-have
+
+import "elasticsearch"
+
+include elasticsearch
+
+import "kibana"

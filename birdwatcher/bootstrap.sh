@@ -18,13 +18,17 @@ puppet module install thejandroman-kibana3
 # http://m0dlx.com/blog/Puppet__could_not_find_a_default_provider_for_augeas.html
 # https://launchpad.net/~raphink/+archive/augeas
 sudo add-apt-repository ppa:raphink/augeas
-sudo apt-get install libaugeas0
-sudo /opt/vagrant_ruby/bin/gem install ruby-augeas 
+sudo apt-get update
+sudo apt-get --yes install libaugeas0=1.1.0-0ubuntu1~raphink1~lucid1 
+sudo apt-get --yes install libaugeas-dev=1.1.0-0ubuntu1~raphink1~lucid1 
+sudo apt-get --yes install libxml2-dev
+sudo /opt/vagrant_ruby/bin/gem install ruby-augeas
 
-#sudo apt-get --yes install libaugeas-dev
-#sudo apt-get install libxml2-dev
-
-
+ # Fix regular Ruby version by installing RVM and updating to 1.9.3
+ #Actually this was not required as fluentd ships it's own ruby 1.9.3. Surprise!
+ #sudo curl -sSL https://get.rvm.io | bash -s stable
+ #source /home/vagrant/.rvm/scripts/rvm
+ #sudo rvm install 1.9.3
 
 # Install Fluentd in the td-agent version
 apt-get --yes install curl
@@ -43,4 +47,4 @@ if [ ! -f ~/td-agent.conf.original ]; then cp /etc/td-agent/td-agent.conf ~/td-a
 sudo cp /vagrant/td-agent.conf /etc/td-agent/td-agent.conf
 
 # Fire up FluentD
-sudo /etc/init.d/td-agent start
+sudo /etc/init.d/td-agent restart

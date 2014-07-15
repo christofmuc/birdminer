@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 
 # Base installation
-apt-get --yes update
-apt-get --yes install build-essential
-apt-get --yes install ruby
+#apt-get --yes update
+#apt-get --yes install build-essential
+#apt-get --yes install ruby
 
 # Install Puppet modules used later
 mkdir -p /etc/puppet/modules
 puppet module install puppetlabs/apt
+puppet module install puppetlabs-concat
+puppet module install puppetlabs-apache
+puppet module install srf-fluentd
+puppet module install puppetlabs-stdlib
+puppet module install puppetlabs-vcsrepo
 puppet module install elasticsearch-elasticsearch
 
 # This is one of many Kibana puppet modules
@@ -29,6 +34,8 @@ sudo /opt/vagrant_ruby/bin/gem install ruby-augeas
  #sudo curl -sSL https://get.rvm.io | bash -s stable
  #source /home/vagrant/.rvm/scripts/rvm
  #sudo rvm install 1.9.3
+
+
 
 # Install Fluentd in the td-agent version
 apt-get --yes install curl

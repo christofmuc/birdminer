@@ -10,6 +10,7 @@ import jdbm.PrimaryTreeMap;
 import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -61,7 +62,7 @@ public class IngestFromFacebook {
     public static void main(final String args[]) throws IOException {
         //System.err.println("Starting IngestFromFacebook, connecting to Facebook!");
         // Open Output File
-        //FileWriter output = new FileWriter("facebookPosts.txt", true);
+        FileWriter output = new FileWriter("/home/vagrant/facebookPosts.txt", true);
 
         // 60 day valid token, don't commit
         // https://stackoverflow.com/questions/9067947/facebook-access-token-server-side-vs-client-side-flows
@@ -108,13 +109,14 @@ public class IngestFromFacebook {
                 JsonObject simplifiedJson = new JsonObject();
                 simplifiedJson.put("message", simplifiedPost);
                 simplifiedJson.put("time", post.getString("created_time"));
+                output.write(simplifiedJson.toString() + '\n');
                 System.out.println(simplifiedJson.toString());
 
                 // Remember that we posted this
                 treeMap.put(id, new Date());
             }
             if (i >= 50) {
-                //output.close();
+                output.close();
                 recMan.commit();
                 //LOG.close();
                 recMan.close();

@@ -59,7 +59,7 @@ fluentd::source{'exec_in':
     format => 'json',
     tag => 'facebook.post',
     config => {
-        'command' => 'java -cp /vagrant/out:/vagrant/repository/restfb-1.6.14.jar info.alpenglow.IngestFromFacebook',
+        'command' => 'java -cp /vagrant/out:/vagrant/repository/fluent-logger-0.2.11.jar:/vagrant/repository/gson-2.2.4.jar:/vagrant/repository/javassist-3.16.1-GA.jar:/vagrant/repository/jdbm-2.4.jar:/vagrant/repository/msgpack-0.6.7.jar:/vagrant/repository/restfb-1.6.14.jar:/vagrant/repository info.alpenglow.IngestFromFacebook',
         'run_interval' => '1m',
     },
     notify => Class['fluentd::service'],

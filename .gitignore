@@ -9,3 +9,4 @@ birdwatcher/twitter-source-fluentd.txt
 birdwatcher/.vagrant
 birdwatcher/td-agent.conf
 
+birdwatcher/.idea

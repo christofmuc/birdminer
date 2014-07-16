@@ -51,6 +51,18 @@ fluentd::source{'twitter_in':
     },
     notify => Class['fluentd::service'],
 }
+fluentd::match {'forward_twitter_match':
+    configfile => 'twitter',
+    pattern => 'input.twitter',
+    type => 'elasticsearch',
+    config => {
+        'host' => '192.168.50.4',
+        'port' => '9200',
+        'index_name' => 'twitter',
+        'type_name' => 'tweet',  
+        'logstash_format' => true,      
+    }
+}
 
 fluentd::configfile {'exec':}
 fluentd::source{'exec_in':
@@ -64,38 +76,8 @@ fluentd::source{'exec_in':
     },
     notify => Class['fluentd::service'],
 }
-
-fluentd::configfile {'tail':}
-fluentd::source{'tail_in':
-    configfile => 'tail',
-    type => 'tail',    
-    format => 'json',
-    tag => 'facebook.post',
-    config => {
-        'path' => '/home/vagrant/facebookPosts.txt',
-        'pos_file' => '/var/log/td-agent/facebookPosts.pos',
-        'time_key' => 'created_time',
-    },
-    notify => Class['fluentd::service'],
-}
-
-fluentd::configfile {'forward_twitter':}
-fluentd::match {'forward_twitter_match':
-    configfile => 'forward_twitter',
-    pattern => 'input.twitter',
-    type => 'elasticsearch',
-    config => {
-        'host' => '192.168.50.4',
-        'port' => '9200',
-        'index_name' => 'twitter',
-        'type_name' => 'tweet',  
-        'logstash_format' => true,      
-    }
-}
-
-fluentd::configfile {'forward_facebook':}
 fluentd::match {'forward_facebook_match':
-    configfile => 'forward_facebook',
+    configfile => 'exec',
     pattern => 'facebook.post',
     type => 'elasticsearch',
     config => {

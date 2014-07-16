@@ -10,12 +10,15 @@ import jdbm.PrimaryTreeMap;
 import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
 public class IngestFromFacebook {
+
+    private final static String BASE_PATH = "/tmp";
 
     // Connect to fluentd
     //private static FluentLogger LOG = FluentLogger.getLogger("facebook");
@@ -50,10 +53,11 @@ public class IngestFromFacebook {
     private static RecordManager recMan;
 
     static {
+        String path = BASE_PATH + File.separator + "facebookPostsRead";
         try {
-            recMan = RecordManagerFactory.createRecordManager("./facebookPostsRead");
+            recMan = RecordManagerFactory.createRecordManager(path);
         } catch (IOException e) {
-            System.err.println("Can't initialize file ./facebookPostsRead");
+            System.err.println("Can't initialize file "+path);
             System.err.println(e);
             System.exit(-1);
         }
@@ -62,7 +66,8 @@ public class IngestFromFacebook {
     public static void main(final String args[]) throws IOException {
         //System.err.println("Starting IngestFromFacebook, connecting to Facebook!");
         // Open Output File
-        FileWriter output = new FileWriter("/home/vagrant/facebookPosts.txt", true);
+        String path = BASE_PATH + File.separator + "facebookPosts.txt";
+        FileWriter output = new FileWriter(path, true);
 
         // 60 day valid token, don't commit
         // https://stackoverflow.com/questions/9067947/facebook-access-token-server-side-vs-client-side-flows

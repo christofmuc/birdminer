@@ -51,6 +51,7 @@ fluentd::source{'twitter_in':
     },
     notify => Class['fluentd::service'],
 }
+
 fluentd::match {'forward_twitter_match':
     configfile => 'twitter',
     pattern => 'input.twitter',
@@ -75,6 +76,7 @@ fluentd::source{'exec_in':
     },
     notify => Class['fluentd::service'],
 }
+
 fluentd::match {'forward_facebook_match':
     configfile => 'exec',
     pattern => 'facebook.post',

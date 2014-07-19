@@ -113,7 +113,8 @@ public class IngestFromFacebook {
 
                 JsonObject simplifiedJson = new JsonObject();
                 simplifiedJson.put("message", simplifiedPost);
-                simplifiedJson.put("time", post.getString("created_time"));
+                simplifiedJson.put("created_at", post.getString("created_time"));
+                simplifiedJson.put("facebookID", post.getString("id"));
                 output.write(simplifiedJson.toString() + '\n');
                 System.out.println(simplifiedJson.toString());
 

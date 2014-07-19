@@ -18,7 +18,10 @@ elasticsearch::plugin{'lmenezes/elasticsearch-kopf':
 }
 
 package {'git':} ->
-class { 'kibana3': manage_git => false}
+class {
+    'kibana3': manage_git => false,
+    config_default_route => '/dashboard/file/BirdWatcher.json'
+}
 
 include ::fluentd
 
@@ -60,7 +63,8 @@ fluentd::match {'forward_twitter_match':
         'host' => '192.168.50.4',
         'port' => '9200',
         'index_name' => 'twitter',
-        'type_name' => 'tweet',  
+        'type_name' => 'tweet',
+        'id_key' => 'id',
     }
 }
 
@@ -72,6 +76,7 @@ fluentd::source{'exec_in':
     tag => 'facebook.post',
     config => {
         'command' => 'java -cp /vagrant/out:/vagrant/repository/fluent-logger-0.2.11.jar:/vagrant/repository/gson-2.2.4.jar:/vagrant/repository/javassist-3.16.1-GA.jar:/vagrant/repository/jdbm-2.4.jar:/vagrant/repository/msgpack-0.6.7.jar:/vagrant/repository/restfb-1.6.14.jar:/vagrant/repository info.alpenglow.IngestFromFacebook',
+        #'time_key' => 'time', # Don't do this, as fluentd then seems to swallow the time stamp
         'run_interval' => '1m',
     },
     notify => Class['fluentd::service'],
@@ -85,6 +90,7 @@ fluentd::match {'forward_facebook_match':
         'host' => '192.168.50.4',
         'port' => '9200',
         'index_name' => 'facebook',
-        'type_name' => 'post',        
+        'type_name' => 'post',
+        'id_key' => 'facebookID',
     }
 }

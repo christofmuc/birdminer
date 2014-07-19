@@ -20,10 +20,10 @@
     "filter": {
       "list": {
         "0": {
+          "from": "2013-10-01T17:20:36.141Z",
+          "to": "now",
           "type": "time",
           "field": "created_at",
-          "from": "now-30d",
-          "to": "now",
           "mandate": "must",
           "active": true,
           "alias": "",
@@ -38,7 +38,7 @@
   "rows": [
     {
       "title": "Graph",
-      "height": "350px",
+      "height": "200px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
@@ -55,7 +55,7 @@
           "value_field": null,
           "auto_int": true,
           "resolution": 100,
-          "interval": "12h",
+          "interval": "1d",
           "fill": 3,
           "linewidth": 3,
           "timezone": "browser",
@@ -118,6 +118,115 @@
           "legend_counts": true,
           "zerofill": true,
           "derivative": false
+        }
+      ],
+      "notice": false
+    },
+    {
+      "title": "Top lists",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "error": false,
+          "span": 4,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "_type",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "10pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "pie",
+          "counter_pos": "none",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Data types"
+        },
+        {
+          "error": false,
+          "span": 4,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "birds",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "10pt"
+          },
+          "donut": true,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "pie",
+          "counter_pos": "none",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Birds"
+        },
+        {
+          "error": false,
+          "span": 4,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "locations",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "10pt"
+          },
+          "donut": true,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "pie",
+          "counter_pos": "none",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Locations"
         }
       ],
       "notice": false

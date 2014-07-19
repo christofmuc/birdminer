@@ -21,54 +21,63 @@ public class PercolateAllDocuments {
     private static Client client;
 
     static public void percolate(String docId) throws IOException {
-        System.out.println("Percolating document " + docId);
+        System.err.print("Percolating document " + docId);
 
         PercolateResponse response = client
                 .preparePercolate()
-                .setGetRequest(new GetRequest("input", "post", docId))
+                .setGetRequest(new GetRequest("facebook", "post", docId))
                 .setDocumentType("post")
                 .execute().actionGet();
 
-        if (response.getMatches().length == 0) {
-            return;
-        }
-
         List<String> birds = new LinkedList<>();
         List<String> locations = new LinkedList<>();
-        for (PercolateResponse.Match m : response.getMatches()) {
-            String id = m.getId().string();
-            if (id.startsWith("Bird_")) {
-                birds.add(id);
-            }
-            if (id.startsWith("Location_")) {
-                locations.add(id);
+        if (response.getMatches().length > 0) {
+            for (PercolateResponse.Match m : response.getMatches()) {
+                String id = m.getId().string();
+                if (id.startsWith("Bird_")) {
+                    birds.add(id);
+                }
+                if (id.startsWith("Location_")) {
+                    locations.add(id);
+                }
             }
         }
 
-        XContentBuilder builder = jsonBuilder().startObject().field("documentId", docId);
+        XContentBuilder builder = jsonBuilder().startObject();
 
-        builder.startArray("birds");
-        for (String bird : birds)
-            builder.value(bird);
-        builder.endArray();
+        if (birds.size() > 0) {
+            builder.startArray("birds");
+            for (String bird : birds)
+                builder.value(bird);
+            builder.endArray();
+        }
 
-        builder.startArray("locations");
-        for (String location : locations)
-            builder.value(location);
-        builder.endArray();
-
+        if (locations.size() > 0) {
+            builder.startArray("locations");
+            for (String location : locations)
+                builder.value(location);
+            builder.endArray();
+        }
+        builder.field("percolated", true);
         builder.endObject();
 
-        client.prepareIndex("result", "bird_candidate")
-                .setSource(builder).execute().actionGet();
+        try {
+            client.prepareUpdate("facebook", "post", docId)
+                    .setDoc(builder)
+                    .execute()
+                    .actionGet();
+        } catch (Exception e) {
+            System.err.println("Update error: " + e.toString());
+        }
+        System.err.println(": Updated document");
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         // Connect to ElasticSearch
-        client = TransportClientFactory.createClient("result");
+        client = TransportClientFactory.createClient("facebook");
 
         // Now loop over all documents in the index
-        SearchResponse response = client.prepareSearch("input")
+        SearchResponse response = client.prepareSearch("facebook")
                 .setTypes("post")
                 .setSearchType(SearchType.SCAN)
                 .setScroll(new TimeValue(60000))

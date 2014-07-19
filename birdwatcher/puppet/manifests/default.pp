@@ -41,13 +41,13 @@ fluentd::source{'twitter_in':
     type => 'twitter',    
     tag => 'input.twitter',
     config => {
-        'consumer_key' => '9Kg1TBr2R5zWYFbrb8KOwdtNq',
-        'consumer_secret' => 'gOGhl3OjJ5NPWhjfQ38ZcpC29dlIIWDwXAJvIVevmiLIkDwQRo',
-        'oauth_token' => '596284653-CjwQHdOXM9G8PrWiP5ri1RB05dkOEntbCfAya3fb',
-        'oauth_token_secret' => '4BDQW5VXlxiMT5MKN3uvKmxe6G5aPG0vHyYVTSkM3mlKB',
+        'consumer_key' => hiera('twitter.consumer_key'),
+        'consumer_secret' => '%{twitter.consumer_secret}',
+        'oauth_token' => '%{twitter.oauth_token}',
+        'oauth_token_secret' => '%{twitter.oauth_token_secret}',
         'output_format' => 'simple',
         'timeline' => 'sampling',
-        'keyword' => '${hashtag}bird',
+        'keyword' => '${hashtag}bird,${hashtag}birding',
     },
     notify => Class['fluentd::service'],
 }
@@ -60,7 +60,6 @@ fluentd::match {'forward_twitter_match':
         'port' => '9200',
         'index_name' => 'twitter',
         'type_name' => 'tweet',  
-        'logstash_format' => true,      
     }
 }
 
@@ -85,6 +84,5 @@ fluentd::match {'forward_facebook_match':
         'port' => '9200',
         'index_name' => 'facebook',
         'type_name' => 'post',        
-        'logstash_format' => true,
     }
 }

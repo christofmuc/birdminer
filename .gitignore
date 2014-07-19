@@ -10,3 +10,4 @@ birdwatcher/.vagrant
 birdwatcher/td-agent.conf
 
 birdwatcher/.idea
+birdwatcher/puppet/local.yaml

@@ -32,6 +32,12 @@ if ! puppet module list | grep -q thejandroman-kibana3; then
     puppet module install thejandroman-kibana3;
 fi
 
+# Hiera expects its configuration file in the /etc directory, which is not really nice. Make a symlink for vagrant
+# Puppet on the other hand has its Hiera configuration in its own subdirectory. Don't ask, just symlink
+ sudo ln -fs /vagrant/puppet/hiera.yaml /etc/hiera.yaml
+ sudo ln -sf /vagrant/puppet/hiera.yaml /etc/puppet/hiera.yaml
+
+
 # Fix Puppet Ruby installation on Ubuntu Lucid
 # https://ask.puppetlabs.com/question/2147/could-not-find-a-suitable-provider-for-augeas/
 # http://m0dlx.com/blog/Puppet__could_not_find_a_default_provider_for_augeas.html

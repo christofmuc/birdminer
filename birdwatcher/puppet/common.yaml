@@ -1,0 +1,18 @@
+# These keys should not be stored in the source repository!
+# Copy this file into a file called "local.yaml" in the same directory as this, and enter
+# your own values. Local.yaml is in gitignore and thus will not be committed.
+
+# To get access for Twitter, go to
+# https://apps.twitter.com//
+# and create a new app
+#
+# The consumer_key is the API key
+twitter.consumer_key: UNSPECIFIED SECRET
+twitter.consumer_secret: UNSPECIFIED SECRET
+# then click on create access token, and put this here (in the local.yaml file, of course)
+twitter.oauth_token: UNSPECIFIED SECRET
+twitter.oauth_token_secret: UNSPECIFIED SECRET
+
+# You can debug this by ssh to the vagrant box, and then run this on the command line:
+# hiera twitter.consumer_key
+# it should list your new key, and not UNSPECIFIED SECRET

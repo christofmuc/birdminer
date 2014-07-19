@@ -7,14 +7,30 @@
 
 # Install Puppet modules used later
 mkdir -p /etc/puppet/modules
-puppet module install puppetlabs/apt
-puppet module install puppetlabs-concat
-puppet module install puppetlabs-apache
-puppet module install srf-fluentd
-puppet module install puppetlabs-stdlib
-puppet module install puppetlabs-vcsrepo
-puppet module install elasticsearch-elasticsearch
-puppet module install thejandroman-kibana3
+if ! puppet module list | grep -q puppetlabs-apt; then
+    puppet module install puppetlabs/apt;
+fi
+if ! puppet module list | grep -q puppetlabs-concat; then
+    puppet module install puppetlabs-concat;
+fi
+if ! puppet module list | grep -q puppetlabs-apache; then
+    puppet module install puppetlabs-apache;
+fi
+if ! puppet module list | grep -q srf-fluentd; then
+    puppet module install srf-fluentd;
+fi
+if ! puppet module list | grep -q puppetlabs-stdlib; then
+    puppet module install puppetlabs-stdlib;
+fi
+if ! puppet module list | grep -q puppetlabs-vcsrepo; then
+    puppet module install puppetlabs-vcsrepo;
+fi
+if ! puppet module list | grep -q elasticsearch-elasticsearch; then
+    puppet module install elasticsearch-elasticsearch;
+fi
+if ! puppet module list | grep -q thejandroman-kibana3; then
+    puppet module install thejandroman-kibana3;
+fi
 
 # Fix Puppet Ruby installation on Ubuntu Lucid
 # https://ask.puppetlabs.com/question/2147/could-not-find-a-suitable-provider-for-augeas/

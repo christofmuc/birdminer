@@ -42,7 +42,7 @@ fluentd::source{'twitter_in':
     tag => 'input.twitter',
     config => {
         'consumer_key' => hiera('twitter.consumer_key'),
-        'consumer_secret' => hiera('twitter.consumer_secret)',
+        'consumer_secret' => hiera('twitter.consumer_secret'),
         'oauth_token' => hiera('twitter.oauth_token'),
         'oauth_token_secret' => hiera('twitter.oauth_token_secret'),
         'output_format' => 'simple',

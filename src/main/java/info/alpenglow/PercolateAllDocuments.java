@@ -7,18 +7,56 @@ import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentBuilder;
+import org.elasticsearch.index.query.FilterBuilders;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 public class PercolateAllDocuments {
 
     private static Client client;
+
+    private static Map<String, String> BirdNames;
+    private static Map<String, String> LocationNames;
+
+    static public void preload() {
+        BirdNames = new HashMap<>();
+        LocationNames = new HashMap<>();
+        SearchResponse response = client
+                .prepareSearch("percolators")
+                .setTypes(".percolator")
+                .setSearchType(SearchType.SCAN)
+                .setScroll(new TimeValue(60000))
+                .setSize(100)
+                .setQuery(QueryBuilders.matchAllQuery())
+                .execute()
+                .actionGet();
+        while (true) {
+            response = client.prepareSearchScroll(response.getScrollId())
+                    .setScroll(new TimeValue(600000)).execute()
+                    .actionGet();
+            if (response.getHits().getHits().length == 0) {
+                break;
+            }
+            for (SearchHit hit : response.getHits()) {
+                // Store the name of the bird in the Index
+                if (hit.getId().startsWith("Bird_")) {
+                    BirdNames.put(hit.getId(), (String) hit.getSource().get("bird"));
+                } else if (hit.getId().startsWith("Location_")) {
+                    LocationNames.put(hit.getId(), (String) hit.getSource().get("location"));
+                } else {
+                    throw new RuntimeException("Unexpected!");
+                }
+            }
+        }
+    }
 
     static public void percolate(String docId) throws IOException {
         System.err.print("Percolating document " + docId);
@@ -48,14 +86,14 @@ public class PercolateAllDocuments {
         if (birds.size() > 0) {
             builder.startArray("birds");
             for (String bird : birds)
-                builder.value(bird);
+                builder.value(BirdNames.get(bird));
             builder.endArray();
         }
 
         if (locations.size() > 0) {
             builder.startArray("locations");
             for (String location : locations)
-                builder.value(location);
+                builder.value(LocationNames.get(location));
             builder.endArray();
         }
         builder.field("percolated", true);
@@ -76,13 +114,16 @@ public class PercolateAllDocuments {
         // Connect to ElasticSearch
         client = TransportClientFactory.createClient("facebook");
 
+        // Load the percolator definitions
+        preload();
+
         // Now loop over all documents in the index
         SearchResponse response = client.prepareSearch("facebook")
                 .setTypes("post")
                 .setSearchType(SearchType.SCAN)
                 .setScroll(new TimeValue(60000))
                 .setSize(10)
-                .setQuery(QueryBuilders.matchAllQuery())
+                .setQuery(QueryBuilders.constantScoreQuery(FilterBuilders.notFilter(FilterBuilders.existsFilter("percolated"))))
                 .execute()
                 .actionGet();
 

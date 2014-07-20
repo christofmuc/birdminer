@@ -97,3 +97,23 @@ fluentd::match {'forward_facebook_match':
         'id_key' => 'facebookID',
     }
 }
+
+fluentd::configfile {'percolate_them':}
+fluentd::source{'percolate documents':
+    configfile => 'percolate_them',
+    type => 'exec',
+    format => 'json',
+    tag => 'percolate.log',
+    config => {
+        'command' => 'java -cp /vagrant/repository/elasticsearch-1.2.2.jar:/vagrant/javabirder/properties:/vagrant/out/:/vagrant/repository/lucene-core-4.8.1.jar info.alpenglow.PercolateAllDocuments',
+        #'time_key' => 'time', # Don't do this, as fluentd then seems to swallow the time stamp
+        'run_interval' => '1m',
+    },
+    notify => Class['fluentd::service'],
+}
+fluentd::match{'percolate log':
+    configfile => 'percolate_them',
+    pattern => 'percolate.log',
+    type => 'stdout',
+    notify => Class['fluentd::service'],
+}

@@ -13,15 +13,6 @@ class {'elasticsearch':
     }
 }
 
-elasticsearch::instance { 'birdmine': 
-    config => { 'node.name' => 'vagrant' },
-}
-
-elasticsearch::plugin{'lmenezes/elasticsearch-kopf':
-  module_dir => 'kopf',
-  instances => 'birdmine',
-}
-
 exec {'create_index':
     command => "/usr/bin/curl -XPUT 'http://localhost:9200/facebook/post/_mapping' -d '
         {
@@ -35,14 +26,23 @@ exec {'create_index':
     onlyif => "/usr/bin/curl -XGET \"http://192.168.50.4:9200/facebook/post/_mapping\" -s | grep --quiet IndexMissingException"
 }
 
+elasticsearch::instance { 'birdmine': 
+    config => { 'node.name' => 'vagrant' },
+}
+
+elasticsearch::plugin{'lmenezes/elasticsearch-kopf':
+  module_dir => 'kopf',
+  instances => 'birdmine',
+}
+
 package {'git':} ->
 class {
     'kibana3': manage_git => false,
     config_default_route => '/dashboard/file/BirdWatcher.json'
 }
 file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
-    source => "puppet:///kibana/BirdWatcher.json",
-    owner => 'www-data'
+    owner => 'www-data',
+    source => "puppet:///kibana/BirdWatcher.json"
 }
 
 include ::fluentd
@@ -117,4 +117,25 @@ fluentd::match {'forward_facebook_match':
     }
 }
 
+fluentd::configfile {'percolate_them':}
+fluentd::source{'percolate documents':
+    configfile => 'percolate_them',
+    type => 'exec',
+    format => 'json',
+    tag => 'percolate.log',
+    config => {
+        'command' => 'java -cp /vagrant/repository/elasticsearch-1.2.2.jar:/vagrant/javabirder/properties:/vagrant/out/:/vagrant/repository/lucene-core-4.8.1.jar info.alpenglow.PercolateAllDocuments',
+        #'time_key' => 'time', # Don't do this, as fluentd then seems to swallow the time stamp
+        'run_interval' => '1m',
+    },
+    notify => Class['fluentd::service'],
+}
+fluentd::match{'percolate log':
+    configfile => 'percolate_them',
+    pattern => 'percolate.log',
+    type => 'stdout',
+    notify => Class['fluentd::service'],
+}
+
 class {'birdwatch-logstash':}
+

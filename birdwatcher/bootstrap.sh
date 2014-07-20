@@ -31,6 +31,12 @@ fi
 if ! puppet module list | grep -q thejandroman-kibana3; then
     puppet module install thejandroman-kibana3;
 fi
+if ! puppet module list | grep -q elasticsearch-logstash; then
+    puppet module install elasticsearch-logstash;
+fi
+if ! puppet module list | grep -q ispavailability-file_concat; then
+    puppet module install ispavailability-file_concat;
+fi
 
 # Hiera expects its configuration file in the /etc directory, which is not really nice. Make a symlink for vagrant
 # Puppet on the other hand has its Hiera configuration in its own subdirectory. Don't ask, just symlink

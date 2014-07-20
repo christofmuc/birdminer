@@ -17,13 +17,27 @@ elasticsearch::plugin{'lmenezes/elasticsearch-kopf':
   instances => 'birdmine',
 }
 
+exec {'create_index':
+    command => "/usr/bin/curl -XPUT 'http://localhost:9200/facebook/post/_mapping' -d '
+        {
+            \"post\" : {
+                \"properties\" : {
+                    \"birds\" : {\"type\" : \"string\", \"index\" : \"not_analyzed\" },
+                    \"locations\" : {\"type\" : \"string\", \"index\" : \"not_analyzed\" }
+                }
+            }
+        }'",
+    onlyif => "/usr/bin/curl -XGET \"http://192.168.50.4:9200/facebook/post/_mapping\" -s | grep --quiet IndexMissingException"
+}
+
 package {'git':} ->
 class {
     'kibana3': manage_git => false,
     config_default_route => '/dashboard/file/BirdWatcher.json'
 }
 file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
-    source => "puppet:///kibana/BirdWatcher.json"
+    source => "puppet:///kibana/BirdWatcher.json",
+    owner => 'www-data'
 }
 
 include ::fluentd

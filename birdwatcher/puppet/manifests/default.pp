@@ -5,7 +5,12 @@ class {'apt':
 class {'elasticsearch':
     manage_repo  => true,
     repo_version => '1.2',
-    config => {'cluster.name' => 'birdwatch'}
+    config => {
+        'cluster.name' => 'birdwatch',
+        'node.name' => 'vagrant',
+        'index.number_of_shards' => 1,
+        'index.number_of_replicas' => 0
+    }
 }
 
 elasticsearch::instance { 'birdmine': 
@@ -112,28 +117,4 @@ fluentd::match {'forward_facebook_match':
     }
 }
 
-class { 'logstash':
-    manage_repo => true,
-    repo_version => '1.4'
-}
-file { '/etc/init.d/logstash':
-    source => "puppet:///logstash/logstash",
-    notify => Service['logstash']
-}
-logstash::plugin {'percolate':
-    ensure => 'present',
-    type => 'filter',
-    source => 'puppet:///logstash/percolate.rb'
-}
-logstash::configfile { 'ls-file-input': 
-    source => 'puppet:///logstash/1_file.conf',
-    order => 10
-}
-logstash::configfile { 'ls-percolate-filter': 
-    source => 'puppet:///logstash/2_percolate.conf',
-    order => 20
-}
-logstash::configfile { 'ls-elastic-output': 
-    source => 'puppet:///logstash/3_elastic.conf',
-    order => 30
-}
+class {'birdwatch-logstash':}

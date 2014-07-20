@@ -1,0 +1,11 @@
+input {
+    twitter {
+        consumer_key => '<%= scope.function_hiera(['twitter.consumer_key']) %>'
+        consumer_secret => '<%= scope.function_hiera(['twitter.consumer_secret']) %>'
+        oauth_token => '<%= scope.function_hiera(['twitter.oauth_token']) %>'
+        oauth_token_secret => '<%= scope.function_hiera(['twitter.oauth_token_secret']) %>'
+        # full_tweet => true
+        type => 'tweet'
+        keywords => '#bird'
+    }
+}

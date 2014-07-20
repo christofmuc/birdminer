@@ -1,0 +1,7 @@
+filter {
+    percolate {
+        server => "<%= scope.function_hiera(['elasticsearch.host']) %>"
+        index => "<%= scope.function_hiera(['elasticsearch.percolator_index']) %>"
+        object_type => "<%= scope.function_hiera(['elasticsearch.percolator_type']) %>"
+    }
+}

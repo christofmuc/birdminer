@@ -16,3 +16,7 @@ twitter.oauth_token_secret: UNSPECIFIED SECRET
 # You can debug this by ssh to the vagrant box, and then run this on the command line:
 # hiera twitter.consumer_key
 # it should list your new key, and not UNSPECIFIED SECRET
+
+elasticsearch.host: localhost
+elasticsearch.percolator_index: percolators
+elasticsearch.percolator_type: my_type

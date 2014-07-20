@@ -121,7 +121,7 @@ public class IngestFromFacebook {
                 // Remember that we posted this
                 treeMap.put(id, new Date());
             }
-            if (i >= 50) {
+            if (i >= 500) {
                 output.close();
                 recMan.commit();
                 //LOG.close();

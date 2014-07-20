@@ -22,6 +22,9 @@ class {
     'kibana3': manage_git => false,
     config_default_route => '/dashboard/file/BirdWatcher.json'
 }
+file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
+    source => "puppet:///kibana/BirdWatcher.json"
+}
 
 include ::fluentd
 

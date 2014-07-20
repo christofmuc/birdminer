@@ -8,7 +8,7 @@
 # Install Puppet modules used later
 mkdir -p /etc/puppet/modules
 if ! puppet module list | grep -q puppetlabs-apt; then
-    puppet module install puppetlabs/apt;
+    puppet module install puppetlabs-apt;
 fi
 if ! puppet module list | grep -q puppetlabs-concat; then
     puppet module install puppetlabs-concat;

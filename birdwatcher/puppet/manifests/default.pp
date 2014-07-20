@@ -47,5 +47,5 @@ file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
 
 class {'birdwatch-fluentd':}
 
-class {'birdwatch-logstash':}
+# class {'birdwatch-logstash':}
 

@@ -18,8 +18,8 @@ class birdwatch-logstash () {
         content => template('birdwatch-logstash/1_twitter.erb'),
         notify => Service['logstash']
     }
-    file { '/etc/logstash/conf.d/1_file.conf': 
-        source => 'puppet:///modules/birdwatch-logstash/1_file.conf',
+    file { '/etc/logstash/conf.d/1_faacebook.conf': 
+        content => template('birdwatch-logstash/1_facebook.erb'),
         notify => Service['logstash']
     }
     file { '/etc/logstash/conf.d/2_percolate.conf': 

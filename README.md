@@ -5,9 +5,9 @@
 # Creating an AWS instance
 * Install the plugin
 
-    vagrant plugin install vagrant-aws
+        vagrant plugin install vagrant-aws
 
 * Make a copy of `aws.yaml_sample` as `aws.yaml`
 * Start the instance
 
-    vagrant up aws --provider=aws
+        vagrant up aws --provider=aws

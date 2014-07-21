@@ -11,3 +11,4 @@ birdwatcher/td-agent.conf
 
 birdwatcher/.idea
 birdwatcher/puppet/local.yaml
+aws.yaml

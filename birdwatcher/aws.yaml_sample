@@ -1,0 +1,12 @@
+access_key_id: ACCESS_KEY
+secret_access_key: SECRET_ACCESS_KEY
+keypair_name: KEYPAIR
+region: REGION
+instance_type: TYPE
+ami: AMI
+subnet_id: SUBNET
+security_groups: 
+      - GROUP1
+associate_public_ip: true
+username: USER
+private_key_path: KEYPATH

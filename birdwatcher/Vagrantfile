@@ -1,38 +1,50 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+require 'yaml'
+aws_conf = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), 'aws.yaml'))
 
 Vagrant.configure("2") do |config|
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ub12_java"
-  config.vm.box_url = "https://www.dropbox.com/s/qcbfbfw8s24nxys/ub12_java.box?dl=1"
-
-  config.vm.provider 'virtualbox' do |v|  
-    v.customize ["modifyvm", :id, "--memory", 1000]
-    v.customize ["modifyvm", :id, "--cpus", 2]
-  end
-
   # Our basic setup script, along the Vagrant Docs Getting Started guide
   config.vm.provision :shell, path: "bootstrap.sh"
 
-  config.vm.provision :puppet, :options => ["--fileserverconfig=/vagrant/fileserver.conf"] do |puppet|
+  config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "./puppet/manifests"
     puppet.manifest_file  = "default.pp"
     puppet.hiera_config_path = "./puppet/hiera.yaml"
     puppet.module_path = "./puppet/modules"
-#    puppet.options = "--verbose --debug"
+    # puppet.options = "--verbose --debug"
   end
 
-  # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.define "local", primary: true do |local|
+    # Every Vagrant virtual environment requires a box to build off of.
+    local.vm.box = "ub12_java"
+    local.vm.box_url = "https://www.dropbox.com/s/qcbfbfw8s24nxys/ub12_java.box?dl=1"
 
-  # Create a private network, which allows host-only access to the machine
-  # using a specific IP.
-  config.vm.network :private_network, ip: "192.168.50.4"
+    local.vm.provider 'virtualbox' do |v|  
+      v.customize ["modifyvm", :id, "--memory", 1000]
+      v.customize ["modifyvm", :id, "--cpus", 2]
+    end
 
-  # Version with port mapping
-  #config.vm.network "forwarded_port", guest: 80, host: 8080
-  #config.vm.network "forwarded_port", guest: 9200, host: 9200
+    local.vm.network :private_network, ip: "192.168.50.4"
+  end
 
+  config.vm.define "aws", autostart: false do |aws|
+    aws.vm.provider :aws do |aws,override|
+      aws.access_key_id = aws_conf['access_key_id']
+      aws.secret_access_key = aws_conf['secret_access_key']
+      aws.keypair_name = aws_conf['keypair_name']
+      aws.region = aws_conf['region']
+      aws.instance_type = aws_conf['instance_type']
+      aws.ami = aws_conf['ami']
+      aws.subnet_id = aws_conf['subnet_id']
+      aws.security_groups = aws_conf['security_groups']
+      aws.associate_public_ip = aws_conf['associate_public_ip']
+
+      override.ssh.username = aws_conf['username']
+      override.ssh.private_key_path = aws_conf['private_key_path']
+    end
+
+    aws.vm.box = "dummy"
+    aws.vm.hostname = "www.birding.aws" # Dummy hostname
+  end
 end

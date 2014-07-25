@@ -49,7 +49,8 @@
         <div class="col-md-9">
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="candidate in candidates">
-                    <div class="title"><strong>{{candidate.file}}</strong> ({{candidate.id}})</div>
+                    <div class="title"><strong>{{candidate.id}}</strong></div>
+                    <div>{{candidate.message}}</div>
                     <div class="location-box">
                         <span class="location" ng-repeat="location in candidate.locations">
                             {{location}}

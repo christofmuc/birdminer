@@ -115,30 +115,13 @@ function candidateController($scope, $http, $sce) {
         $scope.clearCandidates();
         $scope.clearBirds();
         $scope.clearLocations();
-        var filter = {
-            and: [
-                {
-                    exists:{
-                        field:"birds"
-                    }
-                },
-                {
-                    exists:{
-                        field:"locations"
-                    }
-                }
-            ]
-        };
+        var filter = { and: [] };
 
         if ($scope.birdFilter) {
             if ($scope.birdFilter == EMPTY_BIRD_FILTER) {
-                angular.forEach(filter.and, function(value, key) {
-                    if (value.exists.field === "birds") {
-                        filter.and[key] = {
-                            missing: {
-                                field:"birds"
-                            }
-                        }
+                filter.and.push({
+                    missing: {
+                        field:"birds"
                     }
                 });
             } else {
@@ -148,17 +131,19 @@ function candidateController($scope, $http, $sce) {
                     }
                 });
             }
+        } else {
+            filter.and.push({
+                exists: {
+                    field:"birds"
+                }
+            })
         }
 
         if ($scope.locationFilter) {
             if ($scope.locationFilter == EMPTY_LOCATION_FILTER) {
-                angular.forEach(filter.and, function(value, key) {
-                    if (value.exists.field === "locations") {
-                        filter.and[key] = {
-                            missing: {
-                                field:"locations"
-                            }
-                        }
+                filter.and.push({
+                    missing: {
+                        field:"locations"
                     }
                 });
             } else {
@@ -168,6 +153,12 @@ function candidateController($scope, $http, $sce) {
                     }
                 });
             }
+        } else {
+            filter.and.push({
+                exists: {
+                    field:"locations"
+                }
+            })
         }
 
         var search_payload = {
@@ -177,7 +168,20 @@ function candidateController($scope, $http, $sce) {
             },
             aggs: {
                 both_only: {
-                    filter : filter,
+                    filter : {
+                        and: [
+                            {
+                                exists:{
+                                    field:"birds"
+                                }
+                            },
+                            {
+                                exists:{
+                                    field:"locations"
+                                }
+                            }
+                        ]
+                    },
                     aggs: {
                         birds: {
                             terms: {
@@ -203,11 +207,13 @@ function candidateController($scope, $http, $sce) {
                         field: "locations"
                     }
                 }
-            },
-            filter: filter
+            }
         };
-        console.log(JSON.stringify(search_payload));
-        $http.post(server + '/result/_search', search_payload).
+        if (filter.and.length > 0) {
+            search_payload.filter = filter;
+        }
+
+        $http.post(server + '/facebook/_search', search_payload).
             success(function (data, status, headers, config) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
@@ -231,9 +237,6 @@ function candidateController($scope, $http, $sce) {
                 });
 
                 angular.forEach(candidates, function (value, key) {
-                    var documentId = value._source.documentId;
-                    var file = "";
-
                     angular.forEach(value._source.birds, function (tagName, key) {
                         var lookup_key = tagName.toLowerCase();
                         var lookup = $scope.lookup[lookup_key];
@@ -251,7 +254,7 @@ function candidateController($scope, $http, $sce) {
                             }
                         };
                         console.log(JSON.stringify(payload));
-                        $http.post(server + '/input/_search', payload)
+                        $http.post(server + '/facebook/_search', payload)
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
@@ -282,7 +285,7 @@ function candidateController($scope, $http, $sce) {
                             }
                         };
                         console.log(JSON.stringify(payload));
-                        $http.post(server + '/input/_search', payload)
+                        $http.post(server + '/facebook/_search', payload)
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
@@ -298,11 +301,11 @@ function candidateController($scope, $http, $sce) {
 
                     $scope.candidates.push(
                         {
-                            id: documentId,
+                            id: value._id,
+                            message: value._source.message,
                             birds:[],
                             locations:[],
                             highlights:[],
-                            file: value._source.file,
                             percolators: value._source.percolators
                         }
                     );

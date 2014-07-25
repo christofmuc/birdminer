@@ -1,4 +1,6 @@
 function candidateController($scope, $http, $sce) {
+    var host = window.top.location.hostname;
+    var server = 'http://'+host+':9200'
 
     $scope.candidates = [];
     $scope.lookup = [];
@@ -26,7 +28,7 @@ function candidateController($scope, $http, $sce) {
             }
         };
 
-        $http.post('http://localhost:9200/percolators/.percolator/_search',query).
+        $http.post(server + '/percolators/.percolator/_search',query).
             success(function (data, status, headers, config) {
                 console.log("Preload done with: ");
                 angular.forEach(data.hits.hits, function(val,key) {
@@ -205,7 +207,7 @@ function candidateController($scope, $http, $sce) {
             filter: filter
         };
         console.log(JSON.stringify(search_payload));
-        $http.post('http://localhost:9200/result/_search', search_payload).
+        $http.post(server + '/result/_search', search_payload).
             success(function (data, status, headers, config) {
                 console.log("Status is", status);
                 var candidates = data.hits.hits;
@@ -249,7 +251,7 @@ function candidateController($scope, $http, $sce) {
                             }
                         };
                         console.log(JSON.stringify(payload));
-                        $http.post('http://localhost:9200/input/_search', payload)
+                        $http.post(server + '/input/_search', payload)
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {
@@ -280,7 +282,7 @@ function candidateController($scope, $http, $sce) {
                             }
                         };
                         console.log(JSON.stringify(payload));
-                        $http.post('http://localhost:9200/input/_search', payload)
+                        $http.post(server + '/input/_search', payload)
                             .success(function (data, status, headers, config) {
                                 angular.forEach($scope.candidates, function(candidate, idx) {
                                     if (candidate.id === documentId) {

@@ -25,7 +25,7 @@ class birdwatch-elasticsearchkibana() {
                     }
                 }
             }'",
-        onlyif => "/usr/bin/curl -XGET \"http://${es_host}:9200/facebook/post/_mapping\" -s | grep --quiet IndexMissingException"
+        onlyif => "/usr/bin/curl -XGET \"http://${es_host}:9200/facebook/post/_mapping\" -s | grep --invert-match --quiet birds"
     }
 
     elasticsearch::instance { 'birdmine': 

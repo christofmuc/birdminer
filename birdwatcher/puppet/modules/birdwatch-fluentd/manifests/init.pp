@@ -37,7 +37,7 @@ class birdwatch-fluentd() {
         pattern => 'input.twitter',
         type => 'elasticsearch',
         config => {
-            'host' => '192.168.50.4',
+            'host' => hiera('elasticsearch.host'),
             'port' => '9200',
             'index_name' => 'twitter',
             'type_name' => 'tweet',
@@ -64,7 +64,7 @@ class birdwatch-fluentd() {
         pattern => 'facebook.post',
         type => 'elasticsearch',
         config => {
-            'host' => '192.168.50.4',
+            'host' => hiera('elasticsearch.host'),
             'port' => '9200',
             'index_name' => 'facebook',
             'type_name' => 'post',

@@ -1,6 +1,8 @@
 class birdwatch-fluentd() {
 
-    include ::fluentd
+    class {'fluentd':
+        require => Exec['create_index']
+    }
 
     package {'libcurl4-gnutls-dev':} ->
     fluentd::install_plugin { 'elasticsearch': 

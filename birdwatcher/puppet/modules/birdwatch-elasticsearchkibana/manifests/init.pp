@@ -37,13 +37,21 @@ class birdwatch-elasticsearchkibana() {
       instances => 'birdmine',
     }
 
-    package {'git':} ->
-    class {
-        'kibana3': manage_git => false,
-        config_default_route => '/dashboard/file/BirdWatcher.json'
+    # package {'git':} ->
+    # class {'kibana3': 
+    #     manage_git => false,
+    #     manage_ws => false,
+    #     config_default_route => '/dashboard/file/BirdWatcher.json'
+    # }
+    # file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
+    #     owner => 'www-data',
+    #     source => "puppet:///modules/birdwatch-elasticsearchkibana/BirdWatcher.json"
+    # }
+
+    class {'apache':        
     }
-    file { '/opt/kibana3/src/app/dashboards/BirdWatcher.json':
-        owner => 'www-data',
-        source => "puppet:///modules/birdwatch-elasticsearchkibana/BirdWatcher.json"
+    apache::vhost { '192.168.50.4':
+        port             => '80',
+        docroot          => '/vagrant/www'
     }
 }

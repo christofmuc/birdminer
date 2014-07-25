@@ -37,6 +37,9 @@ fi
 if ! puppet module list | grep -q ispavailability-file_concat; then
     puppet module install ispavailability-file_concat;
 fi
+if ! puppet module list | grep -q puppetlabs-apache; then
+    puppet module install puppetlabs-apache;
+fi
 
 # Hiera expects its configuration file in the /etc directory, which is not really nice. Make a symlink for vagrant
 # Puppet on the other hand has its Hiera configuration in its own subdirectory. Don't ask, just symlink

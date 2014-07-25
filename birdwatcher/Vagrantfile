@@ -1,7 +1,5 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-require 'yaml'
-aws_conf = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), 'aws.yaml'))
 
 Vagrant.configure("2") do |config|
   # Our basic setup script, along the Vagrant Docs Getting Started guide
@@ -28,23 +26,32 @@ Vagrant.configure("2") do |config|
     local.vm.network :private_network, ip: "192.168.50.4"
   end
 
-  config.vm.define "aws", autostart: false do |aws|
-    aws.vm.provider :aws do |aws,override|
-      aws.access_key_id = aws_conf['access_key_id']
-      aws.secret_access_key = aws_conf['secret_access_key']
-      aws.keypair_name = aws_conf['keypair_name']
-      aws.region = aws_conf['region']
-      aws.instance_type = aws_conf['instance_type']
-      aws.ami = aws_conf['ami']
-      aws.subnet_id = aws_conf['subnet_id']
-      aws.security_groups = aws_conf['security_groups']
-      aws.associate_public_ip = aws_conf['associate_public_ip']
+  aws_config_file = File.join(File.dirname(File.expand_path(__FILE__)), 'aws.yaml')
+  if File.exists? aws_config_file
+    require 'yaml'
+    aws_conf = YAML::load_file(aws_config_file)
 
-      override.ssh.username = aws_conf['username']
-      override.ssh.private_key_path = aws_conf['private_key_path']
+    config.vm.define "aws", autostart: false do |aws|
+      aws.vm.provider :aws do |aws,override|
+        aws.access_key_id = aws_conf['access_key_id']
+        aws.secret_access_key = aws_conf['secret_access_key']
+        aws.keypair_name = aws_conf['keypair_name']
+        aws.region = aws_conf['region']
+        aws.instance_type = aws_conf['instance_type']
+        aws.ami = aws_conf['ami']
+        aws.subnet_id = aws_conf['subnet_id']
+        aws.security_groups = aws_conf['security_groups']
+        aws.associate_public_ip = aws_conf['associate_public_ip']
+
+        override.ssh.username = aws_conf['username']
+        override.ssh.private_key_path = aws_conf['private_key_path']
+      end
+
+      aws.vm.box = "dummy"
+      aws.vm.hostname = "www.birding.aws" # Dummy hostname
     end
-
-    aws.vm.box = "dummy"
-    aws.vm.hostname = "www.birding.aws" # Dummy hostname
+  else 
+    puts "Please copy/create aws.yaml to use AWS config"
   end
+
 end

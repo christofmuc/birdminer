@@ -82,7 +82,10 @@ public class PercolateAllDocuments {
 
         XContentBuilder builder = XContentFactory.jsonBuilder().startObject();
 
+        boolean hasBirds = false;
+        boolean hasLocation = false;
         if (birds.size() > 0) {
+            hasBirds = true;
             builder.startArray("birds");
             for (String bird : birds)
                 builder.value(BirdNames.get(bird));
@@ -90,11 +93,18 @@ public class PercolateAllDocuments {
         }
 
         if (locations.size() > 0) {
+            hasLocation = true;
             builder.startArray("locations");
             for (String location : locations)
                 builder.value(LocationNames.get(location));
             builder.endArray();
         }
+
+        String birdAndLocationText = (hasBirds && hasLocation) ? "has bird and location" :
+                (hasBirds ? "has bird" :
+                        (hasLocation ? "has location" : "no bird and no location")
+                );
+        builder.field("birdAndLocation", birdAndLocationText);
         builder.field("percolated", true);
         builder.endObject();
 

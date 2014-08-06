@@ -1,6 +1,6 @@
 # Creating a local vagrant box
 * cd into `birdwatcher`
-* run `vagrant up`
+* run `vagrant up local`
 
 # Creating an AWS instance
 * Install the plugin

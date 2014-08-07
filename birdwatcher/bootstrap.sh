@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Base installation
-#apt-get --yes update
+apt-get --yes update
 #apt-get --yes install build-essential
 #apt-get --yes install ruby
 
